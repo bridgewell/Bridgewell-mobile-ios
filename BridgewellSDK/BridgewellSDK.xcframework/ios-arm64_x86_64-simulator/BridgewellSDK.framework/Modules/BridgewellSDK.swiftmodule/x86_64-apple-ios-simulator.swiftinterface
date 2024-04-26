@@ -1,0 +1,182 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BridgewellSDK
+@_exported import BridgewellSDK
+import Foundation
+import PrebidMobile
+import PrebidMobileAdMobAdapters
+import PrebidMobileGAMEventHandlers
+import PrebidMobileMAXAdapters
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public typealias BannerView = PrebidMobile.BannerView
+public typealias BannerViewDelegate = PrebidMobile.BannerViewDelegate
+public typealias InterstitialAdUnitDelegate = PrebidMobile.InterstitialAdUnitDelegate
+public typealias InterstitialRenderingAdUnit = PrebidMobile.InterstitialRenderingAdUnit
+public typealias NativeRequest = PrebidMobile.NativeRequest
+public typealias NativeAd = PrebidMobile.NativeAd
+public typealias NativeAsset = PrebidMobile.NativeAsset
+public typealias NativeAssetImage = PrebidMobile.NativeAssetImage
+public typealias ImageAsset = PrebidMobile.ImageAsset
+public typealias NativeAssetTitle = PrebidMobile.NativeAssetTitle
+public typealias NativeAssetData = PrebidMobile.NativeAssetData
+public typealias NativeEventTracker = PrebidMobile.NativeEventTracker
+public typealias ContextType = PrebidMobile.ContextType
+public typealias PlacementType = PrebidMobile.PlacementType
+public typealias ContextSubType = PrebidMobile.ContextSubType
+public typealias ImageHelper = PrebidMobile.ImageHelper
+public typealias RewardedVideoAdUnit = PrebidMobile.RewardedVideoAdUnit
+public typealias InstreamVideoAdUnit = PrebidMobile.InstreamVideoAdUnit
+public typealias IMAUtils = PrebidMobile.IMAUtils
+public typealias BridgewellHost = PrebidMobile.PrebidHost
+public typealias DataAsset = PrebidMobile.DataAsset
+public typealias EventType = PrebidMobile.EventType
+public typealias EventTracking = PrebidMobile.EventTracking
+public typealias RewardedAdUnitDelegate = PrebidMobile.RewardedAdUnitDelegate
+public typealias RewardedAdUnit = PrebidMobile.RewardedAdUnit
+public typealias MediationBannerAdUnit = PrebidMobile.MediationBannerAdUnit
+public typealias MediationInterstitialAdUnit = PrebidMobile.MediationInterstitialAdUnit
+public typealias MediationNativeAdUnit = PrebidMobile.MediationNativeAdUnit
+public typealias AdViewUtils = PrebidMobile.AdViewUtils
+public typealias BannerAdUnit = PrebidMobile.BannerAdUnit
+public typealias BannerParameters = PrebidMobile.BannerParameters
+public typealias Signals = PrebidMobile.Signals
+public typealias InterstitialAdUnit = PrebidMobile.InterstitialAdUnit
+public typealias VideoParameters = PrebidMobile.VideoParameters
+public typealias NativeAdDelegate = PrebidMobile.NativeAdDelegate
+public typealias BridgewellAdUnit = PrebidMobile.PrebidAdUnit
+public typealias NativeParameters = PrebidMobile.NativeParameters
+public typealias BridgewellRequest = PrebidMobile.PrebidRequest
+public typealias Utils = PrebidMobile.Utils
+public typealias PrebidAdUnit = PrebidMobile.PrebidAdUnit
+public typealias MAXMediationRewardedUtils = PrebidMobileMAXAdapters.MAXMediationRewardedUtils
+public typealias MAXMediationInterstitialUtils = PrebidMobileMAXAdapters.MAXMediationInterstitialUtils
+public typealias GAMRewardedAdEventHandler = PrebidMobileGAMEventHandlers.GAMRewardedAdEventHandler
+public typealias GAMEventHandlerError = PrebidMobileGAMEventHandlers.GAMEventHandlerError
+public typealias GAMUtils = PrebidMobileGAMEventHandlers.GAMUtils
+public typealias MediationRewardedAdUnit = PrebidMobile.MediationRewardedAdUnit
+public typealias AdMobMediationRewardedUtils = PrebidMobileAdMobAdapters.AdMobMediationRewardedUtils
+public typealias AdMobMediationNativeUtils = PrebidMobileAdMobAdapters.AdMobMediationNativeUtils
+public typealias AdMobMediationInterstitialUtils = PrebidMobileAdMobAdapters.AdMobMediationInterstitialUtils
+public typealias AdMobMediationBannerUtils = PrebidMobileAdMobAdapters.AdMobMediationBannerUtils
+public typealias GAMBannerEventHandler = PrebidMobileGAMEventHandlers.GAMBannerEventHandler
+public typealias GAMInterstitialEventHandler = PrebidMobileGAMEventHandlers.GAMInterstitialEventHandler
+public typealias MAXMediationBannerUtils = PrebidMobileMAXAdapters.MAXMediationBannerUtils
+public typealias MAXMediationNativeUtils = PrebidMobileMAXAdapters.MAXMediationNativeUtils
+public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
+  @objc public static let bidderNameAppNexus: Swift.String
+  @objc public static let bidderNameRubiconProject: Swift.String
+  @objc public var timeoutUpdated: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var bridgewellServerAccountId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var pbsDebug: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var customHeaders: [Swift.String : Swift.String] {
+    @objc get
+    @objc set
+  }
+  @objc public var storedBidResponses: [Swift.String : Swift.String] {
+    @objc get
+    @objc set
+  }
+  @objc public var shouldAssignNativeAssetID: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var shareGeoLocation: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var logLevel: PrebidMobile.LogLevel {
+    @objc get
+    @objc set
+  }
+  @objc public var externalUserIdArray: [PrebidMobile.ExternalUserId] {
+    @objc get
+    @objc set
+  }
+  @objc public static let shared: BridgewellSDK.Bridgewell
+  @objc public var version: Swift.String {
+    @objc get
+  }
+  @objc public var omsdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public var bridgewellServerHost: BridgewellSDK.BridgewellHost {
+    @objc get
+    @objc set
+  }
+  @objc public var customStatusEndpoint: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var timeoutMillis: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var timeoutMillisDynamic: Foundation.NSNumber? {
+    @objc get
+    @objc set
+  }
+  @objc public var storedAuctionResponse: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var useCacheForReportingWithRenderingAPI: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var creativeFactoryTimeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc public var creativeFactoryTimeoutPreRenderContent: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc public var useExternalClickthroughBrowser: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var impClickbrowserType: PrebidMobile.ClickbrowserType {
+    @objc get
+    @objc set
+  }
+  @objc public var debugLogFileEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var locationUpdatesEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var includeWinners: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var includeBidderKeys: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public func setCustomBridgewellServer(url: Swift.String) throws
+  @objc public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
+  @objc public func clearStoredBidResponses()
+  @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
+  @objc public func addCustomHeader(name: Swift.String, value: Swift.String)
+  @objc public func clearCustomHeaders()
+  @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.BridgewellInitializationCallback? = nil)
+  @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil)
+  @objc public static func initializeSDK(_ completion: PrebidMobile.PrebidInitializationCallback? = nil)
+  @objc deinit
+}
+public let BridgewellLocalCacheIdKey: Swift.String

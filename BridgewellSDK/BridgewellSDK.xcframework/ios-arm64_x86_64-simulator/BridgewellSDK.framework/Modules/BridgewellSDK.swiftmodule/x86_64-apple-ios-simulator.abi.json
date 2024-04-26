@@ -1,0 +1,3207 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobileAdMobAdapters",
+        "printedName": "PrebidMobileAdMobAdapters",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobileGAMEventHandlers",
+        "printedName": "PrebidMobileGAMEventHandlers",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobileMAXAdapters",
+        "printedName": "PrebidMobileMAXAdapters",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Bridgewell",
+        "printedName": "Bridgewell",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bidderNameAppNexus",
+            "printedName": "bidderNameAppNexus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cpy)bidderNameAppNexus",
+            "mangledName": "$s13BridgewellSDK0A0C18bidderNameAppNexusSSvpZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)bidderNameAppNexus",
+                "mangledName": "$s13BridgewellSDK0A0C18bidderNameAppNexusSSvgZ",
+                "moduleName": "BridgewellSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bidderNameRubiconProject",
+            "printedName": "bidderNameRubiconProject",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cpy)bidderNameRubiconProject",
+            "mangledName": "$s13BridgewellSDK0A0C24bidderNameRubiconProjectSSvpZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)bidderNameRubiconProject",
+                "mangledName": "$s13BridgewellSDK0A0C24bidderNameRubiconProjectSSvgZ",
+                "moduleName": "BridgewellSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutUpdated",
+            "printedName": "timeoutUpdated",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutUpdated",
+            "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutUpdated",
+                "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutUpdated:",
+                "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C14timeoutUpdatedSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bridgewellServerAccountId",
+            "printedName": "bridgewellServerAccountId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)bridgewellServerAccountId",
+            "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)bridgewellServerAccountId",
+                "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setBridgewellServerAccountId:",
+                "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C25bridgewellServerAccountIdSSvM",
+                "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pbsDebug",
+            "printedName": "pbsDebug",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)pbsDebug",
+            "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)pbsDebug",
+                "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setPbsDebug:",
+                "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C8pbsDebugSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customHeaders",
+            "printedName": "customHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)customHeaders",
+            "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)customHeaders",
+                "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomHeaders:",
+                "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C13customHeadersSDyS2SGvM",
+                "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "storedBidResponses",
+            "printedName": "storedBidResponses",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)storedBidResponses",
+            "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)storedBidResponses",
+                "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setStoredBidResponses:",
+                "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvM",
+                "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldAssignNativeAssetID",
+            "printedName": "shouldAssignNativeAssetID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)shouldAssignNativeAssetID",
+            "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)shouldAssignNativeAssetID",
+                "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setShouldAssignNativeAssetID:",
+                "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shareGeoLocation",
+            "printedName": "shareGeoLocation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)shareGeoLocation",
+            "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)shareGeoLocation",
+                "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setShareGeoLocation:",
+                "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C16shareGeoLocationSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logLevel",
+            "printedName": "logLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "PrebidMobile.LogLevel",
+                "usr": "c:@M@PrebidMobile@objc(cs)PBMLogLevel"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)logLevel",
+            "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "PrebidMobile.LogLevel",
+                    "usr": "c:@M@PrebidMobile@objc(cs)PBMLogLevel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)logLevel",
+                "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "PrebidMobile.LogLevel",
+                    "usr": "c:@M@PrebidMobile@objc(cs)PBMLogLevel"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setLogLevel:",
+                "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0CvM",
+                "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0CvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "externalUserIdArray",
+            "printedName": "externalUserIdArray",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PrebidMobile.ExternalUserId]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExternalUserId",
+                    "printedName": "PrebidMobile.ExternalUserId",
+                    "usr": "c:@M@PrebidMobile@objc(cs)ExternalUserId"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)externalUserIdArray",
+            "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PrebidMobile.ExternalUserId]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExternalUserId",
+                        "printedName": "PrebidMobile.ExternalUserId",
+                        "usr": "c:@M@PrebidMobile@objc(cs)ExternalUserId"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)externalUserIdArray",
+                "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PrebidMobile.ExternalUserId]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ExternalUserId",
+                        "printedName": "PrebidMobile.ExternalUserId",
+                        "usr": "c:@M@PrebidMobile@objc(cs)ExternalUserId"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setExternalUserIdArray:",
+                "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvM",
+                "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bridgewell",
+                "printedName": "BridgewellSDK.Bridgewell",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cpy)shared",
+            "mangledName": "$s13BridgewellSDK0A0C6sharedACvpZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bridgewell",
+                    "printedName": "BridgewellSDK.Bridgewell",
+                    "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)shared",
+                "mangledName": "$s13BridgewellSDK0A0C6sharedACvgZ",
+                "moduleName": "BridgewellSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)version",
+            "mangledName": "$s13BridgewellSDK0A0C7versionSSvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)version",
+                "mangledName": "$s13BridgewellSDK0A0C7versionSSvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "omsdkVersion",
+            "printedName": "omsdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)omsdkVersion",
+            "mangledName": "$s13BridgewellSDK0A0C12omsdkVersionSSvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)omsdkVersion",
+                "mangledName": "$s13BridgewellSDK0A0C12omsdkVersionSSvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bridgewellServerHost",
+            "printedName": "bridgewellServerHost",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PrebidHost",
+                "printedName": "PrebidMobile.PrebidHost",
+                "usr": "c:@M@PrebidMobile@E@PrebidHost"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)bridgewellServerHost",
+            "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PrebidHost",
+                    "printedName": "PrebidMobile.PrebidHost",
+                    "usr": "c:@M@PrebidMobile@E@PrebidHost"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)bridgewellServerHost",
+                "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PrebidHost",
+                    "printedName": "PrebidMobile.PrebidHost",
+                    "usr": "c:@M@PrebidMobile@E@PrebidHost"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setBridgewellServerHost:",
+                "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0OvM",
+                "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0OvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "customStatusEndpoint",
+            "printedName": "customStatusEndpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)customStatusEndpoint",
+            "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)customStatusEndpoint",
+                "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomStatusEndpoint:",
+                "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C20customStatusEndpointSSSgvM",
+                "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutMillis",
+            "printedName": "timeoutMillis",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutMillis",
+            "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutMillis",
+                "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutMillis:",
+                "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C13timeoutMillisSivM",
+                "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutMillisDynamic",
+            "printedName": "timeoutMillisDynamic",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutMillisDynamic",
+            "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutMillisDynamic",
+                "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutMillisDynamic:",
+                "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvM",
+                "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "storedAuctionResponse",
+            "printedName": "storedAuctionResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)storedAuctionResponse",
+            "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)storedAuctionResponse",
+                "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setStoredAuctionResponse:",
+                "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C21storedAuctionResponseSSSgvM",
+                "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useCacheForReportingWithRenderingAPI",
+            "printedName": "useCacheForReportingWithRenderingAPI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useCacheForReportingWithRenderingAPI",
+            "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useCacheForReportingWithRenderingAPI",
+                "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseCacheForReportingWithRenderingAPI:",
+                "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvM",
+                "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creativeFactoryTimeout",
+            "printedName": "creativeFactoryTimeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeFactoryTimeout",
+            "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeFactoryTimeout",
+                "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeFactoryTimeout:",
+                "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C22creativeFactoryTimeoutSdvM",
+                "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creativeFactoryTimeoutPreRenderContent",
+            "printedName": "creativeFactoryTimeoutPreRenderContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeFactoryTimeoutPreRenderContent",
+            "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeFactoryTimeoutPreRenderContent",
+                "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeFactoryTimeoutPreRenderContent:",
+                "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvM",
+                "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "useExternalClickthroughBrowser",
+            "printedName": "useExternalClickthroughBrowser",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useExternalClickthroughBrowser",
+            "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useExternalClickthroughBrowser",
+                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseExternalClickthroughBrowser:",
+                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "impClickbrowserType",
+            "printedName": "impClickbrowserType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ClickbrowserType",
+                "printedName": "PrebidMobile.ClickbrowserType",
+                "usr": "c:@M@PrebidMobile@E@PBMClickbrowserType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)impClickbrowserType",
+            "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClickbrowserType",
+                    "printedName": "PrebidMobile.ClickbrowserType",
+                    "usr": "c:@M@PrebidMobile@E@PBMClickbrowserType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)impClickbrowserType",
+                "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ClickbrowserType",
+                    "printedName": "PrebidMobile.ClickbrowserType",
+                    "usr": "c:@M@PrebidMobile@E@PBMClickbrowserType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setImpClickbrowserType:",
+                "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0OvM",
+                "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0OvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugLogFileEnabled",
+            "printedName": "debugLogFileEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)debugLogFileEnabled",
+            "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)debugLogFileEnabled",
+                "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setDebugLogFileEnabled:",
+                "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C19debugLogFileEnabledSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locationUpdatesEnabled",
+            "printedName": "locationUpdatesEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)locationUpdatesEnabled",
+            "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)locationUpdatesEnabled",
+                "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setLocationUpdatesEnabled:",
+                "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C22locationUpdatesEnabledSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "includeWinners",
+            "printedName": "includeWinners",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)includeWinners",
+            "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)includeWinners",
+                "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIncludeWinners:",
+                "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C14includeWinnersSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "includeBidderKeys",
+            "printedName": "includeBidderKeys",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)includeBidderKeys",
+            "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)includeBidderKeys",
+                "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIncludeBidderKeys:",
+                "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C17includeBidderKeysSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomBridgewellServer",
+            "printedName": "setCustomBridgewellServer(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomBridgewellServerWithUrl:error:",
+            "mangledName": "$s13BridgewellSDK0A0C09setCustomA6Server3urlySS_tKF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addStoredBidResponse",
+            "printedName": "addStoredBidResponse(bidder:responseId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)addStoredBidResponseWithBidder:responseId:",
+            "mangledName": "$s13BridgewellSDK0A0C20addStoredBidResponse6bidder10responseIdySS_SStF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearStoredBidResponses",
+            "printedName": "clearStoredBidResponses()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)clearStoredBidResponses",
+            "mangledName": "$s13BridgewellSDK0A0C23clearStoredBidResponsesyyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStoredBidResponses",
+            "printedName": "getStoredBidResponses()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[[Swift.String : Swift.String]]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[[Swift.String : Swift.String]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)getStoredBidResponses",
+            "mangledName": "$s13BridgewellSDK0A0C21getStoredBidResponsesSaySDyS2SGGSgyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addCustomHeader",
+            "printedName": "addCustomHeader(name:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)addCustomHeaderWithName:value:",
+            "mangledName": "$s13BridgewellSDK0A0C15addCustomHeader4name5valueySS_SStF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearCustomHeaders",
+            "printedName": "clearCustomHeaders()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)clearCustomHeaders",
+            "mangledName": "$s13BridgewellSDK0A0C18clearCustomHeadersyyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeSDK",
+            "printedName": "initializeSDK(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnyObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrebidInitializationStatus",
+                            "printedName": "PrebidMobile.PrebidInitializationStatus",
+                            "usr": "c:@M@PrebidMobile@E@PrebidInitializationStatus"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)initializeSDK::",
+            "mangledName": "$s13BridgewellSDK0A0C010initializeB0yyyXlSg_y12PrebidMobile0D20InitializationStatusO_s5Error_pSgtcSgtFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeSDK",
+            "printedName": "initializeSDK(gadMobileAdsVersion:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrebidInitializationStatus",
+                            "printedName": "PrebidMobile.PrebidInitializationStatus",
+                            "usr": "c:@M@PrebidMobile@E@PrebidInitializationStatus"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)initializeSDKWithGadMobileAdsVersion::",
+            "mangledName": "$s13BridgewellSDK0A0C010initializeB019gadMobileAdsVersion_ySSSg_y06PrebidE00H20InitializationStatusO_s5Error_pSgtcSgtFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeSDK",
+            "printedName": "initializeSDK(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrebidInitializationStatus",
+                            "printedName": "PrebidMobile.PrebidInitializationStatus",
+                            "usr": "c:@M@PrebidMobile@E@PrebidInitializationStatus"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)initializeSDK:",
+            "mangledName": "$s13BridgewellSDK0A0C010initializeB0yyy12PrebidMobile0D20InitializationStatusO_s5Error_pSgtcSgFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell",
+        "mangledName": "$s13BridgewellSDK0A0C",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "BridgewellLocalCacheIdKey",
+        "printedName": "BridgewellLocalCacheIdKey",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:13BridgewellSDK0A15LocalCacheIdKeySSvp",
+        "mangledName": "$s13BridgewellSDK0A15LocalCacheIdKeySSvp",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:13BridgewellSDK0A15LocalCacheIdKeySSvg",
+            "mangledName": "$s13BridgewellSDK0A15LocalCacheIdKeySSvg",
+            "moduleName": "BridgewellSDK",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 169,
+      "length": 4,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 10,
+      "value": "\"appnexus\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "StringLiteral",
+      "offset": 458,
+      "length": 9,
+      "value": "\"rubicon\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3188,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 146,
+      "length": 19,
+      "value": "\"hb_cache_id_local\""
+    }
+  ]
+}
