@@ -2607,8 +2607,8 @@
           },
           {
             "kind": "Function",
-            "name": "setCustomPrebidServer",
-            "printedName": "setCustomPrebidServer(url:)",
+            "name": "setCustomBridgewellServer",
+            "printedName": "setCustomBridgewellServer(url:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2623,8 +2623,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomPrebidServerWithUrl:error:",
-            "mangledName": "$s13BridgewellSDK0A0C21setCustomPrebidServer3urlySS_tKF",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomBridgewellServerWithUrl:error:",
+            "mangledName": "$s13BridgewellSDK0A0C09setCustomA6Server3urlySS_tKF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -3169,35 +3169,35 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 169,
       "length": 4,
       "value": "2000"
     },
     {
-      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 10,
       "value": "\"appnexus\""
     },
     {
-      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 458,
       "length": 9,
       "value": "\"rubicon\""
     },
     {
-      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
       "offset": 3188,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 19,
