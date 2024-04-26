@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BridgewellSDK
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name BridgewellSDK
 @_exported import BridgewellSDK
 import Foundation
 import PrebidMobile
@@ -168,7 +168,7 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
     @objc get
     @objc set
   }
-  @objc public func setCustomBridgewellServer(url: Swift.String) throws
+  @objc public func setCustomPrebidServer(url: Swift.String) throws
   @objc public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
   @objc public func clearStoredBidResponses()
   @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?

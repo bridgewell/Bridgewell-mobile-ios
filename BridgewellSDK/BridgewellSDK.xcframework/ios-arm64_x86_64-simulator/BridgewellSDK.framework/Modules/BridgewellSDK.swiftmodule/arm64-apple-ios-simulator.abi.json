@@ -22,6 +22,251 @@
         "moduleName": "BridgewellSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "BridgewellServerStatusRequester",
+        "printedName": "BridgewellServerStatusRequester",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "serverEndpoint",
+            "printedName": "serverEndpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvp",
+            "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvp",
+            "moduleName": "BridgewellSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvg",
+                "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvs",
+                "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvM",
+                "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterC14serverEndpointSSSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgewellServerStatusRequester",
+                "printedName": "BridgewellSDK.BridgewellServerStatusRequester",
+                "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13BridgewellSDK0A21ServerStatusRequesterCACycfc",
+            "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterCACycfc",
+            "moduleName": "BridgewellSDK",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomStatusEndpoint",
+            "printedName": "setCustomStatusEndpoint(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC09setCustomD8EndpointyySSSgF",
+            "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterC09setCustomD8EndpointyySSSgF",
+            "moduleName": "BridgewellSDK",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestStatus",
+            "printedName": "requestStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrebidInitializationStatus",
+                        "printedName": "PrebidMobile.PrebidInitializationStatus",
+                        "usr": "c:@M@PrebidMobile@E@PrebidInitializationStatus"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC07requestD0yyy12PrebidMobile0g14InitializationD0O_s5Error_pSgtcF",
+            "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterC07requestD0yyy12PrebidMobile0g14InitializationD0O_s5Error_pSgtcF",
+            "moduleName": "BridgewellSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13BridgewellSDK0A21ServerStatusRequesterC",
+        "mangledName": "$s13BridgewellSDK0A21ServerStatusRequesterC",
+        "moduleName": "BridgewellSDK",
+        "isOpen": true
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -77,6 +322,342 @@
         "moduleName": "BridgewellSDK"
       },
       {
+        "kind": "TypeDecl",
+        "name": "BridgewellGAMVersionChecker",
+        "printedName": "BridgewellGAMVersionChecker",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "latestTestedGMAVersion",
+            "printedName": "latestTestedGMAVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Swift.Int, Swift.Int, Swift.Int)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC22latestTestedGMAVersionSi_S2itvp",
+            "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC22latestTestedGMAVersionSi_S2itvp",
+            "moduleName": "BridgewellSDK",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.Int, Swift.Int)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC22latestTestedGMAVersionSi_S2itvg",
+                "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC22latestTestedGMAVersionSi_S2itvg",
+                "moduleName": "BridgewellSDK",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentGMAVersion",
+            "printedName": "currentGMAVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(Swift.Int, Swift.Int, Swift.Int)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Int, Swift.Int, Swift.Int)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvp",
+            "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvp",
+            "moduleName": "BridgewellSDK",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(Swift.Int, Swift.Int, Swift.Int)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, Swift.Int, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvg",
+                "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(Swift.Int, Swift.Int, Swift.Int)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, Swift.Int, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvs",
+                "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvM",
+                "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC17currentGMAVersionSi_S2itSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "checkGMAVersionDeprecated",
+            "printedName": "checkGMAVersionDeprecated(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC25checkGMAVersionDeprecatedyySSF",
+            "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC25checkGMAVersionDeprecatedyySSF",
+            "moduleName": "BridgewellSDK",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkGMAVersion",
+            "printedName": "checkGMAVersion(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC15checkGMAVersionyySSF",
+            "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC15checkGMAVersionyySSF",
+            "moduleName": "BridgewellSDK",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgewellGAMVersionChecker",
+                "printedName": "BridgewellSDK.BridgewellGAMVersionChecker",
+                "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13BridgewellSDK0A17GAMVersionCheckerCACycfc",
+            "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerCACycfc",
+            "moduleName": "BridgewellSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13BridgewellSDK0A17GAMVersionCheckerC",
+        "mangledName": "$s13BridgewellSDK0A17GAMVersionCheckerC",
+        "moduleName": "BridgewellSDK",
+        "isOpen": true
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -92,6 +673,233 @@
         "printedName": "PrebidMobile",
         "declKind": "Import",
         "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BridgewellSDKInitializer",
+        "printedName": "BridgewellSDKInitializer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initializeSDK",
+            "printedName": "initializeSDK(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PrebidInitializationStatus",
+                            "printedName": "PrebidMobile.PrebidInitializationStatus",
+                            "usr": "c:@M@PrebidMobile@E@PrebidInitializationStatus"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A14SDKInitializerC010initializeB0yyy12PrebidMobile0E20InitializationStatusO_s5Error_pSgtcSgFZ",
+            "mangledName": "$s13BridgewellSDK0A14SDKInitializerC010initializeB0yyy12PrebidMobile0E20InitializationStatusO_s5Error_pSgtcSgFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkGMAVersion",
+            "printedName": "checkGMAVersion(gadObject:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AnyObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A14SDKInitializerC15checkGMAVersion9gadObjectyyXlSg_tFZ",
+            "mangledName": "$s13BridgewellSDK0A14SDKInitializerC15checkGMAVersion9gadObjectyyXlSg_tFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkGMAVersion",
+            "printedName": "checkGMAVersion(gadVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A14SDKInitializerC15checkGMAVersion10gadVersionySSSg_tFZ",
+            "mangledName": "$s13BridgewellSDK0A14SDKInitializerC15checkGMAVersion10gadVersionySSSg_tFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCustomStatusEndpoint",
+            "printedName": "setCustomStatusEndpoint(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A14SDKInitializerC23setCustomStatusEndpointyySSSgFZ",
+            "mangledName": "$s13BridgewellSDK0A14SDKInitializerC23setCustomStatusEndpointyySSSgFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logInitializerWarningIfNeeded",
+            "printedName": "logInitializerWarningIfNeeded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A14SDKInitializerC29logInitializerWarningIfNeededyyFZ",
+            "mangledName": "$s13BridgewellSDK0A14SDKInitializerC29logInitializerWarningIfNeededyyFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgewellSDKInitializer",
+                "printedName": "BridgewellSDK.BridgewellSDKInitializer",
+                "usr": "s:13BridgewellSDK0A14SDKInitializerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13BridgewellSDK0A14SDKInitializerCACycfc",
+            "mangledName": "$s13BridgewellSDK0A14SDKInitializerCACycfc",
+            "moduleName": "BridgewellSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13BridgewellSDK0A14SDKInitializerC",
+        "mangledName": "$s13BridgewellSDK0A14SDKInitializerC",
+        "moduleName": "BridgewellSDK",
+        "isOpen": true
       },
       {
         "kind": "Import",
@@ -248,6 +1056,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutUpdated",
             "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -269,6 +1078,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutUpdated",
                 "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -295,6 +1105,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutUpdated:",
                 "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -316,6 +1127,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -336,6 +1148,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)bridgewellServerAccountId",
             "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -357,6 +1170,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)bridgewellServerAccountId",
                 "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -383,6 +1197,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setBridgewellServerAccountId:",
                 "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -404,6 +1219,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C25bridgewellServerAccountIdSSvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -424,6 +1240,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)pbsDebug",
             "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -445,6 +1262,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)pbsDebug",
                 "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -471,6 +1289,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setPbsDebug:",
                 "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -492,6 +1311,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -526,6 +1346,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)customHeaders",
             "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -561,6 +1382,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)customHeaders",
                 "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -601,6 +1423,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomHeaders:",
                 "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -622,6 +1445,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -656,6 +1480,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)storedBidResponses",
             "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -691,6 +1516,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)storedBidResponses",
                 "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -731,6 +1557,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setStoredBidResponses:",
                 "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -752,6 +1579,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -772,6 +1600,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)shouldAssignNativeAssetID",
             "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -794,6 +1623,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)shouldAssignNativeAssetID",
                 "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -820,6 +1650,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setShouldAssignNativeAssetID:",
                 "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -841,6 +1672,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C25shouldAssignNativeAssetIDSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -861,6 +1693,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)shareGeoLocation",
             "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -883,6 +1716,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)shareGeoLocation",
                 "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -909,6 +1743,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setShareGeoLocation:",
                 "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -930,6 +1765,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -950,6 +1786,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)logLevel",
             "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -972,6 +1809,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)logLevel",
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -998,6 +1836,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setLogLevel:",
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1019,6 +1858,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0CvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1047,6 +1887,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)externalUserIdArray",
             "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -1077,6 +1918,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)externalUserIdArray",
                 "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1111,6 +1953,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setExternalUserIdArray:",
                 "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1132,6 +1975,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1205,6 +2049,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)version",
             "mangledName": "$s13BridgewellSDK0A0C7versionSSvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1226,6 +2071,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)version",
                 "mangledName": "$s13BridgewellSDK0A0C7versionSSvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1249,6 +2095,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)omsdkVersion",
             "mangledName": "$s13BridgewellSDK0A0C12omsdkVersionSSvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1270,6 +2117,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)omsdkVersion",
                 "mangledName": "$s13BridgewellSDK0A0C12omsdkVersionSSvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1293,6 +2141,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)bridgewellServerHost",
             "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
@@ -1319,6 +2168,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovg",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1346,6 +2196,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovs",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1367,6 +2218,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0OvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1395,6 +2247,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)customStatusEndpoint",
             "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
@@ -1428,6 +2281,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvg",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1463,6 +2317,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvs",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1484,6 +2339,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C20customStatusEndpointSSSgvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1504,6 +2360,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutMillis",
             "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "HasStorage",
               "AccessControl",
@@ -1528,6 +2385,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivg",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1555,6 +2413,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivs",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1576,6 +2435,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C13timeoutMillisSivM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1604,6 +2464,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutMillisDynamic",
             "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1633,6 +2494,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutMillisDynamic",
                 "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1667,6 +2529,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutMillisDynamic:",
                 "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1688,6 +2551,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1716,6 +2580,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)storedAuctionResponse",
             "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1745,6 +2610,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)storedAuctionResponse",
                 "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1779,6 +2645,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setStoredAuctionResponse:",
                 "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1800,6 +2667,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1820,6 +2688,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useCacheForReportingWithRenderingAPI",
             "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -1842,6 +2711,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useCacheForReportingWithRenderingAPI",
                 "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1868,6 +2738,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseCacheForReportingWithRenderingAPI:",
                 "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1889,6 +2760,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1909,6 +2781,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeFactoryTimeout",
             "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -1931,6 +2804,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeFactoryTimeout",
                 "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1957,6 +2831,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeFactoryTimeout:",
                 "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1978,6 +2853,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -1998,6 +2874,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeFactoryTimeoutPreRenderContent",
             "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2020,6 +2897,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeFactoryTimeoutPreRenderContent",
                 "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2046,6 +2924,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeFactoryTimeoutPreRenderContent:",
                 "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2067,6 +2946,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -2087,6 +2967,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useExternalClickthroughBrowser",
             "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2109,6 +2990,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useExternalClickthroughBrowser",
                 "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2135,6 +3017,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseExternalClickthroughBrowser:",
                 "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2156,6 +3039,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -2176,6 +3060,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)impClickbrowserType",
             "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2198,6 +3083,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)impClickbrowserType",
                 "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2224,6 +3110,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setImpClickbrowserType:",
                 "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2245,6 +3132,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0OvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -2265,6 +3153,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)debugLogFileEnabled",
             "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2287,6 +3176,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)debugLogFileEnabled",
                 "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2313,6 +3203,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setDebugLogFileEnabled:",
                 "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2334,6 +3225,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C19debugLogFileEnabledSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -2354,6 +3246,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)locationUpdatesEnabled",
             "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2376,6 +3269,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)locationUpdatesEnabled",
                 "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2402,6 +3296,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setLocationUpdatesEnabled:",
                 "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2423,6 +3318,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -2443,6 +3339,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)includeWinners",
             "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2465,6 +3362,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)includeWinners",
                 "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2491,6 +3389,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIncludeWinners:",
                 "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2512,6 +3411,7 @@
                 "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -2532,6 +3432,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)includeBidderKeys",
             "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvp",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2554,6 +3455,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)includeBidderKeys",
                 "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvg",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2580,6 +3482,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIncludeBidderKeys:",
                 "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvs",
                 "moduleName": "BridgewellSDK",
+                "isOpen": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -2601,14 +3504,15 @@
                 "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
           },
           {
             "kind": "Function",
-            "name": "setCustomBridgewellServer",
-            "printedName": "setCustomBridgewellServer(url:)",
+            "name": "setCustomPrebidServer",
+            "printedName": "setCustomPrebidServer(url:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2623,9 +3527,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomBridgewellServerWithUrl:error:",
-            "mangledName": "$s13BridgewellSDK0A0C09setCustomA6Server3urlySS_tKF",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomPrebidServerWithUrl:error:",
+            "mangledName": "$s13BridgewellSDK0A0C21setCustomPrebidServer3urlySS_tKF",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2661,6 +3566,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)addStoredBidResponseWithBidder:responseId:",
             "mangledName": "$s13BridgewellSDK0A0C20addStoredBidResponse6bidder10responseIdySS_SStF",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2683,6 +3589,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)clearStoredBidResponses",
             "mangledName": "$s13BridgewellSDK0A0C23clearStoredBidResponsesyyF",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -2735,6 +3642,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)getStoredBidResponses",
             "mangledName": "$s13BridgewellSDK0A0C21getStoredBidResponsesSaySDyS2SGGSgyF",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -2768,6 +3676,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)addCustomHeaderWithName:value:",
             "mangledName": "$s13BridgewellSDK0A0C15addCustomHeader4name5valueySS_SStF",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment",
@@ -2790,6 +3699,7 @@
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)clearCustomHeaders",
             "mangledName": "$s13BridgewellSDK0A0C18clearCustomHeadersyyF",
             "moduleName": "BridgewellSDK",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -3040,12 +3950,39 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bridgewell",
+                "printedName": "BridgewellSDK.Bridgewell",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)init",
+            "mangledName": "$s13BridgewellSDK0A0CACycfc",
+            "moduleName": "BridgewellSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
         "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell",
         "mangledName": "$s13BridgewellSDK0A0C",
         "moduleName": "BridgewellSDK",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
@@ -3163,41 +4100,655 @@
             "accessorKind": "get"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "String",
+        "printedName": "String",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isValidURL",
+            "printedName": "isValidURL()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS13BridgewellSDKE10isValidURLSbyF",
+            "mangledName": "$sSS13BridgewellSDKE10isValidURLSbyF",
+            "moduleName": "BridgewellSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encodedURL",
+            "printedName": "encodedURL(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CharacterSet",
+                "printedName": "Foundation.CharacterSet",
+                "usr": "s:10Foundation12CharacterSetV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS13BridgewellSDKE10encodedURL4with10Foundation0D0VSgAD12CharacterSetV_tF",
+            "mangledName": "$sSS13BridgewellSDKE10encodedURL4with10Foundation0D0VSgAD12CharacterSetV_tF",
+            "moduleName": "BridgewellSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "containsOnly",
+            "printedName": "containsOnly(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CharacterSet",
+                "printedName": "Foundation.CharacterSet",
+                "usr": "s:10Foundation12CharacterSetV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS13BridgewellSDKE12containsOnlyySb10Foundation12CharacterSetVF",
+            "mangledName": "$sSS13BridgewellSDKE12containsOnlyySb10Foundation12CharacterSetVF",
+            "moduleName": "BridgewellSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SS",
+        "mangledName": "$sSS",
+        "moduleName": "Swift",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStream",
+            "printedName": "TextOutputStream",
+            "usr": "s:s16TextOutputStreamP",
+            "mangledName": "$ss16TextOutputStreamP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStreamable",
+            "printedName": "TextOutputStreamable",
+            "usr": "s:s20TextOutputStreamableP",
+            "mangledName": "$ss20TextOutputStreamableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
+            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "StringProtocol",
+            "printedName": "StringProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UTF8View",
+                "printedName": "UTF8View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF8View",
+                    "printedName": "Swift.String.UTF8View",
+                    "usr": "s:SS8UTF8ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UTF16View",
+                "printedName": "UTF16View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF16View",
+                    "printedName": "Swift.String.UTF16View",
+                    "usr": "s:SS9UTF16ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarView",
+                "printedName": "UnicodeScalarView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnicodeScalarView",
+                    "printedName": "Swift.String.UnicodeScalarView",
+                    "usr": "s:SS17UnicodeScalarViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sy",
+            "mangledName": "$sSy"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringInterpolation",
+            "printedName": "ExpressibleByStringInterpolation",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringInterpolation",
+                "printedName": "StringInterpolation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultStringInterpolation",
+                    "printedName": "Swift.DefaultStringInterpolation",
+                    "usr": "s:s26DefaultStringInterpolationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s32ExpressibleByStringInterpolationP",
+            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 169,
       "length": 4,
       "value": "2000"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 10,
       "value": "\"appnexus\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 458,
       "length": 9,
       "value": "\"rubicon\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
       "offset": 3188,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "filePath": "\/Users\/nalou\/Developer\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 19,

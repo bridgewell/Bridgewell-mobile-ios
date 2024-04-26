@@ -168,7 +168,7 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
     @objc get
     @objc set
   }
-  @objc public func setCustomBridgewellServer(url: Swift.String) throws
+  @objc public func setCustomPrebidServer(url: Swift.String) throws
   @objc public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
   @objc public func clearStoredBidResponses()
   @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
