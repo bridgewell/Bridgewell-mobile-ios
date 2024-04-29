@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.author                  = { "bridgewell.com, Inc." => 'https://www.bridgewell.com/en/contact/'}
   s.platform     	          = :ios, "15.0"
   s.swift_version 	        = '5.0'
-  s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :branch => "feature/test_distribute" }
+  s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :tag => "#{s.version}" }
   s.xcconfig 		            = { :LIBRARY_SEARCH_PATHS => '$(inherited)',  
 			                          :OTHER_CFLAGS => '$(inherited)',
 			                          :OTHER_LDFLAGS => '$(inherited)',
