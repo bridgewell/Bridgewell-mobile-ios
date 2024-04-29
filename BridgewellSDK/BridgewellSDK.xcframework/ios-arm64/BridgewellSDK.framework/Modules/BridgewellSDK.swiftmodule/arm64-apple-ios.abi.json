@@ -234,8 +234,8 @@
           },
           {
             "kind": "Var",
-            "name": "timeoutUpdated",
-            "printedName": "timeoutUpdated",
+            "name": "updatedTimeout",
+            "printedName": "updatedTimeout",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -245,8 +245,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutUpdated",
-            "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)updatedTimeout",
+            "mangledName": "$s13BridgewellSDK0A0C14updatedTimeoutSbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -266,8 +266,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutUpdated",
-                "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)updatedTimeout",
+                "mangledName": "$s13BridgewellSDK0A0C14updatedTimeoutSbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -292,8 +292,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutUpdated:",
-                "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUpdatedTimeout:",
+                "mangledName": "$s13BridgewellSDK0A0C14updatedTimeoutSbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -312,8 +312,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C14timeoutUpdatedSbvM",
-                "mangledName": "$s13BridgewellSDK0A0C14timeoutUpdatedSbvM",
+                "usr": "s:13BridgewellSDK0A0C14updatedTimeoutSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C14updatedTimeoutSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -410,8 +410,8 @@
           },
           {
             "kind": "Var",
-            "name": "pbsDebug",
-            "printedName": "pbsDebug",
+            "name": "bwsDebug",
+            "printedName": "bwsDebug",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -421,8 +421,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)pbsDebug",
-            "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)bwsDebug",
+            "mangledName": "$s13BridgewellSDK0A0C8bwsDebugSbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -442,8 +442,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)pbsDebug",
-                "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)bwsDebug",
+                "mangledName": "$s13BridgewellSDK0A0C8bwsDebugSbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -468,8 +468,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setPbsDebug:",
-                "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setBwsDebug:",
+                "mangledName": "$s13BridgewellSDK0A0C8bwsDebugSbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -488,8 +488,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C8pbsDebugSbvM",
-                "mangledName": "$s13BridgewellSDK0A0C8pbsDebugSbvM",
+                "usr": "s:13BridgewellSDK0A0C8bwsDebugSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C8bwsDebugSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -498,8 +498,8 @@
           },
           {
             "kind": "Var",
-            "name": "customHeaders",
-            "printedName": "customHeaders",
+            "name": "customRequestHeaders",
+            "printedName": "customRequestHeaders",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -523,8 +523,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)customHeaders",
-            "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)customRequestHeaders",
+            "mangledName": "$s13BridgewellSDK0A0C20customRequestHeadersSDyS2SGvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -558,8 +558,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)customHeaders",
-                "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)customRequestHeaders",
+                "mangledName": "$s13BridgewellSDK0A0C20customRequestHeadersSDyS2SGvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -598,8 +598,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomHeaders:",
-                "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCustomRequestHeaders:",
+                "mangledName": "$s13BridgewellSDK0A0C20customRequestHeadersSDyS2SGvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -618,8 +618,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C13customHeadersSDyS2SGvM",
-                "mangledName": "$s13BridgewellSDK0A0C13customHeadersSDyS2SGvM",
+                "usr": "s:13BridgewellSDK0A0C20customRequestHeadersSDyS2SGvM",
+                "mangledName": "$s13BridgewellSDK0A0C20customRequestHeadersSDyS2SGvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -628,8 +628,8 @@
           },
           {
             "kind": "Var",
-            "name": "storedBidResponses",
-            "printedName": "storedBidResponses",
+            "name": "cachedBidResponses",
+            "printedName": "cachedBidResponses",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -653,8 +653,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)storedBidResponses",
-            "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)cachedBidResponses",
+            "mangledName": "$s13BridgewellSDK0A0C18cachedBidResponsesSDyS2SGvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -688,8 +688,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)storedBidResponses",
-                "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)cachedBidResponses",
+                "mangledName": "$s13BridgewellSDK0A0C18cachedBidResponsesSDyS2SGvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -728,8 +728,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setStoredBidResponses:",
-                "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCachedBidResponses:",
+                "mangledName": "$s13BridgewellSDK0A0C18cachedBidResponsesSDyS2SGvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -748,8 +748,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvM",
-                "mangledName": "$s13BridgewellSDK0A0C18storedBidResponsesSDyS2SGvM",
+                "usr": "s:13BridgewellSDK0A0C18cachedBidResponsesSDyS2SGvM",
+                "mangledName": "$s13BridgewellSDK0A0C18cachedBidResponsesSDyS2SGvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -847,8 +847,8 @@
           },
           {
             "kind": "Var",
-            "name": "shareGeoLocation",
-            "printedName": "shareGeoLocation",
+            "name": "shareGeocoordinate",
+            "printedName": "shareGeocoordinate",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -858,8 +858,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)shareGeoLocation",
-            "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)shareGeocoordinate",
+            "mangledName": "$s13BridgewellSDK0A0C18shareGeocoordinateSbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -880,8 +880,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)shareGeoLocation",
-                "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)shareGeocoordinate",
+                "mangledName": "$s13BridgewellSDK0A0C18shareGeocoordinateSbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -906,8 +906,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setShareGeoLocation:",
-                "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setShareGeocoordinate:",
+                "mangledName": "$s13BridgewellSDK0A0C18shareGeocoordinateSbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -926,8 +926,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C16shareGeoLocationSbvM",
-                "mangledName": "$s13BridgewellSDK0A0C16shareGeoLocationSbvM",
+                "usr": "s:13BridgewellSDK0A0C18shareGeocoordinateSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C18shareGeocoordinateSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1025,8 +1025,8 @@
           },
           {
             "kind": "Var",
-            "name": "externalUserIdArray",
-            "printedName": "externalUserIdArray",
+            "name": "externalUserIds",
+            "printedName": "externalUserIds",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1044,8 +1044,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)externalUserIdArray",
-            "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)externalUserIds",
+            "mangledName": "$s13BridgewellSDK0A0C15externalUserIdsSay12PrebidMobile08ExternalD2IdCGvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -1074,8 +1074,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)externalUserIdArray",
-                "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)externalUserIds",
+                "mangledName": "$s13BridgewellSDK0A0C15externalUserIdsSay12PrebidMobile08ExternalD2IdCGvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1108,8 +1108,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setExternalUserIdArray:",
-                "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setExternalUserIds:",
+                "mangledName": "$s13BridgewellSDK0A0C15externalUserIdsSay12PrebidMobile08ExternalD2IdCGvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1128,8 +1128,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvM",
-                "mangledName": "$s13BridgewellSDK0A0C19externalUserIdArraySay12PrebidMobile08ExternaldE0CGvM",
+                "usr": "s:13BridgewellSDK0A0C15externalUserIdsSay12PrebidMobile08ExternalD2IdCGvM",
+                "mangledName": "$s13BridgewellSDK0A0C15externalUserIdsSay12PrebidMobile08ExternalD2IdCGvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1582,8 +1582,8 @@
           },
           {
             "kind": "Var",
-            "name": "timeoutMillisDynamic",
-            "printedName": "timeoutMillisDynamic",
+            "name": "timeoutMillisecondDynamic",
+            "printedName": "timeoutMillisecondDynamic",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1601,8 +1601,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutMillisDynamic",
-            "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)timeoutMillisecondDynamic",
+            "mangledName": "$s13BridgewellSDK0A0C25timeoutMillisecondDynamicSo8NSNumberCSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -1630,8 +1630,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutMillisDynamic",
-                "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)timeoutMillisecondDynamic",
+                "mangledName": "$s13BridgewellSDK0A0C25timeoutMillisecondDynamicSo8NSNumberCSgvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1664,8 +1664,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutMillisDynamic:",
-                "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setTimeoutMillisecondDynamic:",
+                "mangledName": "$s13BridgewellSDK0A0C25timeoutMillisecondDynamicSo8NSNumberCSgvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1684,8 +1684,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvM",
-                "mangledName": "$s13BridgewellSDK0A0C20timeoutMillisDynamicSo8NSNumberCSgvM",
+                "usr": "s:13BridgewellSDK0A0C25timeoutMillisecondDynamicSo8NSNumberCSgvM",
+                "mangledName": "$s13BridgewellSDK0A0C25timeoutMillisecondDynamicSo8NSNumberCSgvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1694,8 +1694,8 @@
           },
           {
             "kind": "Var",
-            "name": "storedAuctionResponse",
-            "printedName": "storedAuctionResponse",
+            "name": "cachedAuctionResponse",
+            "printedName": "cachedAuctionResponse",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1713,8 +1713,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)storedAuctionResponse",
-            "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)cachedAuctionResponse",
+            "mangledName": "$s13BridgewellSDK0A0C21cachedAuctionResponseSSSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -1742,8 +1742,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)storedAuctionResponse",
-                "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)cachedAuctionResponse",
+                "mangledName": "$s13BridgewellSDK0A0C21cachedAuctionResponseSSSgvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1776,8 +1776,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setStoredAuctionResponse:",
-                "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCachedAuctionResponse:",
+                "mangledName": "$s13BridgewellSDK0A0C21cachedAuctionResponseSSSgvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1796,8 +1796,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C21storedAuctionResponseSSSgvM",
-                "mangledName": "$s13BridgewellSDK0A0C21storedAuctionResponseSSSgvM",
+                "usr": "s:13BridgewellSDK0A0C21cachedAuctionResponseSSSgvM",
+                "mangledName": "$s13BridgewellSDK0A0C21cachedAuctionResponseSSSgvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1806,8 +1806,8 @@
           },
           {
             "kind": "Var",
-            "name": "useCacheForReportingWithRenderingAPI",
-            "printedName": "useCacheForReportingWithRenderingAPI",
+            "name": "useCacheForReportWithRenderingAPI",
+            "printedName": "useCacheForReportWithRenderingAPI",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1817,8 +1817,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useCacheForReportingWithRenderingAPI",
-            "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useCacheForReportWithRenderingAPI",
+            "mangledName": "$s13BridgewellSDK0A0C33useCacheForReportWithRenderingAPISbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -1839,8 +1839,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useCacheForReportingWithRenderingAPI",
-                "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useCacheForReportWithRenderingAPI",
+                "mangledName": "$s13BridgewellSDK0A0C33useCacheForReportWithRenderingAPISbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1865,8 +1865,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseCacheForReportingWithRenderingAPI:",
-                "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseCacheForReportWithRenderingAPI:",
+                "mangledName": "$s13BridgewellSDK0A0C33useCacheForReportWithRenderingAPISbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1885,8 +1885,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvM",
-                "mangledName": "$s13BridgewellSDK0A0C36useCacheForReportingWithRenderingAPISbvM",
+                "usr": "s:13BridgewellSDK0A0C33useCacheForReportWithRenderingAPISbvM",
+                "mangledName": "$s13BridgewellSDK0A0C33useCacheForReportWithRenderingAPISbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1895,8 +1895,8 @@
           },
           {
             "kind": "Var",
-            "name": "creativeFactoryTimeout",
-            "printedName": "creativeFactoryTimeout",
+            "name": "creativeTimeout",
+            "printedName": "creativeTimeout",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1906,8 +1906,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeFactoryTimeout",
-            "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeTimeout",
+            "mangledName": "$s13BridgewellSDK0A0C15creativeTimeoutSdvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -1928,8 +1928,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeFactoryTimeout",
-                "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeTimeout",
+                "mangledName": "$s13BridgewellSDK0A0C15creativeTimeoutSdvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1954,8 +1954,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeFactoryTimeout:",
-                "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeTimeout:",
+                "mangledName": "$s13BridgewellSDK0A0C15creativeTimeoutSdvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -1974,8 +1974,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C22creativeFactoryTimeoutSdvM",
-                "mangledName": "$s13BridgewellSDK0A0C22creativeFactoryTimeoutSdvM",
+                "usr": "s:13BridgewellSDK0A0C15creativeTimeoutSdvM",
+                "mangledName": "$s13BridgewellSDK0A0C15creativeTimeoutSdvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1984,8 +1984,8 @@
           },
           {
             "kind": "Var",
-            "name": "creativeFactoryTimeoutPreRenderContent",
-            "printedName": "creativeFactoryTimeoutPreRenderContent",
+            "name": "creativeTimeoutPreRenderContent",
+            "printedName": "creativeTimeoutPreRenderContent",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1995,8 +1995,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeFactoryTimeoutPreRenderContent",
-            "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)creativeTimeoutPreRenderContent",
+            "mangledName": "$s13BridgewellSDK0A0C31creativeTimeoutPreRenderContentSdvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -2017,8 +2017,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeFactoryTimeoutPreRenderContent",
-                "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)creativeTimeoutPreRenderContent",
+                "mangledName": "$s13BridgewellSDK0A0C31creativeTimeoutPreRenderContentSdvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2043,8 +2043,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeFactoryTimeoutPreRenderContent:",
-                "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setCreativeTimeoutPreRenderContent:",
+                "mangledName": "$s13BridgewellSDK0A0C31creativeTimeoutPreRenderContentSdvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2063,8 +2063,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvM",
-                "mangledName": "$s13BridgewellSDK0A0C38creativeFactoryTimeoutPreRenderContentSdvM",
+                "usr": "s:13BridgewellSDK0A0C31creativeTimeoutPreRenderContentSdvM",
+                "mangledName": "$s13BridgewellSDK0A0C31creativeTimeoutPreRenderContentSdvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2073,8 +2073,8 @@
           },
           {
             "kind": "Var",
-            "name": "useExternalClickthroughBrowser",
-            "printedName": "useExternalClickthroughBrowser",
+            "name": "useExternalClickThroughBrowser",
+            "printedName": "useExternalClickThroughBrowser",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2084,8 +2084,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useExternalClickthroughBrowser",
-            "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)useExternalClickThroughBrowser",
+            "mangledName": "$s13BridgewellSDK0A0C30useExternalClickThroughBrowserSbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -2106,8 +2106,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useExternalClickthroughBrowser",
-                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)useExternalClickThroughBrowser",
+                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickThroughBrowserSbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2132,8 +2132,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseExternalClickthroughBrowser:",
-                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUseExternalClickThroughBrowser:",
+                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickThroughBrowserSbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2152,8 +2152,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvM",
-                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickthroughBrowserSbvM",
+                "usr": "s:13BridgewellSDK0A0C30useExternalClickThroughBrowserSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C30useExternalClickThroughBrowserSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2162,8 +2162,8 @@
           },
           {
             "kind": "Var",
-            "name": "impClickbrowserType",
-            "printedName": "impClickbrowserType",
+            "name": "implementedClickbrowserType",
+            "printedName": "implementedClickbrowserType",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2173,8 +2173,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)impClickbrowserType",
-            "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)implementedClickbrowserType",
+            "mangledName": "$s13BridgewellSDK0A0C27implementedClickbrowserType12PrebidMobile0dE0Ovp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -2195,8 +2195,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)impClickbrowserType",
-                "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)implementedClickbrowserType",
+                "mangledName": "$s13BridgewellSDK0A0C27implementedClickbrowserType12PrebidMobile0dE0Ovg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2221,8 +2221,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setImpClickbrowserType:",
-                "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0Ovs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setImplementedClickbrowserType:",
+                "mangledName": "$s13BridgewellSDK0A0C27implementedClickbrowserType12PrebidMobile0dE0Ovs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2241,8 +2241,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0OvM",
-                "mangledName": "$s13BridgewellSDK0A0C19impClickbrowserType12PrebidMobile0dE0OvM",
+                "usr": "s:13BridgewellSDK0A0C27implementedClickbrowserType12PrebidMobile0dE0OvM",
+                "mangledName": "$s13BridgewellSDK0A0C27implementedClickbrowserType12PrebidMobile0dE0OvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2340,8 +2340,8 @@
           },
           {
             "kind": "Var",
-            "name": "locationUpdatesEnabled",
-            "printedName": "locationUpdatesEnabled",
+            "name": "isLocationUpdatesEnabled",
+            "printedName": "isLocationUpdatesEnabled",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2351,8 +2351,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)locationUpdatesEnabled",
-            "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)isLocationUpdatesEnabled",
+            "mangledName": "$s13BridgewellSDK0A0C24isLocationUpdatesEnabledSbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -2373,8 +2373,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)locationUpdatesEnabled",
-                "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)isLocationUpdatesEnabled",
+                "mangledName": "$s13BridgewellSDK0A0C24isLocationUpdatesEnabledSbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2399,8 +2399,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setLocationUpdatesEnabled:",
-                "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIsLocationUpdatesEnabled:",
+                "mangledName": "$s13BridgewellSDK0A0C24isLocationUpdatesEnabledSbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2419,8 +2419,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C22locationUpdatesEnabledSbvM",
-                "mangledName": "$s13BridgewellSDK0A0C22locationUpdatesEnabledSbvM",
+                "usr": "s:13BridgewellSDK0A0C24isLocationUpdatesEnabledSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C24isLocationUpdatesEnabledSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2429,8 +2429,8 @@
           },
           {
             "kind": "Var",
-            "name": "includeWinners",
-            "printedName": "includeWinners",
+            "name": "isIncludeWinners",
+            "printedName": "isIncludeWinners",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2440,8 +2440,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)includeWinners",
-            "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)isIncludeWinners",
+            "mangledName": "$s13BridgewellSDK0A0C16isIncludeWinnersSbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -2462,8 +2462,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)includeWinners",
-                "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)isIncludeWinners",
+                "mangledName": "$s13BridgewellSDK0A0C16isIncludeWinnersSbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2488,8 +2488,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIncludeWinners:",
-                "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIsIncludeWinners:",
+                "mangledName": "$s13BridgewellSDK0A0C16isIncludeWinnersSbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2508,8 +2508,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C14includeWinnersSbvM",
-                "mangledName": "$s13BridgewellSDK0A0C14includeWinnersSbvM",
+                "usr": "s:13BridgewellSDK0A0C16isIncludeWinnersSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C16isIncludeWinnersSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2518,8 +2518,8 @@
           },
           {
             "kind": "Var",
-            "name": "includeBidderKeys",
-            "printedName": "includeBidderKeys",
+            "name": "isIncludeBidderKeys",
+            "printedName": "isIncludeBidderKeys",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2529,8 +2529,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)includeBidderKeys",
-            "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvp",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)isIncludeBidderKeys",
+            "mangledName": "$s13BridgewellSDK0A0C19isIncludeBidderKeysSbvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -2551,8 +2551,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)includeBidderKeys",
-                "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvg",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)isIncludeBidderKeys",
+                "mangledName": "$s13BridgewellSDK0A0C19isIncludeBidderKeysSbvg",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2577,8 +2577,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIncludeBidderKeys:",
-                "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvs",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setIsIncludeBidderKeys:",
+                "mangledName": "$s13BridgewellSDK0A0C19isIncludeBidderKeysSbvs",
                 "moduleName": "BridgewellSDK",
                 "declAttributes": [
                   "ObjC"
@@ -2597,8 +2597,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C17includeBidderKeysSbvM",
-                "mangledName": "$s13BridgewellSDK0A0C17includeBidderKeysSbvM",
+                "usr": "s:13BridgewellSDK0A0C19isIncludeBidderKeysSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C19isIncludeBidderKeysSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3192,7 +3192,7 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3188,
+      "offset": 3198,
       "length": 5,
       "value": "false"
     },

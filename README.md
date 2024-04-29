@@ -17,12 +17,21 @@ end
 ```
 Now run `pod install` to add the Bridgewell SDK to project dependencies.
 
+# Config `info.plist` file
+Update your app's `Info.plist` file to add this key:
+`GADApplicationIdentifier` key with a string value of your AdMob app ID [found in the AdMob UI](https://support.google.com/admob/answer/7356431).
+
+```
+<key>GADApplicationIdentifier</key>
+<string>{{YOUR-KEY}}</string>
+```
+
 # Add SDK
 ## Set Bridgewell Server
 Once you have a Bridgewell server, you will add them to BW mobile. For example, if you’re using the AppNexus Server.
 ```
-Bridgewell.shared.BridgewellServerAccountId = YOUR_ACCOUNT_ID
-Bridgewell.shared.BridgewellServerHost = YOUR_SERVER_HOST
+Bridgewell.shared.bridgewellServerAccountId = YOUR_ACCOUNT_ID
+Bridgewell.shared.bridgewellServerHost = YOUR_SERVER_HOST
 ```
 If you have opted to host your own BW Server solution, you will need to store the URL to the server in your app. Make sure that your URL points to the /openrtb2/auction endpoint.
 
@@ -102,7 +111,7 @@ The `Bridgewell` class is a singleton that enables the user to apply global sett
 
 `bridgewellServerHost`: String containing configuration your Bridgewell Server host with which Bridgewell SDK will communicate. Choose from the system-defined Bridgewell Server hosts or define your own custom Bridgewell Server host.
 
-`shareGeoLocation`: Optional Bool, if this flag is True AND the app collects the user’s geographical location data, Bridgewell Mobile will send the user’s geographical location data to Bridgewell Server. If this flag is False OR the app does not collect the user’s geographical location data, Bridgewell Mobile will not populate any user geographical location information in the call to Bridgewell Server. The default setting is false.
+`shareGeocoordinate`: Optional Bool, if this flag is True AND the app collects the user’s geographical location data, Bridgewell Mobile will send the user’s geographical location data to Bridgewell Server. If this flag is False OR the app does not collect the user’s geographical location data, Bridgewell Mobile will not populate any user geographical location information in the call to Bridgewell Server. The default setting is false.
 
 `logLevel`: Optional level of logging to output in the console. Options are one of the following sorted by a verbosity of the log:
 
@@ -117,13 +126,13 @@ public static let severe = LogLevel(stringValue: "[🔥]", rawValue: 5)
 
 `timeoutMillis`: The Bridgewell timeout (accessible to Bridgewell SDK 1.2+), set in milliseconds, will return control to the ad server SDK to fetch an ad once the expiration period is achieved. Because Bridgewell SDK solicits bids from Bridgewell Server in one payload, setting Bridgewell timeout too low can stymie all demand resulting in a potential negative revenue impact.
 
-`creativeFactoryTimeout`: Controls how long banner creative has to load before it is considered a failure.
+`creativeTimeout`: Controls how long banner creative has to load before it is considered a failure.
 
-`creativeFactoryTimeoutPreRenderContent`: Controls how long video and interstitial creatives have to load before it is considered a failure.
+`creativeTimeoutPreRenderContent`: Controls how long video and interstitial creatives have to load before it is considered a failure.
 
-`storedAuctionResponse`: Set as type string, stored auction responses signal Bridgewell Server to respond with a static response matching the storedAuctionResponse found in the Bridgewell Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written description on github issue 133.
+`cachedAuctionResponse`: Set as type string, stored auction responses signal Bridgewell Server to respond with a static response matching the storedAuctionResponse found in the Bridgewell Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written description on github issue 133.
 
-`pbsDebug`: adds the debug flag (“test”:1) on the outbound http call to Bridgewell Server. The test:1 flag will signal to Bridgewell Server to emit the full resolved request (resolving any Stored Request IDs) as well as the full Bid Request and Bid Response to and from each bidder.
+`bwsDebug`: adds the debug flag (“test”:1) on the outbound http call to Bridgewell Server. The test:1 flag will signal to Bridgewell Server to emit the full resolved request (resolving any Stored Request IDs) as well as the full Bid Request and Bid Response to and from each bidder.
 
 ## Methods
 ### Stored Response
@@ -320,4 +329,4 @@ func rewardedAdDidReceiveAd(_ rewardedAd: RewardedAdUnit) {
 
 
 # About
-Copyright 2019 Bridgewell | All Rights Reserved
+Copyright 2024 Bridgewell | All Rights Reserved
