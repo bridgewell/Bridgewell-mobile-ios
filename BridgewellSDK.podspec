@@ -40,6 +40,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.vendored_frameworks = 'BridgewellSDK/BridgewellSDK.xcframework'
   s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
   # Dependencies
   s.dependency 'PrebidMobile', '~> 2.2.0'
