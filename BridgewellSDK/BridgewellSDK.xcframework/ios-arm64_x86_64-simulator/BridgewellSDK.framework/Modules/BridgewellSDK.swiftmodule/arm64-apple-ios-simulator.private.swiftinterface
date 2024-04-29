@@ -69,7 +69,7 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public static let bidderNameAppNexus: Swift.String
   @objc public static let bidderNameRubiconProject: Swift.String
-  @objc public var timeoutUpdated: Swift.Bool {
+  @objc public var updatedTimeout: Swift.Bool {
     @objc get
     @objc set
   }
@@ -77,15 +77,15 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
     @objc get
     @objc set
   }
-  @objc public var pbsDebug: Swift.Bool {
+  @objc public var bwsDebug: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc public var customHeaders: [Swift.String : Swift.String] {
+  @objc public var customRequestHeaders: [Swift.String : Swift.String] {
     @objc get
     @objc set
   }
-  @objc public var storedBidResponses: [Swift.String : Swift.String] {
+  @objc public var cachedBidResponses: [Swift.String : Swift.String] {
     @objc get
     @objc set
   }
@@ -93,7 +93,7 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
     @objc get
     @objc set
   }
-  @objc public var shareGeoLocation: Swift.Bool {
+  @objc public var shareGeocoordinate: Swift.Bool {
     @objc get
     @objc set
   }
@@ -101,7 +101,7 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
     @objc get
     @objc set
   }
-  @objc public var externalUserIdArray: [PrebidMobile.ExternalUserId] {
+  @objc public var externalUserIds: [PrebidMobile.ExternalUserId] {
     @objc get
     @objc set
   }
@@ -124,31 +124,31 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
     @objc get
     @objc set
   }
-  @objc public var timeoutMillisDynamic: Foundation.NSNumber? {
+  @objc public var timeoutMillisecondDynamic: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc public var storedAuctionResponse: Swift.String? {
+  @objc public var cachedAuctionResponse: Swift.String? {
     @objc get
     @objc set
   }
-  @objc public var useCacheForReportingWithRenderingAPI: Swift.Bool {
+  @objc public var useCacheForReportWithRenderingAPI: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc public var creativeFactoryTimeout: Foundation.TimeInterval {
+  @objc public var creativeTimeout: Foundation.TimeInterval {
     @objc get
     @objc set
   }
-  @objc public var creativeFactoryTimeoutPreRenderContent: Foundation.TimeInterval {
+  @objc public var creativeTimeoutPreRenderContent: Foundation.TimeInterval {
     @objc get
     @objc set
   }
-  @objc public var useExternalClickthroughBrowser: Swift.Bool {
+  @objc public var useExternalClickThroughBrowser: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc public var impClickbrowserType: PrebidMobile.ClickbrowserType {
+  @objc public var implementedClickbrowserType: PrebidMobile.ClickbrowserType {
     @objc get
     @objc set
   }
@@ -156,15 +156,15 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
     @objc get
     @objc set
   }
-  @objc public var locationUpdatesEnabled: Swift.Bool {
+  @objc public var isLocationUpdatesEnabled: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc public var includeWinners: Swift.Bool {
+  @objc public var isIncludeWinners: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc public var includeBidderKeys: Swift.Bool {
+  @objc public var isIncludeBidderKeys: Swift.Bool {
     @objc get
     @objc set
   }
