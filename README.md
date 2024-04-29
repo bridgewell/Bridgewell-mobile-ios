@@ -12,8 +12,22 @@ If you are not familiar with using Cocoapods for dependency management, visit th
 
 ```
 target 'MyAmazingApp' do
-    pod 'BridgewellSDK'
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for Test SDK
+  pod 'BridgewellSDK'
+  
+  # Should include this at the end of pod file
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      end
+    end
+  end
 end
+
 ```
 Now run `pod install` to add the Bridgewell SDK to project dependencies.
 
