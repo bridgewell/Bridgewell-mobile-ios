@@ -21,6 +21,11 @@ Now run `pod install` to add the Bridgewell SDK to project dependencies.
 Update your app's `Info.plist` file to add this key:
 `GADApplicationIdentifier` key with a string value of your AdMob app ID [found in the AdMob UI](https://support.google.com/admob/answer/7356431).
 
+```
+<key>GADApplicationIdentifier</key>
+<string>{{YOUR-KEY}}</string>
+```
+
 # Add SDK
 ## Set Bridgewell Server
 Once you have a Bridgewell server, you will add them to BW mobile. For example, if you’re using the AppNexus Server.
