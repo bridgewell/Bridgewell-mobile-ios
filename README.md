@@ -28,6 +28,16 @@ Update your app's `Info.plist` file to add this key:
 
 # Add SDK
 ## Set Bridgewell Server
+
+First you have to import SDKs for setting it up, often it is in `AppDelegate`
+```
+import BridgewellSDK
+import PrebidMobile
+import GoogleMobileAds
+import PrebidMobileAdMobAdapters
+import PrebidMobileGAMEventHandlers
+```
+
 Once you have a Bridgewell server, you will add them to BW mobile. For example, if you’re using the AppNexus Server.
 ```
 Bridgewell.shared.bridgewellServerAccountId = YOUR_ACCOUNT_ID
