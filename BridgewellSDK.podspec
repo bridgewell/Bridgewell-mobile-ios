@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BridgewellSDK"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "BridgewellSDK is a lightweight framework that integrates directly with Prebid Server."
 
   s.description  = <<-DESC
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.author                  = { "bridgewell.com, Inc." => 'https://www.bridgewell.com/en/contact/'}
   s.platform     	          = :ios, "15.0"
   s.swift_version 	        = '5.0'
-  s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :branch => "feature/reduce_dependency" }
+  s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :tag => "#{s.version}" }
   s.xcconfig 		            = { :LIBRARY_SEARCH_PATHS => '$(inherited)',  
 			                          :OTHER_CFLAGS => '$(inherited)',
 			                          :OTHER_LDFLAGS => '$(inherited)',
