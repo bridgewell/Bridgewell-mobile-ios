@@ -1,10 +1,7 @@
 # Documentation Guide
 
-Bridgewell SDK for iOS.  <br><br>
-
-<b>Version: 1.0</b> 
-
-<br>
+# Bridgewell SDK for iOS.
+# Version: 0.0.4
 
 # SDK Integration
 ## Cocoapods
@@ -31,14 +28,6 @@ end
 ```
 Now run `pod install` to add the Bridgewell SDK to project dependencies.
 
-# Config `info.plist` file
-Update your app's `Info.plist` file to add this key:
-`GADApplicationIdentifier` key with a string value of your AdMob app ID [found in the AdMob UI](https://support.google.com/admob/answer/7356431).
-
-```
-<key>GADApplicationIdentifier</key>
-<string>{{YOUR-KEY}}</string>
-```
 
 # Add SDK
 ## Set Bridgewell Server
@@ -47,19 +36,15 @@ First you have to import SDKs for setting it up, often it is in `AppDelegate`
 ```
 import BridgewellSDK
 import PrebidMobile
-import GoogleMobileAds
-import PrebidMobileAdMobAdapters
-import PrebidMobileGAMEventHandlers
 ```
 
 Once you have a Bridgewell server, you will add them to BW mobile. For example, if you’re using the AppNexus Server.
-```
+```swift
 Bridgewell.shared.bridgewellServerAccountId = YOUR_ACCOUNT_ID
-Bridgewell.shared.bridgewellServerHost = YOUR_SERVER_HOST
 ```
 If you have opted to host your own BW Server solution, you will need to store the URL to the server in your app. Make sure that your URL points to the /openrtb2/auction endpoint.
 
-```
+```swift
 try? Bridgewell.shared.setCustomBridgewellServer(url: YOUR_CUSTOM_HOST_SERVER)
 ```
 This method throws an exception if the provided URL is invalid.
@@ -67,52 +52,7 @@ This method throws an exception if the provided URL is invalid.
 ## Initialize SDK
 After you have an account id and host server. You should initialize BW Sdk like this
 
-Once you set the account ID and the Bw Server host, you should initialize the Bw SDK. There are several options for how to do it.
-
-If you integrate Bridgewell with GMA SDK with version equal or higher than 10.7.0, use the following initializer, which checks the compatibility of Bridgewell SDK with GMA SDK used in the app:
-
-```swift
-Bridgewell.initializeSDK(gadMobileAdsVersion: GADGetStringFromVersionNumber(GADMobileAds.sharedInstance().versionNumber) { status, error in
-    switch status {
-    case .succeeded:
-        print("Bw SDK successfully initialized")
-    case .failed:
-        if let error = error {
-            print("An error occurred during Bw SDK initialization: \(error.localizedDescription)")
-        }
-    case .serverStatusWarning:
-        if let error = error {
-            print("Bw Server status checking failed: \(error.localizedDescription)")
-        }
-    default:
-        break
-    }            
-} 
-```
-
-If you integrate Bridgewell sdk with GMA SDK with version lower than 10.7.0, use the following initializer:
-```swift
-Bridgewell.initializeSDK(GADMobileAds.sharedInstance()) { status, error in
-    switch status {
-    case .succeeded:
-        print("Bridgewell SDK successfully initialized")
-    case .failed:
-        if let error = error {
-            print("An error occurred during Bridgewell SDK initialization: \(error.localizedDescription)")
-        }
-    case .serverStatusWarning:
-        if let error = error {
-            print("Bridgewell Server status checking failed: \(error.localizedDescription)")
-        }
-    default:
-        break
-    }
-}
-```
-
-Check the log messages of the app. If the provided GMA SDK version is not verified for compatibility, the Bridgewell SDK informs about it.
-
-For the No Ad Server scenario, use the following initialization:
+Once you set the account ID and the Bw Server host, you should initialize the Bw SDK, use the following initialization:
 ```swift
 Bridgewell.initializeSDK { status, error in
     // ....

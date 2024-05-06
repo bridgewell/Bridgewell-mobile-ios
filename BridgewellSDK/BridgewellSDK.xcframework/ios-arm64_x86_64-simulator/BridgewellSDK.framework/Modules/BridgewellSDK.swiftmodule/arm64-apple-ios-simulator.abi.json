@@ -40,27 +40,6 @@
       },
       {
         "kind": "Import",
-        "name": "PrebidMobileAdMobAdapters",
-        "printedName": "PrebidMobileAdMobAdapters",
-        "declKind": "Import",
-        "moduleName": "BridgewellSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "PrebidMobileGAMEventHandlers",
-        "printedName": "PrebidMobileGAMEventHandlers",
-        "declKind": "Import",
-        "moduleName": "BridgewellSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "PrebidMobileMAXAdapters",
-        "printedName": "PrebidMobileMAXAdapters",
-        "declKind": "Import",
-        "moduleName": "BridgewellSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
