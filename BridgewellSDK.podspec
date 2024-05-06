@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BridgewellSDK"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "BridgewellSDK is a lightweight framework that integrates directly with Prebid Server."
 
   s.description  = <<-DESC
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.author                  = { "bridgewell.com, Inc." => 'https://www.bridgewell.com/en/contact/'}
   s.platform     	          = :ios, "15.0"
   s.swift_version 	        = '5.0'
-  s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :tag => "#{s.version}" }
+  s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :branch => "feature/reduce_dependency" }
   s.xcconfig 		            = { :LIBRARY_SEARCH_PATHS => '$(inherited)',  
 			                          :OTHER_CFLAGS => '$(inherited)',
 			                          :OTHER_LDFLAGS => '$(inherited)',
@@ -44,9 +44,5 @@ Pod::Spec.new do |s|
 
   # Dependencies
   s.dependency 'PrebidMobile', '2.2.1'
-  s.dependency 'PrebidMobileAdMobAdapters', '2.2.1'
-  s.dependency 'PrebidMobileMAXAdapters', '2.2.1'
-  s.dependency 'PrebidMobileGAMEventHandlers', '2.2.1'
-  s.dependency 'GoogleAds-IMA-iOS-SDK'
 
 end

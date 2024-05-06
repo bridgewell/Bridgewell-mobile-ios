@@ -4,9 +4,6 @@
 @_exported import BridgewellSDK
 import Foundation
 import PrebidMobile
-import PrebidMobileAdMobAdapters
-import PrebidMobileGAMEventHandlers
-import PrebidMobileMAXAdapters
 import Swift
 import _Concurrency
 import _StringProcessing
@@ -51,20 +48,7 @@ public typealias NativeParameters = PrebidMobile.NativeParameters
 public typealias BridgewellRequest = PrebidMobile.PrebidRequest
 public typealias Utils = PrebidMobile.Utils
 public typealias PrebidAdUnit = PrebidMobile.PrebidAdUnit
-public typealias MAXMediationRewardedUtils = PrebidMobileMAXAdapters.MAXMediationRewardedUtils
-public typealias MAXMediationInterstitialUtils = PrebidMobileMAXAdapters.MAXMediationInterstitialUtils
-public typealias GAMRewardedAdEventHandler = PrebidMobileGAMEventHandlers.GAMRewardedAdEventHandler
-public typealias GAMEventHandlerError = PrebidMobileGAMEventHandlers.GAMEventHandlerError
-public typealias GAMUtils = PrebidMobileGAMEventHandlers.GAMUtils
 public typealias MediationRewardedAdUnit = PrebidMobile.MediationRewardedAdUnit
-public typealias AdMobMediationRewardedUtils = PrebidMobileAdMobAdapters.AdMobMediationRewardedUtils
-public typealias AdMobMediationNativeUtils = PrebidMobileAdMobAdapters.AdMobMediationNativeUtils
-public typealias AdMobMediationInterstitialUtils = PrebidMobileAdMobAdapters.AdMobMediationInterstitialUtils
-public typealias AdMobMediationBannerUtils = PrebidMobileAdMobAdapters.AdMobMediationBannerUtils
-public typealias GAMBannerEventHandler = PrebidMobileGAMEventHandlers.GAMBannerEventHandler
-public typealias GAMInterstitialEventHandler = PrebidMobileGAMEventHandlers.GAMInterstitialEventHandler
-public typealias MAXMediationBannerUtils = PrebidMobileMAXAdapters.MAXMediationBannerUtils
-public typealias MAXMediationNativeUtils = PrebidMobileMAXAdapters.MAXMediationNativeUtils
 public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public static let bidderNameAppNexus: Swift.String
