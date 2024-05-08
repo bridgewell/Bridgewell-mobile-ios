@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i0g8h/QCTZ6myjzscjK35e6mYws=
+		E46I71tyMdTsyB04HEhbEWfY8Ts=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4BucUVOiJkTNjh5nTTWhdbxY9Zk=
+		4snxZM87jCGmDCx2fICJXkhaqjw=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		H8QiYHaoxaSEsXz5fiGCM5mWMzw=
+		+1F7iBA0ZuWYCV8GDQ8wC0xyEKo=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4BucUVOiJkTNjh5nTTWhdbxY9Zk=
+		4snxZM87jCGmDCx2fICJXkhaqjw=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zISoLa5d9a2HtjJjVZ3oeB6kx2I=
+		uPOfUlmVQRWZCxloZ0/bGsVvLd4=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YF9iamzPOR4Y1i8lpSpyjfb0PAI=
+		gK+y+8HYrVAcbYYi0d0MHaZmgdA=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		44v8UjUgS9TZKnahvXivizHi6JU=
+		79ejfFEC1y/QmYuvetDGBpWBlIQ=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YF9iamzPOR4Y1i8lpSpyjfb0PAI=
+		gK+y+8HYrVAcbYYi0d0MHaZmgdA=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vKmciCdLbmaPXzjLK9pwmjvB7k0=
+		Hs6MS3vciMK6oEd5vYBB0ST9Bbw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,28 +77,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BRkUVWN6kNwK6cj0Uw4N/tc0AuUreMeLSczbdYV6r9o=
+			wDQ06BZ4mWM8+zPJt7G9XUWIAfc4ePKloN1NQoBPYkI=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rOf4YEMXzhFRJAumiiDp/cG3oBqIZAvM0GMayC8aX+E=
+			DdGqmbwFIyus8y8QVAAL4ngZZE8kzW2Y2VYH9vxBf30=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BRkUVWN6kNwK6cj0Uw4N/tc0AuUreMeLSczbdYV6r9o=
+			wDQ06BZ4mWM8+zPJt7G9XUWIAfc4ePKloN1NQoBPYkI=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lIegxM6SqlenonLCmoaqAl4x2unCg2RnKuSfSxg2DEw=
+			DC3enBG6EjGeQQvA2jqC2mPVf+qi74lddX/0W+Qm7GI=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -112,28 +112,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uV+Xjt5swAx3reFkN5vciUY5obm2ynXQUIdzVeH4YLA=
+			XJhDvsQ86gDCDWyQnSi4j/hDP96M58NVWKne7MKbZOg=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B1k/2YHf0lajoAnxVyHhnVHLG639FoJIqPmN2PESdbo=
+			jK1mb7CXtDkYTyJKlCPWXHShSoRcWEKtyafv+TLW0sE=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uV+Xjt5swAx3reFkN5vciUY5obm2ynXQUIdzVeH4YLA=
+			XJhDvsQ86gDCDWyQnSi4j/hDP96M58NVWKne7MKbZOg=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YNvlEcxSFhE+g0TpLhL37U2whgGj/+WjJY1MIWL937g=
+			9dsYqG6bP2yd/ECctr+a7Rztnh3DFdTO6aW+z+UkoYk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
