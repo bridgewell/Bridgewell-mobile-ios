@@ -1,0 +1,6 @@
+framework module BridgewellMAXSDK {
+  umbrella header "BridgewellMAXSDK.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,42 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellAdmobSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "BridgewellAdmobSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobileGAMEventHandlers",
+        "printedName": "PrebidMobileGAMEventHandlers",
+        "declKind": "Import",
+        "moduleName": "BridgewellAdmobSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobileAdMobAdapters",
+        "printedName": "PrebidMobileAdMobAdapters",
+        "declKind": "Import",
+        "moduleName": "BridgewellAdmobSDK"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
