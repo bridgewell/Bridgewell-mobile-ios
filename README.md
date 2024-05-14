@@ -1,7 +1,13 @@
 # Documentation Guide
 
 # Bridgewell SDK for iOS.
-# Version: 0.0.4
+# Version: 0.0.5
+
+# Requirements
+
+- [Xcode](https://developer.apple.com/xcode/) version 14.0 or later
+- An app targeting iOS 12 or later.
+- [Cocoapods](https://cocoapods.org/) 1.15.0 or later for integrate with SDK.
 
 # SDK Integration
 ## Cocoapods
