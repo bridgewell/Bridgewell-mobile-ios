@@ -96,10 +96,6 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
   @objc public var omsdkVersion: Swift.String {
     @objc get
   }
-  @objc public var bridgewellServerHost: BridgewellSDK.BridgewellHost {
-    @objc get
-    @objc set
-  }
   @objc public var customStatusEndpoint: Swift.String? {
     @objc get
     @objc set

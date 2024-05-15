@@ -1258,100 +1258,6 @@
           },
           {
             "kind": "Var",
-            "name": "bridgewellServerHost",
-            "printedName": "bridgewellServerHost",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PrebidHost",
-                "printedName": "PrebidMobile.PrebidHost",
-                "usr": "c:@M@PrebidMobile@E@PrebidHost"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)bridgewellServerHost",
-            "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovp",
-            "moduleName": "BridgewellSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PrebidHost",
-                    "printedName": "PrebidMobile.PrebidHost",
-                    "usr": "c:@M@PrebidMobile@E@PrebidHost"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)bridgewellServerHost",
-                "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovg",
-                "moduleName": "BridgewellSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PrebidHost",
-                    "printedName": "PrebidMobile.PrebidHost",
-                    "usr": "c:@M@PrebidMobile@E@PrebidHost"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setBridgewellServerHost:",
-                "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0Ovs",
-                "moduleName": "BridgewellSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0OvM",
-                "mangledName": "$s13BridgewellSDK0A0C20bridgewellServerHost12PrebidMobile0fE0OvM",
-                "moduleName": "BridgewellSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "customStatusEndpoint",
             "printedName": "customStatusEndpoint",
             "children": [
@@ -3171,7 +3077,7 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3198,
+      "offset": 3199,
       "length": 5,
       "value": "false"
     },

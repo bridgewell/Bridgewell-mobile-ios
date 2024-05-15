@@ -79,8 +79,6 @@ The `Bridgewell` class is a singleton that enables the user to apply global sett
 ## Properties
 `bridgewellServerAccountId`: String containing the Bridgewell Server account ID.
 
-`bridgewellServerHost`: String containing configuration your Bridgewell Server host with which Bridgewell SDK will communicate. Choose from the system-defined Bridgewell Server hosts or define your own custom Bridgewell Server host.
-
 `shareGeocoordinate`: Optional Bool, if this flag is True AND the app collects the user’s geographical location data, Bridgewell Mobile will send the user’s geographical location data to Bridgewell Server. If this flag is False OR the app does not collect the user’s geographical location data, Bridgewell Mobile will not populate any user geographical location information in the call to Bridgewell Server. The default setting is false.
 
 `logLevel`: Optional level of logging to output in the console. Options are one of the following sorted by a verbosity of the log:
