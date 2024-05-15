@@ -82,9 +82,10 @@ The `Bridgewell` class is a singleton that enables the user to apply global sett
 `shareGeocoordinate`: Optional Bool, if this flag is True AND the app collects the user’s geographical location data, Bridgewell Mobile will send the user’s geographical location data to Bridgewell Server. If this flag is False OR the app does not collect the user’s geographical location data, Bridgewell Mobile will not populate any user geographical location information in the call to Bridgewell Server. The default setting is false.
 
 `logLevel`: Optional level of logging to output in the console. Options are one of the following sorted by a verbosity of the log:
+The default value of logLevel `logLevel` is `.debug`, here is the list of all level.
 
 ```Swift
-public static let debug = LogLevel(stringValue: "[💬]", rawValue: 0)
+public static let debug = LogLevel(stringValue: "[💬]", rawValue: 0) // this is default value
 public static let verbose = LogLevel(stringValue: "[🔬]", rawValue: 1)
 public static let info = LogLevel(stringValue: "[ℹ️]", rawValue: 2)
 public static let warn = LogLevel(stringValue: "[⚠️]", rawValue: 3)
@@ -92,7 +93,7 @@ public static let error = LogLevel(stringValue: "[‼️]", rawValue: 4)
 public static let severe = LogLevel(stringValue: "[🔥]", rawValue: 5)
 ```
 
-`timeoutMillis`: The Bridgewell timeout (accessible to Bridgewell SDK 1.2+), set in milliseconds, will return control to the ad server SDK to fetch an ad once the expiration period is achieved. Because Bridgewell SDK solicits bids from Bridgewell Server in one payload, setting Bridgewell timeout too low can stymie all demand resulting in a potential negative revenue impact.
+`timeoutMillis`: The Bridgewell timeout, set in milliseconds, will return control to the ad server SDK to fetch an ad once the expiration period is achieved. Because Bridgewell SDK solicits bids from Bridgewell Server in one payload, setting Bridgewell timeout too low can stymie all demand resulting in a potential negative revenue impact.
 
 `creativeTimeout`: Controls how long banner creative has to load before it is considered a failure.
 
