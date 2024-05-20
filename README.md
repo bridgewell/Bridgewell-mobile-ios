@@ -93,15 +93,16 @@ public static let error = LogLevel(stringValue: "[‼️]", rawValue: 4)
 public static let severe = LogLevel(stringValue: "[🔥]", rawValue: 5)
 ```
 
-`timeoutMillis`: The Bridgewell timeout, set in milliseconds, will return control to the ad server SDK to fetch an ad once the expiration period is achieved. Because Bridgewell SDK solicits bids from Bridgewell Server in one payload, setting Bridgewell timeout too low can stymie all demand resulting in a potential negative revenue impact.
+`timeoutMillis`: The Bridgewell timeout (accessible to Bridgewell SDK 1.2+), set in milliseconds, will return control to the ad server SDK to fetch an ad once the expiration period is achieved. Because Bridgewell SDK solicits bids from Bridgewell Server in one payload, setting Bridgewell timeout too low can stymie all demand resulting in a potential negative revenue impact. default value is 2000ms (2s).
 
-`creativeTimeout`: Controls how long banner creative has to load before it is considered a failure.
+`creativeTimeout`: Controls how long banner creative has to load before it is considered a failure. Default is 6.0 (seconds)
 
-`creativeTimeoutPreRenderContent`: Controls how long video and interstitial creatives have to load before it is considered a failure.
+`creativeTimeoutPreRenderContent`: Controls how long video and interstitial creatives have to load before it is considered a failure. Default is 30.0 (seconds)
 
-`cachedAuctionResponse`: Set as type string, stored auction responses signal Bridgewell Server to respond with a static response matching the storedAuctionResponse found in the Bridgewell Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written description on github issue 133.
+`cachedAuctionResponse`: Set as type string, stored auction responses signal Bridgewell Server to respond with a static response matching the storedAuctionResponse found in the Bridgewell Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written description on github issue 133. This will be `nil` by default.
 
-`bwsDebug`: adds the debug flag (“test”:1) on the outbound http call to Bridgewell Server. The test:1 flag will signal to Bridgewell Server to emit the full resolved request (resolving any Stored Request IDs) as well as the full Bid Request and Bid Response to and from each bidder.
+`bwsDebug`: adds the debug flag (“test”:1) on the outbound http call to Bridgewell Server. The test:1 flag will signal to Bridgewell Server to emit the full resolved request (resolving any Stored Request IDs) as well as the full Bid Request and Bid Response to and from each bidder. Default is `false`
+
 
 ## Methods
 ### Stored Response
