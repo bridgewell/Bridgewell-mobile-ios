@@ -291,9 +291,66 @@ func rewardedAdDidReceiveAd(_ rewardedAd: RewardedAdUnit) {
 }
 ```
 
+### In-App browsers
+#### Integrate the WebView API for Ads :
+If your iOS app utilizes [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) to display web content, it's recommended to configure it so that content can be optimally monetized with ads.
+#### How it work:
+The SDK adds some value to javascript `window` object. So they can be access anywhere in javascript code. Then the script can display and optimize the user ads experience.
+You have to prepare script to get those value from SDK. 
+```
+// This is server account id which Set Bridgewell Server step
+window.bwsAccountID
+// This is [advertisingIdentifier](https://developer.apple.com/documentation/adsupport/asidentifiermanager/advertisingidentifier) for iOS
+window.bwsIDFA 
+```
+If setup on iOS correctly, your script can obtain `bwsAccountID` while `bwsIDFA` need your project to be configurated to [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)
+#### Prepare for display media contents and register webview
+Default `WKWebView` settings are not optimized for video ads. Use the `WKWebViewConfiguration` APIs to configure your WKWebView for inline playback and automatic video play.
+Then we call `registerWebView` function from Bridgewell
+Note: Should do all the setup in main thread.
+```
+class ViewController: UIViewController {
 
+  var webView: WKWebView!
 
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
+    // Initialize a WKWebViewConfiguration object.
+    let webViewConfiguration = WKWebViewConfiguration()
+    // Let HTML videos with a "playsinline" attribute play inline.
+    webViewConfiguration.allowsInlineMediaPlayback = true
+    // Let HTML videos with an "autoplay" attribute play automatically.
+    webViewConfiguration.mediaTypesRequiringUserActionForPlayback = []
+
+    // Initialize the WKWebView with your WKWebViewConfiguration object.
+    webView = WKWebView(frame: view.frame, configuration: webViewConfiguration)
+    view.addSubview(webView)
+
+    // Register the web view.
+    Bridgewell.shared.registerWebView(webView)
+
+    // Load the HTML
+    // Load the URL for optimized web view performance.
+    guard let url = URL(string: "yourawesomeurl.com") else { return }
+    let request = URLRequest(url: url)
+    webView.load(request)
+    // Or load 
+  }
+}
+```
+#### Load the webview
+1. You can load the HTML content but using URL 
+```
+// Load the URL for optimized web view performance.
+guard let url = URL(string: "yourawesomeurl.com") else { return }
+let request = URLRequest(url: url)
+webView.load(request)
+``` 
+2. Or just load HTML string 
+```
+webView.loadHTMLString("{your_html_string}", baseURL: nil)
+```
 
 
 
