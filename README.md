@@ -93,15 +93,16 @@ public static let error = LogLevel(stringValue: "[‼️]", rawValue: 4)
 public static let severe = LogLevel(stringValue: "[🔥]", rawValue: 5)
 ```
 
-`timeoutMillis`: The Bridgewell timeout, set in milliseconds, will return control to the ad server SDK to fetch an ad once the expiration period is achieved. Because Bridgewell SDK solicits bids from Bridgewell Server in one payload, setting Bridgewell timeout too low can stymie all demand resulting in a potential negative revenue impact.
+`timeoutMillis`: The Bridgewell timeout (accessible to Bridgewell SDK 1.2+), set in milliseconds, will return control to the ad server SDK to fetch an ad once the expiration period is achieved. Because Bridgewell SDK solicits bids from Bridgewell Server in one payload, setting Bridgewell timeout too low can stymie all demand resulting in a potential negative revenue impact. default value is 2000ms (2s).
 
-`creativeTimeout`: Controls how long banner creative has to load before it is considered a failure.
+`creativeTimeout`: Controls how long banner creative has to load before it is considered a failure. Default is 6.0 (seconds)
 
-`creativeTimeoutPreRenderContent`: Controls how long video and interstitial creatives have to load before it is considered a failure.
+`creativeTimeoutPreRenderContent`: Controls how long video and interstitial creatives have to load before it is considered a failure. Default is 30.0 (seconds)
 
-`cachedAuctionResponse`: Set as type string, stored auction responses signal Bridgewell Server to respond with a static response matching the storedAuctionResponse found in the Bridgewell Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written description on github issue 133.
+`cachedAuctionResponse`: Set as type string, stored auction responses signal Bridgewell Server to respond with a static response matching the storedAuctionResponse found in the Bridgewell Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written description on github issue 133. This will be `nil` by default.
 
-`bwsDebug`: adds the debug flag (“test”:1) on the outbound http call to Bridgewell Server. The test:1 flag will signal to Bridgewell Server to emit the full resolved request (resolving any Stored Request IDs) as well as the full Bid Request and Bid Response to and from each bidder.
+`bwsDebug`: adds the debug flag (“test”:1) on the outbound http call to Bridgewell Server. The test:1 flag will signal to Bridgewell Server to emit the full resolved request (resolving any Stored Request IDs) as well as the full Bid Request and Bid Response to and from each bidder. Default is `false`
+
 
 ## Methods
 ### Stored Response
@@ -291,10 +292,111 @@ func rewardedAdDidReceiveAd(_ rewardedAd: RewardedAdUnit) {
 }
 ```
 
+### In-App browsers
+#### Integrate the WebView API for Ads :
+If your iOS app utilizes [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) to display web content, it's recommended to configure it so that content can be optimally monetized with ads.
+#### How it work:
+The SDK adds some value to javascript `window` object. So they can be access anywhere in javascript code. Then the script can display and optimize the user ads experience.
+You have to prepare script to get those value from SDK. 
+```
+// This is server account id which Set Bridgewell Server step
+window.bwsAccountID
+// This is [advertisingIdentifier](https://developer.apple.com/documentation/adsupport/asidentifiermanager/advertisingidentifier) for iOS
+window.bwsIDFA 
+```
+If setup on iOS correctly, your script can obtain `bwsAccountID` while `bwsIDFA` need your project to be configurated to [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)
+#### Prepare for display media contents and register webview
+Default `WKWebView` settings are not optimized for video ads. Use the `WKWebViewConfiguration` APIs to configure your WKWebView for inline playback and automatic video play.
+Then we call `registerWebView` function from Bridgewell
+Note: Should do all the setup in main thread.
+```
+class ViewController: UIViewController {
 
+  var webView: WKWebView!
 
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
+    // Initialize a WKWebViewConfiguration object.
+    let webViewConfiguration = WKWebViewConfiguration()
+    // Let HTML videos with a "playsinline" attribute play inline.
+    webViewConfiguration.allowsInlineMediaPlayback = true
+    // Let HTML videos with an "autoplay" attribute play automatically.
+    webViewConfiguration.mediaTypesRequiringUserActionForPlayback = []
 
+    // Initialize the WKWebView with your WKWebViewConfiguration object.
+    webView = WKWebView(frame: view.frame, configuration: webViewConfiguration)
+    view.addSubview(webView)
+
+    // Register the web view.
+    Bridgewell.shared.registerWebView(webView)
+
+    // Load the HTML
+    // Load the URL for optimized web view performance.
+    guard let url = URL(string: "yourawesomeurl.com") else { return }
+    let request = URLRequest(url: url)
+    webView.load(request)
+    // Or load 
+  }
+}
+```
+#### Load the webview
+1. You can load the HTML content but using URL 
+```
+// Load the URL for optimized web view performance.
+guard let url = URL(string: "yourawesomeurl.com") else { return }
+let request = URLRequest(url: url)
+webView.load(request)
+``` 
+2. Or just load HTML string 
+```
+webView.loadHTMLString("{your_html_string}", baseURL: nil)
+```
+
+### IDFA support
+
+#### Update Info.plist
+Update your `Info.plist` to add the `NSUserTrackingUsageDescription` key with a custom message string describing your usage.
+```
+<key>NSUserTrackingUsageDescription</key>
+<string>This identifier will be used to deliver personalized ads to you.</string>
+```
+The usage description appears as part of the `App tracking transparency` dialog.
+
+#### Request for `App tracking transparency`
+- Link the `AppTrackingTransparency` framework:
+Click on your project, open tab `General` for your app's target. Scroll down to `Frameworks, Libraries, and Embededd Content`, select `+` and add `App tracking transparency` framework.
+Then inside your app, call `ATTrackingManager.requestTrackingAuthorization(completionHandler:)` to request permission.
+
+If you want to `requestTrackingAuthorization` right after app launch, please follow this guide
+- AppDelegate
+Make the call inside `applicationDidBecomeActive`
+```
+func applicationDidBecomeActive(_ application: UIApplication) {
+    // Just make sure this will be call on main thread
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        if #available(iOS 14, *) {         
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                // Tracking authorization completed. Start loading ads here.
+            })
+        }
+    }
+}
+```
+- SceneDelegate
+Make the call inside `sceneDidBecomeActive`
+```
+func sceneDidBecomeActive(_ scene: UIScene) {
+    // Just make sure this will be call on main thread
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                // Tracking authorization completed. Start loading ads here.
+            })
+        }
+    }
+}
+```
 
 
 # About
