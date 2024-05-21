@@ -353,6 +353,50 @@ webView.load(request)
 webView.loadHTMLString("{your_html_string}", baseURL: nil)
 ```
 
+### IDFA support
+
+#### Update Info.plist
+Update your `Info.plist` to add the `NSUserTrackingUsageDescription` key with a custom message string describing your usage.
+```
+<key>NSUserTrackingUsageDescription</key>
+<string>This identifier will be used to deliver personalized ads to you.</string>
+```
+The usage description appears as part of the `App tracking transparency` dialog.
+
+#### Request for `App tracking transparency`
+- Link the `AppTrackingTransparency` framework:
+Click on your project, open tab `General` for your app's target. Scroll down to `Frameworks, Libraries, and Embededd Content`, select `+` and add `App tracking transparency` framework.
+Then inside your app, call `ATTrackingManager.requestTrackingAuthorization(completionHandler:)` to request permission.
+
+If you want to `requestTrackingAuthorization` right after app launch, please follow this guide
+- AppDelegate
+Make the call inside `applicationDidBecomeActive`
+```
+func applicationDidBecomeActive(_ application: UIApplication) {
+    // Just make sure this will be call on main thread
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        if #available(iOS 14, *) {         
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                // Tracking authorization completed. Start loading ads here.
+            })
+        }
+    }
+}
+```
+- SceneDelegate
+Make the call inside `sceneDidBecomeActive`
+```
+func sceneDidBecomeActive(_ scene: UIScene) {
+    // Just make sure this will be call on main thread
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                // Tracking authorization completed. Start loading ads here.
+            })
+        }
+    }
+}
+```
 
 
 # About
