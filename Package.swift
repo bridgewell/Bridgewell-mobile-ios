@@ -13,7 +13,7 @@ let package = Package(
         ),
         .library(
             name: "PrebidMobile",
-            targets: ["XCPrebidMobile"]
+            targets: ["PrebidMobile"]
         ),
     ],
     targets: [
