@@ -12,8 +12,8 @@ let package = Package(
             targets: ["BridgewellFramework"]
         ),
         .library(
-            name: "PrebidFramework",
-            targets: ["PrebidFramework"]
+            name: "PrebidMobile",
+            targets: ["XCPrebidMobile"]
         ),
     ],
     targets: [
@@ -22,8 +22,8 @@ let package = Package(
             path: "./BridgewellSDK/BridgewellSDK.xcframework"
         ),
         .binaryTarget(
-            name: "PrebidFramework",
-            path: "./PrebidFrameworks/PrebidMobile.xcframework"
+            name: "PrebidMobile",
+            path: "./PrebidFrameworks/XCPrebidMobile.xcframework"
         ),
     ]
 )
