@@ -4,9 +4,13 @@
 import AdSupport
 import AppTrackingTransparency
 @_exported import BridgewellSDK
+import CoreLocation
+import CoreTelephony
 import Foundation
+import Network
 import PrebidMobile
 import Swift
+import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -53,6 +57,7 @@ public typealias Utils = PrebidMobile.Utils
 public typealias PrebidAdUnit = PrebidMobile.PrebidAdUnit
 public typealias MediationRewardedAdUnit = PrebidMobile.MediationRewardedAdUnit
 public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
+public typealias BridgewellRegisterWebviewCallback = (((any Swift.Error)?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public static let bidderNameAppNexus: Swift.String
   @objc public static let bidderNameRubiconProject: Swift.String
@@ -160,7 +165,7 @@ public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializ
   @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.BridgewellInitializationCallback? = nil)
   @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil)
   @objc public static func initializeSDK(_ completion: PrebidMobile.PrebidInitializationCallback? = nil)
-  @objc public func registerWebView(_ webview: WebKit.WKWebView)
+  @objc public func registerWebView(_ webview: WebKit.WKWebView, completion: @escaping BridgewellSDK.BridgewellRegisterWebviewCallback)
   @objc deinit
 }
 public let BridgewellLocalCacheIdKey: Swift.String
