@@ -377,6 +377,9 @@ __Geo__
 window.bwsGeo
 ```
 
+Geo data will be available if user allow app to access location service. 
+Also those two properties `shareGeocoordinate`, `isLocationUpdatesEnabled` should be true 
+
 | Attribute | Type   | Implementation details                                          |
 |-----------|--------|-----------------------------------------------------------------|
 | lat       | double | Longitude from -180.0 to +180.0, where negative is west.        |
