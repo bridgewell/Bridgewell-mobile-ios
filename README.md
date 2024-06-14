@@ -334,19 +334,24 @@ class ViewController: UIViewController {
     view.addSubview(webView)
 
     // Register the web view.
-    Bridgewell.shared.registerWebView(webView)
+    Bridgewell.shared.registerWebView(webView, completion: { // Completion handle   
+        // Should load the webview after register it success
+        self.loadWebView()
+    })
 
+  }
+
+  private func loadWebView() {
     // Load the HTML
     // Load the URL for optimized web view performance.
     guard let url = URL(string: "yourawesomeurl.com") else { return }
     let request = URLRequest(url: url)
     webView.load(request)
-    // Or load 
   }
 }
 ```
 #### Load the webview
-1. You can load the HTML content but using URL 
+1. You can load the HTML content by using URL 
 ```
 // Load the URL for optimized web view performance.
 guard let url = URL(string: "yourawesomeurl.com") else { return }
