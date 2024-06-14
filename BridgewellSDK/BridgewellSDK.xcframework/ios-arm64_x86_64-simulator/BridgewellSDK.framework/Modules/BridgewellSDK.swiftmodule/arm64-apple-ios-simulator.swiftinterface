@@ -57,7 +57,7 @@ public typealias Utils = PrebidMobile.Utils
 public typealias PrebidAdUnit = PrebidMobile.PrebidAdUnit
 public typealias MediationRewardedAdUnit = PrebidMobile.MediationRewardedAdUnit
 public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
-public typealias BridgewellRegisterWebviewCallback = (((any Swift.Error)?) -> Swift.Void)
+public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public static let bidderNameAppNexus: Swift.String
   @objc public static let bidderNameRubiconProject: Swift.String

@@ -3062,7 +3062,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "((any Swift.Error)?) -> ()",
+                "printedName": "() -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3071,24 +3071,15 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any Swift.Error)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Void",
+                    "printedName": "()"
                   }
                 ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)registerWebView:completion:",
-            "mangledName": "$s13BridgewellSDK0A0C15registerWebView_10completionySo05WKWebE0C_ys5Error_pSgctF",
+            "mangledName": "$s13BridgewellSDK0A0C15registerWebView_10completionySo05WKWebE0C_yyctF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -3748,21 +3739,21 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 478,
       "length": 10,
       "value": "\"appnexus\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
-      "offset": 544,
+      "offset": 538,
       "length": 9,
       "value": "\"rubicon\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3285,
+      "offset": 3279,
       "length": 5,
       "value": "false"
     },
