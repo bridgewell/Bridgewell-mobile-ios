@@ -1,7 +1,7 @@
 # Documentation Guide
 
 # Bridgewell SDK for iOS.
-# Version: 0.0.6
+# Version: 0.0.7
 
 # Requirements
 
@@ -80,6 +80,9 @@ The `Bridgewell` class is a singleton that enables the user to apply global sett
 `bridgewellServerAccountId`: String containing the Bridgewell Server account ID.
 
 `shareGeocoordinate`: Optional Bool, if this flag is True AND the app collects the user’s geographical location data, Bridgewell Mobile will send the user’s geographical location data to Bridgewell Server. If this flag is False OR the app does not collect the user’s geographical location data, Bridgewell Mobile will not populate any user geographical location information in the call to Bridgewell Server. The default setting is false.
+
+`isLocationUpdatesEnabled`: Optional Bool.
+If true, the SDK will periodically try to listen for location updates in order to request location-based ads.
 
 `logLevel`: Optional level of logging to output in the console. Options are one of the following sorted by a verbosity of the log:
 The default value of logLevel `logLevel` is `.debug`, here is the list of all level.
@@ -299,10 +302,12 @@ If your iOS app utilizes [WKWebView](https://developer.apple.com/documentation/w
 The SDK adds some value to javascript `window` object. So they can be access anywhere in javascript code. Then the script can display and optimize the user ads experience.
 You have to prepare script to get those value from SDK. 
 ```
-// This is server account id which Set Bridgewell Server step
-window.bwsAccountID
-// This is [advertisingIdentifier](https://developer.apple.com/documentation/adsupport/asidentifiermanager/advertisingidentifier) for iOS
-window.bwsIDFA 
+// Property for mobile app device, which include `bundle-id` and `idfa` (optional)
+window.bwsMobile
+// This is geo location data of the user (optional)
+window.bwsGeo
+// This is user's device data such as OS version, screen size ... (optional)
+window.bwsDevice
 ```
 If setup on iOS correctly, your script can obtain `bwsAccountID` while `bwsIDFA` need your project to be configurated to [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)
 #### Prepare for display media contents and register webview
@@ -329,19 +334,24 @@ class ViewController: UIViewController {
     view.addSubview(webView)
 
     // Register the web view.
-    Bridgewell.shared.registerWebView(webView)
+    Bridgewell.shared.registerWebView(webView, completion: { // Completion handle   
+        // Should load the webview after register it success
+        self.loadWebView()
+    })
 
+  }
+
+  private func loadWebView() {
     // Load the HTML
     // Load the URL for optimized web view performance.
     guard let url = URL(string: "yourawesomeurl.com") else { return }
     let request = URLRequest(url: url)
     webView.load(request)
-    // Or load 
   }
 }
 ```
 #### Load the webview
-1. You can load the HTML content but using URL 
+1. You can load the HTML content by using URL 
 ```
 // Load the URL for optimized web view performance.
 guard let url = URL(string: "yourawesomeurl.com") else { return }
@@ -352,6 +362,72 @@ webView.load(request)
 ```
 webView.loadHTMLString("{your_html_string}", baseURL: nil)
 ```
+
+### SDK will get information from your users to personalized ads. 
+All information here are optional, they wont be available without user consent.
+
+__Mobile__
+```
+// To look up it on HTML, use javascript to retrieve it
+window.bwsMobile
+```
+
+| Attribute | Type    | Implementation details   |
+|-----------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| is_app    | bool    | true                                                                                                                                                                                                                                                                                                           |
+| app_id    | string  | The identifier of the mobile app when this ad query comes from a mobile app. <br/>If the app was downloaded from the Apple iTunes app store, then this is the app-store ID; for example, `343200656`. <br/>For Android devices, this is the fully qualified package name; for example, `com.rovio.angrybirds`. |
+| idfa/adid | string  | ADID / IDFA fetch from device                                                                                                                                                                                                                                                                                  |
+
+__Geo__
+```
+// To look up it on HTML, use javascript to retrieve it
+window.bwsGeo
+```
+
+Geo data will be available if user allow app to access location service. 
+Also those two properties `shareGeocoordinate`, `isLocationUpdatesEnabled` should be true 
+
+| Attribute | Type   | Implementation details                                          |
+|-----------|--------|-----------------------------------------------------------------|
+| lat       | double | Longitude from -180.0 to +180.0, where negative is west.        |
+| lon       | double | Longitude from -180.0 to +180.0, where negative is west.        |
+| country   | string | Country using ISO-3166-1 Alpha-3.                               |
+| ~~region~~    | string | ~~Region code using ISO-3166-2; 2-letter state code if USA.~~       |
+| city      | string | City using United Nations Code for Trade & Transport Locations. |
+| zip       | string | Zip/postal code.                                                |
+| accuracy  | int32  | Estimated location accuracy in meters.                          |
+| utcoffset | int32  | Local time as the number +/- of minutes from UTC.               |
+
+__Device__
+```
+// To look up it on HTML, use javascript to retrieve it
+window.bwsDevice
+```
+
+| Attribute                         | Type      | imp                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|-----------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| platform                          | string    | The platform of the device. Examples: Android, iPhone, Palm.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| brand                             | string    | The brand of the device (for example, "Apple" or "Samsung").                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| model                             | string    | Device model (for example, "pixel 7 pro"). <br/>For iPhone/iPad, this field contains Apple's model identifier string (such as "iPhone12,1" and "iPad13,8") if available. <br/>Otherwise this field contains the generic model (either "iphone" or "ipad").                                                                                                                                                                                                                                                   |
+| os_version                        | OsVersion | The OS version; for example, 2 for Android 2.1, or 3.3 for iOS 3.3.1.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| carrier_id                        | int64     | Unique identifier for the mobile carrier if the device is connected to the internet through a carrier (as opposed to through WiFi).                                                                                                                                                                                                                                                                                                                                                                          |
+| screen_width                      | int32     | The width of the device screen in pixels.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| screen_height                     | int32     | The height of the device screen in pixels.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| screen_pixel_ratio_millis         | int32     | Used for high-density devices (for example, iOS retina displays). A non-default value indicates that the nominal screen size (with pixels as the unit) does not describe the actual number of pixels in the screen. For example, nominal width and height may be 320x640 for a screen that actually has 640x1280 pixels, in which case `screen_width=320, screen_height=640`, and `screen_pixel_ratio_millis=2000`, since each axis has twice as many pixels as its dimensions would indicate. Default = `0` |
+| screen_orientation                | enum      | The screen orientation of the device when the ad request is sent. Default = **UNKNOWN_ORIENTATION**. <br/>**UNKNOWN_ORIENTATION = 0** <br/>**PORTRAIT = 1** <br/>**LANDSCAPE = 2**                                                                                                                                                                                                                                                                                                                           |
+| hardware_version                  | string    | Hardware version of the device. For iPhone/iPad, this field contains Apple's model identifier string (such as "iPhone12,1" and "iPad13,8") if available.                                                                                                                                                                                                                                                                                                                                                     |
+| limit_ad_tracking                 | bool      | "Limit Ad Tracking" is a commercially endorsed signal based on the operating system or device settings, where false indicates that tracking is unrestricted and true indicates that tracking must be limited per commercial guidelines. <br/>This signal reflects user decisions on surfaces including iOS App Tracking Transparency. See also lmt and App Tracking Transparency guidance and Android advertising ID.                                                                                        |
+| app_tracking_authorization_status | enum      | This field is only populated for iOS devices. Indicates the app tracking authorization status. This value is retrieved from ATTrackingManager and provided as is. For more information about iOS's app tracking authorization status, see this article. <br/><br/>**NOT_DETERMINED = 0** <br/>**RESTRICTED = 1** <br/>**DENIED = 2** <br/>**AUTHORIZED = 3**                                                                                                                                                 |
+| connection_type                   | enum      | The type of network to which the user's device is connected. For 5G connection type, we send `CELL_4G` instead of `CELL_5G`. Default = **CONNECTION_UNKNOWN**. <br/><br/>**CONNECTION_UNKNOWN = 0** <br/>**ETHERNET = 1** <br/>**WIFI = 2** <br/>**CELL_UNKNOWN = 3** <br/>**CELL_2G = 4** <br/>**CELL_3G = 5** <br/>**CELL_4G = 6** <br/>**CELL_5G = 7**                                                                                                                                                    |
+
+__OsVersion__
+
+Contains the OS version of the platform. 
+iOS 17.5.1 will be major = 17, minor = 5, micro = 1
+
+| Attribute                   | Type  |
+|-----------------------------|-------|
+| major <br/>minor <br/>micro | int32 |
 
 ### IDFA support
 
