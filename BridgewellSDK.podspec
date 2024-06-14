@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
   s.author                  = { "bridgewell.com, Inc." => 'https://www.bridgewell.com/en/contact/'}
   s.platform     	          = :ios, "12.0"
   s.swift_version 	        = '5.0'
-  s.source                  = { :git => "https://github.com/Alamofire/Alamofire.git", :branch => "feature/add_device_information_to_webview" }
-  s.xcconfig 		            = { :LIBRARY_SEARCH_PATHS => '$(inherited)',  
+  s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :tag => "#{s.version}" }
+  s.xcconfig 		            = { :LIBRARY_SEARCH_PATHS => '$(inherited)',   
 			                          :OTHER_CFLAGS => '$(inherited)',
 			                          :OTHER_LDFLAGS => '$(inherited)',
 			                          :HEADER_SEARCH_PATHS => '$(inherited)',
