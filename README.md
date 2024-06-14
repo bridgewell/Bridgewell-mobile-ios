@@ -34,6 +34,22 @@ end
 ```
 Now run `pod install` to add the Bridgewell SDK to project dependencies.
 
+## Swift Package Manager
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
+Once you have your Swift package set up, adding Bridgewell as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift` or the Package list in Xcode.
+
+### Add Package Dependency
+1. In Xcode, select File > Add Packages....
+2. Copy and paste the following into the search/input box: `https://github.com/bridgewell/Bridgewell-mobile-ios.git`
+3. In the options for the Bridgewell-mobile-ios package, we recommend setting the Dependency Rule to Up to Next Major Version, and enter the latest version (0.0.7) . Then, click Add Package.
+__Note__: We support SPM from version `0.0.7`.
+
+### Or edit your Package file by adding:
+```swift
+dependencies: [
+    .package(url: "https://github.com/bridgewell/Bridgewell-mobile-ios.git", .upToNextMajor(from: "0.0.7"))
+]
+```
 
 # Add SDK
 ## Set Bridgewell Server
