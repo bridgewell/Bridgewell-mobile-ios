@@ -302,10 +302,12 @@ If your iOS app utilizes [WKWebView](https://developer.apple.com/documentation/w
 The SDK adds some value to javascript `window` object. So they can be access anywhere in javascript code. Then the script can display and optimize the user ads experience.
 You have to prepare script to get those value from SDK. 
 ```
-// This is server account id which Set Bridgewell Server step
-window.bwsAccountID
-// This is [advertisingIdentifier](https://developer.apple.com/documentation/adsupport/asidentifiermanager/advertisingidentifier) for iOS
-window.bwsIDFA 
+// Property for mobile app device, which include `bundle-id` and `idfa` (optional)
+window.bwsMobile
+// This is geo location data of the user (optional)
+window.bwsGeo
+// This is user's device data such as OS version, screen size ... (optional)
+window.bwsDevice
 ```
 If setup on iOS correctly, your script can obtain `bwsAccountID` while `bwsIDFA` need your project to be configurated to [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)
 #### Prepare for display media contents and register webview
