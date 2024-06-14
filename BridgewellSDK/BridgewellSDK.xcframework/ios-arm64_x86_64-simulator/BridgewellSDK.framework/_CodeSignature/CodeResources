@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Wqgpycl8IMr2xsWkTa8dcy4k1Dk=
+		rln94x+QbVVzyldiKEOOcZgvF3Q=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1RhgO9+hJNyjg8VzHboCzSMmc7U=
+		KDnRiSxlveR0WaoM+RkOyCmA5Pc=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Wqgpycl8IMr2xsWkTa8dcy4k1Dk=
+		rln94x+QbVVzyldiKEOOcZgvF3Q=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LMfY/I8gAHCCXZ7Xq1ztnSbKQq0=
+		wtzZMJrOPg2J7miD4zpp9IUSnAo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IzCR44DBWxDtAztKpNXp8fuflLe8XlyM/bau8yQWApA=
+			xCE/gEqtHPIm+BDLekgEuCfZCYA5NNPNx4xY5CaSgOY=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O9pRSjO1bif9DdhPaBs05Adxx3xtKsGjnvNph4GATkU=
+			DHvaZ5j67uMKHB+WEULyiVZXaQpGoMHw/jejZY/S4YU=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IzCR44DBWxDtAztKpNXp8fuflLe8XlyM/bau8yQWApA=
+			xCE/gEqtHPIm+BDLekgEuCfZCYA5NNPNx4xY5CaSgOY=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cI6EzL+6txPvz4WglSxNP53+VXPoC74PIcU4Dhe2fC4=
+			8QxesIdrdk/GMALSLPBR5KU7WcSOdPtTN84Om2fBvdY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
