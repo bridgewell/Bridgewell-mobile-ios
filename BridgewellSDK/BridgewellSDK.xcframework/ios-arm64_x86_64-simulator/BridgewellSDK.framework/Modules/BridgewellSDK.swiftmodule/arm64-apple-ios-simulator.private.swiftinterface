@@ -59,8 +59,6 @@ public typealias MediationRewardedAdUnit = PrebidMobile.MediationRewardedAdUnit
 public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
 public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
-  @objc public static let bidderNameAppNexus: Swift.String
-  @objc public static let bidderNameRubiconProject: Swift.String
   @objc public var updatedTimeout: Swift.Bool {
     @objc get
     @objc set
@@ -117,6 +115,10 @@ public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
     @objc set
   }
   @objc public var cachedAuctionResponse: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var enableLogging: Swift.Bool {
     @objc get
     @objc set
   }
