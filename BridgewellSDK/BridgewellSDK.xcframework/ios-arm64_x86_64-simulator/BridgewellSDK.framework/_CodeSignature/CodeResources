@@ -14,43 +14,43 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/RywUpp2qWSq6qMniWwe+0K6NMM=
+		K/vx+W9ri4Zwevp7b9zj4/SUK9I=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		nS1g8mfpR4Dv4ywnzAd/j7RLnf8=
+		oSLSzlKyGOdfcnBjo3Ixg30vil0=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LbgJQiZgVwy2UDq0QXouW/0LwrE=
+		T6ovqnqdJi2QCHOyb5MDy3jYCRk=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nS1g8mfpR4Dv4ywnzAd/j7RLnf8=
+		oSLSzlKyGOdfcnBjo3Ixg30vil0=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dUFLWz9735vI5WXhUPgmhyVm1eo=
+		9LRkfpcYHT4Zk3z+aqrpyzwTeJs=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/RywUpp2qWSq6qMniWwe+0K6NMM=
+		K/vx+W9ri4Zwevp7b9zj4/SUK9I=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xYGpIFuI4JAUFcrB1zODwTmM2pY=
+		a2h5yvHro+VGogqZbg/wTLf6qek=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/DwYO/vUpXj66ejWDZm1zOAS2cs=
+		YcBcBolUFyfuk/weMB5KyvblooY=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xYGpIFuI4JAUFcrB1zODwTmM2pY=
+		a2h5yvHro+VGogqZbg/wTLf6qek=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		boRf+zaSmhPjwhTQCyv9yfu8al4=
+		mhgot2rb+wBiCIiozO6/1YQBUm8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,70 +70,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lEtfOgSa+AoQnWS2J7gaiqucQiHHEZPgNuAUFrbgiEI=
+			yARI2i5gkRwdMMlvAwiI/GWQcSwnFIaYp8gaHQXGHeY=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q6vhN46EuMmBZvdprqP/H06+izluFRDH7erbV+VXvG4=
+			eEBkiNuuAy9v8121CA6Rndyy0RJTjEkoPB+JW35GXJs=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1IlIemKef2wD+EG4XJcay2Z2WOxpdUapW0FwOZ2zgQ=
+			s+QO4KEpr86cyFuYfyxrEr0FiOx2AkcieQtPAA4zZcg=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q6vhN46EuMmBZvdprqP/H06+izluFRDH7erbV+VXvG4=
+			eEBkiNuuAy9v8121CA6Rndyy0RJTjEkoPB+JW35GXJs=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			icTmDpvEDUWLRXLlIIxgM4vFnPO3Lhb60iZt7846rXw=
+			c+/2YX+2NQyC2hmLFzcW3GBuALJIpxTPYAe4nOQ3FbM=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lEtfOgSa+AoQnWS2J7gaiqucQiHHEZPgNuAUFrbgiEI=
+			yARI2i5gkRwdMMlvAwiI/GWQcSwnFIaYp8gaHQXGHeY=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8zt3d3H09UbNI2Qd4OqZPgCOwJ6ZFgz52iS8vRYIW4=
+			UEygMFv3/WE6Y3slSMixzuaecx7wq21NBHwPSaqjrkU=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AlAZ9eKoFlFCARl/BKuyV8DWY+lkXspFuS5qbstu8IA=
+			ibNiHHQUmOJ9FTuQADO17ZIbOb+FwW9029lisYluPN4=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8zt3d3H09UbNI2Qd4OqZPgCOwJ6ZFgz52iS8vRYIW4=
+			UEygMFv3/WE6Y3slSMixzuaecx7wq21NBHwPSaqjrkU=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kUb+Q4ENR419jsPLaghmjqT5dALXmpYfT4Oyenxjxo8=
+			omofgmm3OU9cMcU5N+F434UVod9gYk74x9QuzBgnwkM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

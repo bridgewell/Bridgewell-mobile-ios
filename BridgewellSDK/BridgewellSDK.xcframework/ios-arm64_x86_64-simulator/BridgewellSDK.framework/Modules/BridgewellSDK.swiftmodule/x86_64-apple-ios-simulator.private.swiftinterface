@@ -91,6 +91,10 @@ public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
     @objc get
     @objc set
   }
+  @objc public var enableLogging: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc public var externalUserIds: [PrebidMobile.ExternalUserId] {
     @objc get
     @objc set
@@ -115,10 +119,6 @@ public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
     @objc set
   }
   @objc public var cachedAuctionResponse: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc public var enableLogging: Swift.Bool {
     @objc get
     @objc set
   }
