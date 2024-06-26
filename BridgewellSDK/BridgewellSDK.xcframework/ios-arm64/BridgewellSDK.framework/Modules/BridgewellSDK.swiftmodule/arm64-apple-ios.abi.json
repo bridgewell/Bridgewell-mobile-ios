@@ -940,10 +940,13 @@
             "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -961,6 +964,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)logLevel",
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvg",
                 "moduleName": "BridgewellSDK",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -987,6 +991,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setLogLevel:",
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvs",
                 "moduleName": "BridgewellSDK",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -3764,21 +3769,21 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3547,
+      "offset": 3519,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4660,
+      "offset": 4636,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4582,
+      "offset": 4554,
       "length": 5,
       "value": "false"
     },
