@@ -223,113 +223,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "bidderNameAppNexus",
-            "printedName": "bidderNameAppNexus",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cpy)bidderNameAppNexus",
-            "mangledName": "$s13BridgewellSDK0A0C18bidderNameAppNexusSSvpZ",
-            "moduleName": "BridgewellSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)bidderNameAppNexus",
-                "mangledName": "$s13BridgewellSDK0A0C18bidderNameAppNexusSSvgZ",
-                "moduleName": "BridgewellSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "bidderNameRubiconProject",
-            "printedName": "bidderNameRubiconProject",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cpy)bidderNameRubiconProject",
-            "mangledName": "$s13BridgewellSDK0A0C24bidderNameRubiconProjectSSvpZ",
-            "moduleName": "BridgewellSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(cm)bidderNameRubiconProject",
-                "mangledName": "$s13BridgewellSDK0A0C24bidderNameRubiconProjectSSvgZ",
-                "moduleName": "BridgewellSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "updatedTimeout",
             "printedName": "updatedTimeout",
             "children": [
@@ -1047,10 +940,13 @@
             "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
               "AccessControl",
               "RawDocComment",
               "ObjC"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1068,6 +964,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)logLevel",
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvg",
                 "moduleName": "BridgewellSDK",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1094,6 +991,7 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setLogLevel:",
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0Cvs",
                 "moduleName": "BridgewellSDK",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -1113,6 +1011,100 @@
                 "declKind": "Accessor",
                 "usr": "s:13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0CvM",
                 "mangledName": "$s13BridgewellSDK0A0C8logLevel12PrebidMobile03LogD0CvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableLogging",
+            "printedName": "enableLogging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(py)enableLogging",
+            "mangledName": "$s13BridgewellSDK0A0C13enableLoggingSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)enableLogging",
+                "mangledName": "$s13BridgewellSDK0A0C13enableLoggingSbvg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setEnableLogging:",
+                "mangledName": "$s13BridgewellSDK0A0C13enableLoggingSbvs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A0C13enableLoggingSbvM",
+                "mangledName": "$s13BridgewellSDK0A0C13enableLoggingSbvM",
                 "moduleName": "BridgewellSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3749,21 +3741,49 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
-      "offset": 478,
+      "offset": 245,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 263,
+      "length": 2,
+      "value": "99"
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
       "length": 10,
       "value": "\"appnexus\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 657,
       "length": 9,
       "value": "\"rubicon\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3085,
+      "length": 2,
+      "value": "99"
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3271,
+      "offset": 2989,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4079,
       "length": 5,
       "value": "false"
     },

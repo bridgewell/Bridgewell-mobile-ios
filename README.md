@@ -1,7 +1,7 @@
 # Documentation Guide
 
 # Bridgewell SDK for iOS.
-# Version: 0.0.7
+# Version: 0.0.8
 
 # Requirements
 
@@ -100,6 +100,8 @@ The `Bridgewell` class is a singleton that enables the user to apply global sett
 `isLocationUpdatesEnabled`: Optional Bool.
 If true, the SDK will periodically try to listen for location updates in order to request location-based ads.
 
+`enableLogging`: Optional Bool. Enable print write log to file and print log message to console. By default this value will be `false`, should have check condition for not enable this when build with release configuration.
+
 `logLevel`: Optional level of logging to output in the console. Options are one of the following sorted by a verbosity of the log:
 The default value of logLevel `logLevel` is `.debug`, here is the list of all level.
 
@@ -153,10 +155,6 @@ func clearCustomHeaders()
 
 ## Examples
 ```swift
-// Host
-Bridgewell.shared.BridgewellServerHost = .Rubicon
-// or set a custom host
-Bridgewell.shared.BridgewellServerHost = BridgewellHost.Custom
 do {
     try Bridgewell.shared.setCustomBridgewellServer(url: "https://Bridgewell-server.customhost.com")
 } catch {
@@ -167,19 +165,22 @@ do {
 Bridgewell.shared.BridgewellServerAccountId = "1234"
 
 // Geolocation
-Bridgewell.shared.shareGeoLocation = true
+Bridgewell.shared.shareGeocoordinate = true
 
 // Log level data
+#if DEBUG
+Bridgewell.shared.enableLogging = true
+#endif
 Bridgewell.shared.logLevel = .verbose
 
 // Set Bridgewell timeout in milliseconds
 Bridgewell.shared.timeoutMillis = 3000
 
 // Enable Bridgewell Server debug respones
-Bridgewell.shared.pbsDebug = true
+Bridgewell.shared.bwsDebug = true
 
 // Stored responses  can be one of storedAuction response or storedBidResponse
-Bridgewell.shared.storedAuctionResponse = "111122223333"
+Bridgewell.shared.cachedAuctionResponse = "111122223333"
 
 //or
 Bridgewell.shared.addStoredBidResponse(bidder: "appnexus", responseId: "221144")
