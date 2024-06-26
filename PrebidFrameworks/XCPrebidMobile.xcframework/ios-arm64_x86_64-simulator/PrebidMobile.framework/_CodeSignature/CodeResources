@@ -418,7 +418,7 @@
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cOxOBArJSH/oQRlDSOnGp+1Srnc=
+		gmK3Q926moTyrore+0QJFgsASsU=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cOxOBArJSH/oQRlDSOnGp+1Srnc=
+		gmK3Q926moTyrore+0QJFgsASsU=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -1185,7 +1185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKWM3zgGZ9pK04JClRM1yYwt50QLfirpB2CLmt51BJw=
+			Qud63Bqj+rwfLnoE31R9TXYT1ln7o7fQ75OlDm5XRN4=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1220,7 +1220,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKWM3zgGZ9pK04JClRM1yYwt50QLfirpB2CLmt51BJw=
+			Qud63Bqj+rwfLnoE31R9TXYT1ln7o7fQ75OlDm5XRN4=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

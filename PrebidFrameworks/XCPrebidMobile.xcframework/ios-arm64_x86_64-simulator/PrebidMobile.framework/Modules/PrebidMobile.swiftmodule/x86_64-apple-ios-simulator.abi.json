@@ -82101,14 +82101,14 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/prebid-mobile-ios\/PrebidMobile\/Logging\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 5417,
+      "offset": 5412,
       "length": 19,
       "value": "\"prebid-mobile-sdk\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/prebid-mobile-ios\/PrebidMobile\/Logging\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 5574,
+      "offset": 5569,
       "length": 6,
       "value": "\".txt\""
     },
