@@ -26,12 +26,6 @@ import _SwiftConcurrencyShims
   @objc optional func bannerViewDidDismissModal(_ bannerView: BridgewellSDK.BannerView)
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var adUnitConfig: PrebidMobile.AdUnitConfig {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public var eventHandler: (any PrebidMobile.BannerEventHandler)? {
-    get
-  }
   @objc @_Concurrency.MainActor(unsafe) public var bannerParameters: BridgewellSDK.BannerParameters {
     @objc get
   }
@@ -254,8 +248,3 @@ public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
   @objc deinit
 }
 public let BridgewellLocalCacheIdKey: Swift.String
-@_inheritsConvenienceInitializers @objc public class BwsConstants : ObjectiveC.NSObject {
-  @objc public static let BWS_VERSION: Swift.String
-  @objc override dynamic public init()
-  @objc deinit
-}

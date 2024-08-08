@@ -251,104 +251,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "adUnitConfig",
-            "printedName": "adUnitConfig",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AdUnitConfig",
-                "printedName": "PrebidMobile.AdUnitConfig",
-                "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvp",
-            "mangledName": "$s13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvp",
-            "moduleName": "BridgewellSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdUnitConfig",
-                    "printedName": "PrebidMobile.AdUnitConfig",
-                    "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvg",
-                "mangledName": "$s13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvg",
-                "moduleName": "BridgewellSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "eventHandler",
-            "printedName": "eventHandler",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any PrebidMobile.BannerEventHandler)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BannerEventHandler",
-                    "printedName": "any PrebidMobile.BannerEventHandler",
-                    "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvp",
-            "mangledName": "$s13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvp",
-            "moduleName": "BridgewellSDK",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any PrebidMobile.BannerEventHandler)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BannerEventHandler",
-                        "printedName": "any PrebidMobile.BannerEventHandler",
-                        "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvg",
-                "mangledName": "$s13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvg",
-                "moduleName": "BridgewellSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "bannerParameters",
             "printedName": "bannerParameters",
             "children": [
@@ -5377,157 +5279,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "BwsConstants",
-        "printedName": "BwsConstants",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "BWS_VERSION",
-            "printedName": "BWS_VERSION",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(cpy)BWS_VERSION",
-            "mangledName": "$s13BridgewellSDK12BwsConstantsC11BWS_VERSIONSSvpZ",
-            "moduleName": "BridgewellSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(cm)BWS_VERSION",
-                "mangledName": "$s13BridgewellSDK12BwsConstantsC11BWS_VERSIONSSvgZ",
-                "moduleName": "BridgewellSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BwsConstants",
-                "printedName": "BridgewellSDK.BwsConstants",
-                "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(im)init",
-            "mangledName": "$s13BridgewellSDK12BwsConstantsCACycfc",
-            "moduleName": "BridgewellSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants",
-        "mangledName": "$s13BridgewellSDK12BwsConstantsC",
-        "moduleName": "BridgewellSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5577,616 +5328,609 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4100,
+      "offset": 3996,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4132,
+      "offset": 4028,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4231,
+      "offset": 4127,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4263,
+      "offset": 4159,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4382,
+      "offset": 4278,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
       "offset": 2061,
       "length": 10,
       "value": "\"BridgewellSDK.BannerView\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 8,
       "value": "\"is_app\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 587,
       "length": 6,
       "value": "\"idfa\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 8,
       "value": "\"is_app\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 587,
       "length": 6,
       "value": "\"idfa\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1377,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1399,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1422,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1377,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1399,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1422,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1377,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1399,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1422,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1778,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1798,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1778,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1798,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1778,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1798,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2048,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2066,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2092,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2113,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2134,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2155,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2176,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2048,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2066,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2092,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2113,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2134,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2155,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2176,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2048,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2066,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2092,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2113,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2134,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2155,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2176,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2842,
       "length": 12,
       "value": "\"carrier_id\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2882,
       "length": 14,
       "value": "\"screen_width\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2925,
       "length": 15,
       "value": "\"screen_height\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2968,
       "length": 27,
       "value": "\"screen_pixel_ratio_millis\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3029,
       "length": 20,
       "value": "\"screen_orientation\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3081,
       "length": 18,
       "value": "\"hardware_version\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3131,
       "length": 19,
       "value": "\"limit_ad_tracking\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3184,
       "length": 35,
       "value": "\"app_tracking_authorization_status\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3246,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2842,
       "length": 12,
       "value": "\"carrier_id\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2882,
       "length": 14,
       "value": "\"screen_width\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2925,
       "length": 15,
       "value": "\"screen_height\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2968,
       "length": 27,
       "value": "\"screen_pixel_ratio_millis\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3029,
       "length": 20,
       "value": "\"screen_orientation\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3081,
       "length": 18,
       "value": "\"hardware_version\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3131,
       "length": 19,
       "value": "\"limit_ad_tracking\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3184,
       "length": 35,
       "value": "\"app_tracking_authorization_status\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3246,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 183,
       "length": 4,
       "value": "2000"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 6,
       "value": "\"none\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 263,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 596,
       "length": 10,
       "value": "\"appnexus\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 657,
       "length": 9,
       "value": "\"rubicon\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 3085,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
       "offset": 2989,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4085,
+      "offset": 4079,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 19,
       "value": "\"hb_cache_id_local\""
     },
     {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 317,
-      "length": 7,
-      "value": "\"1.3.0\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-babtsapjeqqgrzaunrvqvgdahidz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/maiquan\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-ajpxkfzpgzwhvkezgxdhmvujaltr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 722,
       "length": 7,
