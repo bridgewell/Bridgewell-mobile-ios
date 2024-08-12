@@ -254,3 +254,8 @@ public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
   @objc deinit
 }
 public let BridgewellLocalCacheIdKey: Swift.String
+@_inheritsConvenienceInitializers @objc public class BwsConstants : ObjectiveC.NSObject {
+  @objc public static let BWS_VERSION: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}

@@ -5377,6 +5377,157 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BwsConstants",
+        "printedName": "BwsConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "BWS_VERSION",
+            "printedName": "BWS_VERSION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(cpy)BWS_VERSION",
+            "mangledName": "$s13BridgewellSDK12BwsConstantsC11BWS_VERSIONSSvpZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(cm)BWS_VERSION",
+                "mangledName": "$s13BridgewellSDK12BwsConstantsC11BWS_VERSIONSSvgZ",
+                "moduleName": "BridgewellSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BwsConstants",
+                "printedName": "BridgewellSDK.BwsConstants",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(im)init",
+            "mangledName": "$s13BridgewellSDK12BwsConstantsCACycfc",
+            "moduleName": "BridgewellSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants",
+        "mangledName": "$s13BridgewellSDK12BwsConstantsC",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -6016,7 +6167,7 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4079,
+      "offset": 4078,
       "length": 5,
       "value": "false"
     },
@@ -6026,6 +6177,13 @@
       "offset": 146,
       "length": 19,
       "value": "\"hb_cache_id_local\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 7,
+      "value": "\"0.0.9\""
     },
     {
       "filePath": "\/Users\/maiquan\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-ajpxkfzpgzwhvkezgxdhmvujaltr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
