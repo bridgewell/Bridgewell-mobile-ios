@@ -5579,42 +5579,77 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4100,
+      "offset": 4120,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4132,
+      "offset": 4152,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4231,
+      "offset": 4251,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4263,
+      "offset": 4283,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4382,
+      "offset": 4402,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2061,
+      "offset": 4647,
+      "length": 10,
+      "value": "\"ic_close\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 4682,
+      "length": 25,
+      "value": "\"com.bridgewell.bwmobile\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 4803,
+      "length": 10,
+      "value": "\"ic_close\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 4838,
+      "length": 25,
+      "value": "\"com.bridgewell.bwmobile\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5079,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2081,
       "length": 10,
       "value": "\"BridgewellSDK.BannerView\""
     },
@@ -6191,6 +6226,13 @@
       "offset": 722,
       "length": 7,
       "value": "\"ic_ad\""
+    },
+    {
+      "filePath": "\/Users\/maiquan\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-ajpxkfzpgzwhvkezgxdhmvujaltr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphonesimulator\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 10,
+      "value": "\"ic_close\""
     }
   ]
 }
