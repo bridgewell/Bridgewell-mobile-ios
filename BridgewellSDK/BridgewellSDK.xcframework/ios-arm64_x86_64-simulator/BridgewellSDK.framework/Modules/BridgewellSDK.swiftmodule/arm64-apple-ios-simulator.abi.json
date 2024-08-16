@@ -1215,11 +1215,11 @@
             "objc_name": "initWithFrame:configID:adSize:eventHandler:",
             "declAttributes": [
               "Custom",
+              "Convenience",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
           },
           {
             "kind": "Constructor",
@@ -1293,6 +1293,64 @@
             "mangledName": "$s13BridgewellSDK10BannerViewC5frame8configID6adSizeACSo6CGRectV_SSSo6CGSizeVtcfc",
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithFrame:configID:adSize:",
+            "declAttributes": [
+              "Custom",
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(floatingBannerSize:configId:eventHandler:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any PrebidMobile.BannerEventHandler)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerEventHandler",
+                    "printedName": "any PrebidMobile.BannerEventHandler",
+                    "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)initWithFloatingBannerSize:configId:eventHandler:from:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC08floatingC4Size8configId12eventHandler4fromACSo6CGSizeV_SS12PrebidMobile0c5EventJ0_pSgSo16UIViewControllerCtcfc",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "initWithFloatingBannerSize:configId:eventHandler:from:",
             "declAttributes": [
               "Custom",
               "Convenience",
