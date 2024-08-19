@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<data>
+		I4xd3AHE5hy1URLr+3Pzl3R+ynU=
+		</data>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		VWCA3MeaiPMoOAS1uOteTSLX8js=
+		</data>
 		<key>Headers/BridgewellAdmobSDK.h</key>
 		<data>
 		pC19H45fnKgGLU+bKzZlFynUZLw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		S5TQ187pAUs7+WNJvGvlOo48zPo=
+		s0wCaFw2EQ5LutVoh0MRK48uuAU=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,7 +38,7 @@
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3oSdhdkCvrav4MWzZJtYHtaQk4g=
+		7JtlsgLmlT98TczyC0xxs3sXscU=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,15 +58,37 @@
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pyt5bjYfXMEyO5hKBNzS0TULXyE=
+		cr10mNegMegEhfS0XNd2hCBflps=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Xh0A8wYH4CdIICnx4Y5mhcHhovk=
 		</data>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<data>
+		0zJrZMXWjb4MChQmbWhC74op5Xo=
+		</data>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		k9OFlDPBRWfteJ+bfG12WAoBuls=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1cOdJVfHjp/TaRWlBDReaSGW2VWsBez3sRGjrkeE1Bc=
+			</data>
+		</dict>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			afsRJYL8I/wGxjXJYdJio/e0tWVNKEeHSR3jAA2t+dI=
+			</data>
+		</dict>
 		<key>Headers/BridgewellAdmobSDK.h</key>
 		<dict>
 			<key>hash2</key>
@@ -98,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZJf0otHhlCyqqIoGt8xAfscokGjFrtBT0aq1ANnWAI4=
+			sl36YfAlPC8UiFGh4xQS1rPBE7Ko9kwuPHH/HLepxnY=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -133,7 +163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5cs2CIxGtzXqyq9Q/It+KVsYxv2m8nU4jsX9P6KVuSg=
+			FpNt2DTdINSvbf0vioBbJ/2s0ETFaPU/hIFL66R9QsQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -141,6 +171,20 @@
 			<key>hash2</key>
 			<data>
 			x1S2c84KRAHHpVlOGw9aee8UcI6ga+eg541j5JV/RHY=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BQJW+BqzvaAbLANpPiap3H6Eq3RkCCn1dNuAtq2vh6A=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RbetuZ/NLZYqHIAPv8wTJbV6f6QWX0FhgjI7tf/pyQA=
 			</data>
 		</dict>
 	</dict>

@@ -6,6 +6,2169 @@
     "children": [
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannerViewDelegate",
+        "printedName": "BannerViewDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "bannerViewPresentationController",
+            "printedName": "bannerViewPresentationController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate(im)bannerViewPresentationController",
+            "mangledName": "$s13BridgewellSDK18BannerViewDelegateP06bannerD22PresentationControllerSo06UIViewH0CSgyF",
+            "moduleName": "BridgewellSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BridgewellSDK.BannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : BridgewellSDK.BannerViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didReceiveAdWithAdSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate(im)bannerView:didReceiveAdWithAdSize:",
+            "mangledName": "$s13BridgewellSDK18BannerViewDelegateP06bannerD0_016didReceiveAdWithI4SizeyAA0cD0C_So6CGSizeVtF",
+            "moduleName": "BridgewellSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BridgewellSDK.BannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : BridgewellSDK.BannerViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didFailToReceiveAdWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate(im)bannerView:didFailToReceiveAdWith:",
+            "mangledName": "$s13BridgewellSDK18BannerViewDelegateP06bannerD0_22didFailToReceiveAdWithyAA0cD0C_s5Error_ptF",
+            "moduleName": "BridgewellSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BridgewellSDK.BannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : BridgewellSDK.BannerViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewWillLeaveApplication",
+            "printedName": "bannerViewWillLeaveApplication(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate(im)bannerViewWillLeaveApplication:",
+            "mangledName": "$s13BridgewellSDK18BannerViewDelegateP06bannerD20WillLeaveApplicationyyAA0cD0CF",
+            "moduleName": "BridgewellSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BridgewellSDK.BannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : BridgewellSDK.BannerViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewWillPresentModal",
+            "printedName": "bannerViewWillPresentModal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate(im)bannerViewWillPresentModal:",
+            "mangledName": "$s13BridgewellSDK18BannerViewDelegateP06bannerD16WillPresentModalyyAA0cD0CF",
+            "moduleName": "BridgewellSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BridgewellSDK.BannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : BridgewellSDK.BannerViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidDismissModal",
+            "printedName": "bannerViewDidDismissModal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate(im)bannerViewDidDismissModal:",
+            "mangledName": "$s13BridgewellSDK18BannerViewDelegateP06bannerD15DidDismissModalyyAA0cD0CF",
+            "moduleName": "BridgewellSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BridgewellSDK.BannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : BridgewellSDK.BannerViewDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate",
+        "mangledName": "$s13BridgewellSDK18BannerViewDelegateP",
+        "moduleName": "BridgewellSDK",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannerView",
+        "printedName": "BannerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adUnitConfig",
+            "printedName": "adUnitConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdUnitConfig",
+                "printedName": "PrebidMobile.AdUnitConfig",
+                "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvp",
+            "mangledName": "$s13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnitConfig",
+                    "printedName": "PrebidMobile.AdUnitConfig",
+                    "usr": "c:@M@PrebidMobile@objc(cs)AdUnitConfig"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvg",
+                "mangledName": "$s13BridgewellSDK10BannerViewC12adUnitConfig12PrebidMobile02AdfG0Cvg",
+                "moduleName": "BridgewellSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventHandler",
+            "printedName": "eventHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any PrebidMobile.BannerEventHandler)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerEventHandler",
+                    "printedName": "any PrebidMobile.BannerEventHandler",
+                    "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvp",
+            "mangledName": "$s13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any PrebidMobile.BannerEventHandler)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannerEventHandler",
+                        "printedName": "any PrebidMobile.BannerEventHandler",
+                        "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvg",
+                "mangledName": "$s13BridgewellSDK10BannerViewC12eventHandler12PrebidMobile0c5EventF0_pSgvg",
+                "moduleName": "BridgewellSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bannerParameters",
+            "printedName": "bannerParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerParameters",
+                "printedName": "PrebidMobile.BannerParameters",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerParameters"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)bannerParameters",
+            "mangledName": "$s13BridgewellSDK10BannerViewC16bannerParameters12PrebidMobile0cF0Cvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerParameters",
+                    "printedName": "PrebidMobile.BannerParameters",
+                    "usr": "c:@M@PrebidMobile@objc(cs)BannerParameters"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)bannerParameters",
+                "mangledName": "$s13BridgewellSDK10BannerViewC16bannerParameters12PrebidMobile0cF0Cvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoParameters",
+            "printedName": "videoParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoParameters",
+                "printedName": "PrebidMobile.VideoParameters",
+                "usr": "c:@M@PrebidMobile@objc(cs)VideoParameters"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)videoParameters",
+            "mangledName": "$s13BridgewellSDK10BannerViewC15videoParameters12PrebidMobile05VideoF0Cvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoParameters",
+                    "printedName": "PrebidMobile.VideoParameters",
+                    "usr": "c:@M@PrebidMobile@objc(cs)VideoParameters"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)videoParameters",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15videoParameters12PrebidMobile05VideoF0Cvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastBidResponse",
+            "printedName": "lastBidResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PrebidMobile.BidResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BidResponse",
+                    "printedName": "PrebidMobile.BidResponse",
+                    "usr": "c:@M@PrebidMobile@objc(cs)BidResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)lastBidResponse",
+            "mangledName": "$s13BridgewellSDK10BannerViewC15lastBidResponse12PrebidMobile0fG0CSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrebidMobile.BidResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BidResponse",
+                        "printedName": "PrebidMobile.BidResponse",
+                        "usr": "c:@M@PrebidMobile@objc(cs)BidResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)lastBidResponse",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15lastBidResponse12PrebidMobile0fG0CSgvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configID",
+            "printedName": "configID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)configID",
+            "mangledName": "$s13BridgewellSDK10BannerViewC8configIDSSvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)configID",
+                "mangledName": "$s13BridgewellSDK10BannerViewC8configIDSSvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refreshInterval",
+            "printedName": "refreshInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)refreshInterval",
+            "mangledName": "$s13BridgewellSDK10BannerViewC15refreshIntervalSdvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)refreshInterval",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15refreshIntervalSdvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setRefreshInterval:",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15refreshIntervalSdvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC15refreshIntervalSdvM",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15refreshIntervalSdvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "additionalSizes",
+            "printedName": "additionalSizes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CoreFoundation.CGSize]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreFoundation.CGSize]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGSize",
+                        "printedName": "CoreFoundation.CGSize",
+                        "usr": "c:@S@CGSize"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)additionalSizes",
+            "mangledName": "$s13BridgewellSDK10BannerViewC15additionalSizesSaySo6CGSizeVGSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[CoreFoundation.CGSize]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[CoreFoundation.CGSize]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGSize",
+                            "printedName": "CoreFoundation.CGSize",
+                            "usr": "c:@S@CGSize"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)additionalSizes",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15additionalSizesSaySo6CGSizeVGSgvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[CoreFoundation.CGSize]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[CoreFoundation.CGSize]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGSize",
+                            "printedName": "CoreFoundation.CGSize",
+                            "usr": "c:@S@CGSize"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setAdditionalSizes:",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15additionalSizesSaySo6CGSizeVGSgvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC15additionalSizesSaySo6CGSizeVGSgvM",
+                "mangledName": "$s13BridgewellSDK10BannerViewC15additionalSizesSaySo6CGSizeVGSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adFormat",
+            "printedName": "adFormat",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormat",
+                "printedName": "PrebidMobile.AdFormat",
+                "usr": "c:@M@PrebidMobile@objc(cs)AdFormat"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)adFormat",
+            "mangledName": "$s13BridgewellSDK10BannerViewC8adFormat12PrebidMobile02AdF0Cvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFormat",
+                    "printedName": "PrebidMobile.AdFormat",
+                    "usr": "c:@M@PrebidMobile@objc(cs)AdFormat"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)adFormat",
+                "mangledName": "$s13BridgewellSDK10BannerViewC8adFormat12PrebidMobile02AdF0Cvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFormat",
+                    "printedName": "PrebidMobile.AdFormat",
+                    "usr": "c:@M@PrebidMobile@objc(cs)AdFormat"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setAdFormat:",
+                "mangledName": "$s13BridgewellSDK10BannerViewC8adFormat12PrebidMobile02AdF0Cvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC8adFormat12PrebidMobile02AdF0CvM",
+                "mangledName": "$s13BridgewellSDK10BannerViewC8adFormat12PrebidMobile02AdF0CvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adPosition",
+            "printedName": "adPosition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdPosition",
+                "printedName": "PrebidMobile.AdPosition",
+                "usr": "c:@M@PrebidMobile@E@PBMAdPosition"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)adPosition",
+            "mangledName": "$s13BridgewellSDK10BannerViewC10adPosition12PrebidMobile02AdF0Ovp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdPosition",
+                    "printedName": "PrebidMobile.AdPosition",
+                    "usr": "c:@M@PrebidMobile@E@PBMAdPosition"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)adPosition",
+                "mangledName": "$s13BridgewellSDK10BannerViewC10adPosition12PrebidMobile02AdF0Ovg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdPosition",
+                    "printedName": "PrebidMobile.AdPosition",
+                    "usr": "c:@M@PrebidMobile@E@PBMAdPosition"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setAdPosition:",
+                "mangledName": "$s13BridgewellSDK10BannerViewC10adPosition12PrebidMobile02AdF0Ovs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC10adPosition12PrebidMobile02AdF0OvM",
+                "mangledName": "$s13BridgewellSDK10BannerViewC10adPosition12PrebidMobile02AdF0OvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ortbConfig",
+            "printedName": "ortbConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)ortbConfig",
+            "mangledName": "$s13BridgewellSDK10BannerViewC10ortbConfigSSSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)ortbConfig",
+                "mangledName": "$s13BridgewellSDK10BannerViewC10ortbConfigSSSgvg",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setOrtbConfig:",
+                "mangledName": "$s13BridgewellSDK10BannerViewC10ortbConfigSSSgvs",
+                "moduleName": "BridgewellSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC10ortbConfigSSSgvM",
+                "mangledName": "$s13BridgewellSDK10BannerViewC10ortbConfigSSSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any BridgewellSDK.BannerViewDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(py)delegate",
+            "mangledName": "$s13BridgewellSDK10BannerViewC8delegateAA0cD8Delegate_pSgvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BridgewellSDK.BannerViewDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannerViewDelegate",
+                        "printedName": "any BridgewellSDK.BannerViewDelegate",
+                        "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)delegate",
+                "mangledName": "$s13BridgewellSDK10BannerViewC8delegateAA0cD8Delegate_pSgvg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BridgewellSDK.BannerViewDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannerViewDelegate",
+                        "printedName": "any BridgewellSDK.BannerViewDelegate",
+                        "usr": "c:@M@BridgewellSDK@objc(pl)BannerViewDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setDelegate:",
+                "mangledName": "$s13BridgewellSDK10BannerViewC8delegateAA0cD8Delegate_pSgvs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK10BannerViewC8delegateAA0cD8Delegate_pSgvM",
+                "mangledName": "$s13BridgewellSDK10BannerViewC8delegateAA0cD8Delegate_pSgvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:configID:adSize:eventHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerEventHandler",
+                "printedName": "any PrebidMobile.BannerEventHandler",
+                "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)initWithFrame:configID:adSize:eventHandler:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC5frame8configID6adSize12eventHandlerACSo6CGRectV_SSSo6CGSizeV12PrebidMobile0c5EventK0_ptcfc",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "initWithFrame:configID:adSize:eventHandler:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configID:eventHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerEventHandler",
+                "printedName": "any PrebidMobile.BannerEventHandler",
+                "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)initWithConfigID:eventHandler:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC8configID12eventHandlerACSS_12PrebidMobile0c5EventH0_ptcfc",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "initWithConfigID:eventHandler:",
+            "declAttributes": [
+              "Custom",
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:configID:adSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)initWithFrame:configID:adSize:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC5frame8configID6adSizeACSo6CGRectV_SSSo6CGSizeVtcfc",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "initWithFrame:configID:adSize:",
+            "declAttributes": [
+              "Custom",
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)loadAd",
+            "mangledName": "$s13BridgewellSDK10BannerViewC6loadAdyyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setStoredAuctionResponse",
+            "printedName": "setStoredAuctionResponse(storedAuction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setStoredAuctionResponseWithStoredAuction:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC24setStoredAuctionResponse06storedG0ySS_tF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "setStoredAuctionResponseWithStoredAuction:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRefresh",
+            "printedName": "stopRefresh()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)stopRefresh",
+            "mangledName": "$s13BridgewellSDK10BannerViewC11stopRefreshyyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addExtData",
+            "printedName": "addExtData(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)addExtDataWithKey:value:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC10addExtData3key5valueySS_SStF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "addExtDataWithKey:value:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateExtData",
+            "printedName": "updateExtData(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)updateExtDataWithKey:value:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC13updateExtData3key5valueySS_ShySSGtF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "updateExtDataWithKey:value:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeExtData",
+            "printedName": "removeExtData(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)removeExtDataForKey:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC13removeExtData6forKeyySS_tF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "removeExtDataForKey:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearExtData",
+            "printedName": "clearExtData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)clearExtData",
+            "mangledName": "$s13BridgewellSDK10BannerViewC12clearExtDatayyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addExtKeyword",
+            "printedName": "addExtKeyword(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)addExtKeyword:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC13addExtKeywordyySSF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addExtKeywords",
+            "printedName": "addExtKeywords(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)addExtKeywords:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC14addExtKeywordsyyShySSGF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeExtKeyword",
+            "printedName": "removeExtKeyword(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)removeExtKeyword:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC16removeExtKeywordyySSF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearExtKeywords",
+            "printedName": "clearExtKeywords()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)clearExtKeywords",
+            "mangledName": "$s13BridgewellSDK10BannerViewC16clearExtKeywordsyyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAppContent",
+            "printedName": "setAppContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBMORTBAppContent",
+                "printedName": "PrebidMobile.PBMORTBAppContent",
+                "usr": "c:objc(cs)PBMORTBAppContent"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)setAppContent:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC13setAppContentyySo010PBMORTBAppG0CF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAppContent",
+            "printedName": "clearAppContent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)clearAppContent",
+            "mangledName": "$s13BridgewellSDK10BannerViewC15clearAppContentyyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addAppContentData",
+            "printedName": "addAppContentData(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PrebidMobile.PBMORTBContentData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBMORTBContentData",
+                    "printedName": "PrebidMobile.PBMORTBContentData",
+                    "usr": "c:objc(cs)PBMORTBContentData"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)addAppContentData:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC17addAppContentDatayySaySo014PBMORTBContentH0CGF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAppContentDataObject",
+            "printedName": "removeAppContentDataObject(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBMORTBContentData",
+                "printedName": "PrebidMobile.PBMORTBContentData",
+                "usr": "c:objc(cs)PBMORTBContentData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)removeAppContentDataObject:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC26removeAppContentDataObjectyySo014PBMORTBContentH0CF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAppContentDataObjects",
+            "printedName": "clearAppContentDataObjects()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)clearAppContentDataObjects",
+            "mangledName": "$s13BridgewellSDK10BannerViewC26clearAppContentDataObjectsyyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addUserData",
+            "printedName": "addUserData(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PrebidMobile.PBMORTBContentData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PBMORTBContentData",
+                    "printedName": "PrebidMobile.PBMORTBContentData",
+                    "usr": "c:objc(cs)PBMORTBContentData"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)addUserData:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC11addUserDatayySaySo014PBMORTBContentG0CGF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeUserData",
+            "printedName": "removeUserData(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PBMORTBContentData",
+                "printedName": "PrebidMobile.PBMORTBContentData",
+                "usr": "c:objc(cs)PBMORTBContentData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)removeUserData:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC14removeUserDatayySo014PBMORTBContentG0CF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearUserData",
+            "printedName": "clearUserData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)clearUserData",
+            "mangledName": "$s13BridgewellSDK10BannerViewC13clearUserDatayyF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "BridgewellSDK.BannerView",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)initWithFrame:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "BridgewellSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewPresentationController",
+            "printedName": "bannerViewPresentationController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BridgewellSDK@objc(cs)BannerView(im)bannerViewPresentationController",
+            "mangledName": "$s13BridgewellSDK10BannerViewC06bannerD22PresentationControllerSo06UIViewG0CSgyF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "bannerViewPresentationController",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didReceiveAdWithAdSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "PrebidMobile.BannerView",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BridgewellSDK@objc(cs)BannerView(im)bannerView:didReceiveAdWithAdSize:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC06bannerD0_016didReceiveAdWithH4Sizey12PrebidMobileABC_So6CGSizeVtF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "bannerView:didReceiveAdWithAdSize:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didFailToReceiveAdWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "PrebidMobile.BannerView",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BridgewellSDK@objc(cs)BannerView(im)bannerView:didFailToReceiveAdWith:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC06bannerD0_22didFailToReceiveAdWithy12PrebidMobileABC_s5Error_ptF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "bannerView:didFailToReceiveAdWith:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewWillLeaveApplication",
+            "printedName": "bannerViewWillLeaveApplication(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "PrebidMobile.BannerView",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BridgewellSDK@objc(cs)BannerView(im)bannerViewWillLeaveApplication:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC06bannerD20WillLeaveApplicationyy12PrebidMobileABCF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "bannerViewWillLeaveApplication:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewWillPresentModal",
+            "printedName": "bannerViewWillPresentModal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "PrebidMobile.BannerView",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BridgewellSDK@objc(cs)BannerView(im)bannerViewWillPresentModal:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC06bannerD16WillPresentModalyy12PrebidMobileABCF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "bannerViewWillPresentModal:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidDismissModal",
+            "printedName": "bannerViewDidDismissModal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerView",
+                "printedName": "PrebidMobile.BannerView",
+                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BridgewellSDK@objc(cs)BannerView(im)bannerViewDidDismissModal:",
+            "mangledName": "$s13BridgewellSDK10BannerViewC06bannerD15DidDismissModalyy12PrebidMobileABCF",
+            "moduleName": "BridgewellSDK",
+            "objc_name": "bannerViewDidDismissModal:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BridgewellSDK@objc(cs)BannerView",
+        "mangledName": "$s13BridgewellSDK10BannerViewC",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BannerViewDelegate",
+            "printedName": "BannerViewDelegate",
+            "usr": "c:@M@PrebidMobile@objc(pl)BannerViewDelegate",
+            "mangledName": "$s12PrebidMobile18BannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3214,6 +5377,157 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BwsConstants",
+        "printedName": "BwsConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "BWS_VERSION",
+            "printedName": "BWS_VERSION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(cpy)BWS_VERSION",
+            "mangledName": "$s13BridgewellSDK12BwsConstantsC11BWS_VERSIONSSvpZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(cm)BWS_VERSION",
+                "mangledName": "$s13BridgewellSDK12BwsConstantsC11BWS_VERSIONSSvgZ",
+                "moduleName": "BridgewellSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BwsConstants",
+                "printedName": "BridgewellSDK.BwsConstants",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants(im)init",
+            "mangledName": "$s13BridgewellSDK12BwsConstantsCACycfc",
+            "moduleName": "BridgewellSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BridgewellSDK@objc(cs)BwsConstants",
+        "mangledName": "$s13BridgewellSDK12BwsConstantsC",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3229,570 +5543,654 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 4100,
+      "length": 7,
+      "value": "\"ic_ad\""
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 4132,
+      "length": 25,
+      "value": "\"com.bridgewell.bwmobile\""
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 4231,
+      "length": 7,
+      "value": "\"ic_ad\""
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 4263,
+      "length": 25,
+      "value": "\"com.bridgewell.bwmobile\""
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4382,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2061,
+      "length": 10,
+      "value": "\"BridgewellSDK.BannerView\""
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 8,
       "value": "\"is_app\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 587,
       "length": 6,
       "value": "\"idfa\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 8,
       "value": "\"is_app\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 587,
       "length": 6,
       "value": "\"idfa\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1377,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1399,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1422,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1377,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1399,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1422,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1377,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1399,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1422,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1778,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1798,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1778,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1798,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1778,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1798,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2048,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2066,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2092,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2113,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2134,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2155,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2176,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2048,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2066,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2092,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2113,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2134,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2155,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2176,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2026,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2048,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2066,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2092,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2113,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2134,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2155,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2176,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2842,
       "length": 12,
       "value": "\"carrier_id\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2882,
       "length": 14,
       "value": "\"screen_width\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2925,
       "length": 15,
       "value": "\"screen_height\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2968,
       "length": 27,
       "value": "\"screen_pixel_ratio_millis\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3029,
       "length": 20,
       "value": "\"screen_orientation\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3081,
       "length": 18,
       "value": "\"hardware_version\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3131,
       "length": 19,
       "value": "\"limit_ad_tracking\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3184,
       "length": 35,
       "value": "\"app_tracking_authorization_status\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3246,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2842,
       "length": 12,
       "value": "\"carrier_id\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2882,
       "length": 14,
       "value": "\"screen_width\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2925,
       "length": 15,
       "value": "\"screen_height\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 2968,
       "length": 27,
       "value": "\"screen_pixel_ratio_millis\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3029,
       "length": 20,
       "value": "\"screen_orientation\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3081,
       "length": 18,
       "value": "\"hardware_version\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3131,
       "length": 19,
       "value": "\"limit_ad_tracking\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3184,
       "length": 35,
       "value": "\"app_tracking_authorization_status\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "StringLiteral",
       "offset": 3246,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 183,
       "length": 4,
       "value": "2000"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 6,
       "value": "\"none\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 263,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 596,
       "length": 10,
       "value": "\"appnexus\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
       "offset": 657,
       "length": 9,
       "value": "\"rubicon\""
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 3085,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
       "offset": 2989,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4079,
+      "offset": 4085,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 146,
       "length": 19,
       "value": "\"hb_cache_id_local\""
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 7,
+      "value": "\"1.3.0\""
+    },
+    {
+      "filePath": "\/Users\/mac-mini-01\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-babtsapjeqqgrzaunrvqvgdahidz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 722,
+      "length": 7,
+      "value": "\"ic_ad\""
     }
   ]
 }
