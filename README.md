@@ -191,8 +191,10 @@ Bridgewell.shared.addStoredBidResponse(bidder: "rubicon", responseId: "221155")
 ## Custom Bidding Integration
 You can use Bridgewell SDK to monetize your app with a custom ad server or even without it. Use the Rendering API to display the winning bid without primary ad server and its SDK.
  
-### Banner API
+#### Banner API
+
  Integration example:
+
 ```swift
 // 1. Create an Ad View
 let banner = BannerView(frame: CGRect(origin: .zero, size: adSize),
@@ -205,29 +207,32 @@ banner.delegate = self
 banner.loadAd()
 ```
 
-**Step 1: Create Ad View**
+__Step 1: Create Ad View__
 
 Initialize the BannerAdView with properties:
+
 - frame - the frame rectangle for the view
 - configID - an ID of the Stored Impression on the Bridgewell Server
 - size - the size of the ad unit which will be used in the bid request.
 
 <br>
 
-**Step 2: Load the Ad**
+__Step 2: Load the Ad__
 
 Call the method loadAd() which will:
+
 - make a bid request to the Bridgewell Server.
 - render the winning bid on display.
 
-**Outstream Video**
+__Outstream Video__
 
 For Banner Video you also need to specify the ad format:
+
 ```swift
 banner.adFormat = .video
 ```
 
-Delegate callback:
+__Delegate callback:__
   ```
   /**
      A view controller instance to use for presenting modal views
@@ -275,6 +280,35 @@ Delegate callback:
         
     }
   ```
+
+### Floating Banner View
+ Integration example:
+ ```
+    // Create Floating banner view
+    let floatingBannerView = BannerView(floatingBannerSize: adSize, configId: "config_bw_app_staging_carousel2", from: self)
+        
+    // 2. Configure the BannerView, same as normal banner view
+    floatingBannerView.delegate = self
+    floatingBannerView.adFormat = .banner
+    floatingBannerView.videoParameters.placement = .InBanner
+        
+    // 3. Load the banner ad and no need for add it to some host view like normal banner because it is fixed to bottom
+    floatingBannerView.loadAd()
+ ```
+__Step 1: Create Floating Banner View__
+
+- floatingBannerSize - the size of the banner which user desire
+- configID - an ID of the Stored Impression on the Bridgewell Server
+- from - the view controller which banner will floating on.
+__Step 2: Load the Ad__
+
+Call the method loadAd() which will:
+- make a bid request to the Bridgewell Server.
+- render the winning bid on display.
+
+__Handle callback__
+
+Please check the following delegate calling `BannerViewDelegate` above.
 
 
 ### Interstitial API
