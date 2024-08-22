@@ -68,10 +68,9 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
+  @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(configID: Swift.String, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize)
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(floatingBannerSize: CoreFoundation.CGSize, configId: Swift.String, eventHandler: (any PrebidMobile.BannerEventHandler)? = nil, from: UIKit.UIViewController)
   @objc deinit
   @objc @_Concurrency.MainActor(unsafe) public func loadAd()
   @objc @_Concurrency.MainActor(unsafe) public func setStoredAuctionResponse(storedAuction: Swift.String)

@@ -1215,11 +1215,11 @@
             "objc_name": "initWithFrame:configID:adSize:eventHandler:",
             "declAttributes": [
               "Custom",
-              "Convenience",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
-            "init_kind": "Convenience"
+            "init_kind": "Designated"
           },
           {
             "kind": "Constructor",
@@ -1293,64 +1293,6 @@
             "mangledName": "$s13BridgewellSDK10BannerViewC5frame8configID6adSizeACSo6CGRectV_SSSo6CGSizeVtcfc",
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithFrame:configID:adSize:",
-            "declAttributes": [
-              "Custom",
-              "Convenience",
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(floatingBannerSize:configId:eventHandler:from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "BridgewellSDK.BannerView",
-                "usr": "c:@M@BridgewellSDK@objc(cs)BannerView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "usr": "c:@S@CGSize"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any PrebidMobile.BannerEventHandler)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BannerEventHandler",
-                    "printedName": "any PrebidMobile.BannerEventHandler",
-                    "usr": "c:@M@PrebidMobile@objc(pl)BannerEventHandler"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BannerView(im)initWithFloatingBannerSize:configId:eventHandler:from:",
-            "mangledName": "$s13BridgewellSDK10BannerViewC08floatingC4Size8configId12eventHandler4fromACSo6CGSizeV_SS12PrebidMobile0c5EventJ0_pSgSo16UIViewControllerCtcfc",
-            "moduleName": "BridgewellSDK",
-            "objc_name": "initWithFloatingBannerSize:configId:eventHandler:from:",
             "declAttributes": [
               "Custom",
               "Convenience",
@@ -5637,77 +5579,42 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4120,
+      "offset": 4100,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4152,
+      "offset": 4132,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4251,
+      "offset": 4231,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4283,
+      "offset": 4263,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4402,
+      "offset": 4382,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4647,
-      "length": 10,
-      "value": "\"ic_close\""
-    },
-    {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 4682,
-      "length": 25,
-      "value": "\"com.bridgewell.bwmobile\""
-    },
-    {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 4803,
-      "length": 10,
-      "value": "\"ic_close\""
-    },
-    {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 4838,
-      "length": 25,
-      "value": "\"com.bridgewell.bwmobile\""
-    },
-    {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5079,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 2081,
+      "offset": 2061,
       "length": 10,
       "value": "\"BridgewellSDK.BannerView\""
     },
@@ -6284,13 +6191,6 @@
       "offset": 722,
       "length": 7,
       "value": "\"ic_ad\""
-    },
-    {
-      "filePath": "\/Users\/maiquan\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-ajpxkfzpgzwhvkezgxdhmvujaltr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 854,
-      "length": 10,
-      "value": "\"ic_close\""
     }
   ]
 }
