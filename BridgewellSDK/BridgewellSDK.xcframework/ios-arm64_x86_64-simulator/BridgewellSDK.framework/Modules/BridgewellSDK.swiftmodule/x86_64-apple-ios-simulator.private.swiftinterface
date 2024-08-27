@@ -25,17 +25,17 @@ import _SwiftConcurrencyShims
   @objc optional func bannerViewWillPresentModal(_ bannerView: BridgewellSDK.BannerView)
   @objc optional func bannerViewDidDismissModal(_ bannerView: BridgewellSDK.BannerView)
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var adUnitConfig: PrebidMobile.AdUnitConfig {
     get
   }
   @_Concurrency.MainActor(unsafe) public var eventHandler: (any PrebidMobile.BannerEventHandler)? {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var bannerParameters: BridgewellSDK.BannerParameters {
+  @objc @_Concurrency.MainActor(unsafe) public var bannerParameters: PrebidMobile.BannerParameters {
     @objc get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var videoParameters: BridgewellSDK.VideoParameters {
+  @objc @_Concurrency.MainActor(unsafe) public var videoParameters: PrebidMobile.VideoParameters {
     @objc get
   }
   @objc @_Concurrency.MainActor(unsafe) public var lastBidResponse: PrebidMobile.BidResponse? {
