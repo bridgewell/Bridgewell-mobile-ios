@@ -4,3 +4,8 @@ framework module BridgewellSDK {
 
   module * { export * }
 }
+
+module BridgewellSDK.Swift {
+  header "BridgewellSDK-Swift.h"
+  requires objc
+}
