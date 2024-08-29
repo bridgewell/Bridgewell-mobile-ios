@@ -302,89 +302,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class NSString;
-@class PBMLogLevel;
-@class ExternalUserId;
-@class NSNumber;
-@class WKWebView;
 
 SWIFT_CLASS("_TtC13BridgewellSDK10Bridgewell")
 @interface Bridgewell : NSObject
-@property (nonatomic) BOOL updatedTimeout;
-@property (nonatomic, copy) NSString * _Nonnull bridgewellServerAccountId;
-@property (nonatomic) BOOL bwsDebug;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull customRequestHeaders;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull cachedBidResponses;
-/// This property is set by the developer when he is willing to assign the assetID for Native ad.
-/// *
-@property (nonatomic) BOOL shouldAssignNativeAssetID;
-/// This property is set by the developer when he is willing to share the location for better ad targeting
-/// *
-@property (nonatomic) BOOL shareGeocoordinate;
-/// Set the desidered verbosity of the logs
-@property (nonatomic, strong) PBMLogLevel * _Nonnull logLevel;
-/// Enable print write log to file and print log message to console
-/// note:
-/// it is recommended to use it only while debugging, should not use it on when build release
-@property (nonatomic) BOOL enableLogging;
-/// Array  containing objects that hold External UserId parameters.
-@property (nonatomic, copy) NSArray<ExternalUserId *> * _Nonnull externalUserIds;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell * _Nonnull shared;)
-+ (Bridgewell * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSString * _Nonnull version;
-@property (nonatomic, readonly, copy) NSString * _Nonnull omsdkVersion;
-@property (nonatomic, copy) NSString * _Nullable customStatusEndpoint;
-@property (nonatomic) NSInteger timeoutMillis;
-@property (nonatomic, strong) NSNumber * _Nullable timeoutMillisecondDynamic;
-@property (nonatomic, copy) NSString * _Nullable cachedAuctionResponse;
-@property (nonatomic) BOOL useCacheForReportWithRenderingAPI;
-@property (nonatomic) NSTimeInterval creativeTimeout;
-@property (nonatomic) NSTimeInterval creativeTimeoutPreRenderContent;
-@property (nonatomic) BOOL useExternalClickThroughBrowser;
-@property (nonatomic) enum PBMClickbrowserType implementedClickbrowserType;
-@property (nonatomic) BOOL debugLogFileEnabled;
-@property (nonatomic) BOOL isLocationUpdatesEnabled;
-@property (nonatomic) BOOL isIncludeWinners;
-@property (nonatomic) BOOL isIncludeBidderKeys;
-- (BOOL)setCustomBridgewellServerWithUrl:(NSString * _Nonnull)url error:(NSError * _Nullable * _Nullable)error;
-- (void)addStoredBidResponseWithBidder:(NSString * _Nonnull)bidder responseId:(NSString * _Nonnull)responseId;
-- (void)clearStoredBidResponses;
-- (NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable)getStoredBidResponses SWIFT_WARN_UNUSED_RESULT;
-- (void)addCustomHeaderWithName:(NSString * _Nonnull)name value:(NSString * _Nonnull)value;
-- (void)clearCustomHeaders;
-/// Initializes BridgewellMobile SDK.
-/// Checks the status of Bridgewell Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Bridgewell.shared.bridgewellServerHost</code>.
-/// Checks the version of GMA SDK. If the version is not supported - logs warning.
-/// Use this SDK initializer if you’re using Bridgewell SDK with GMA SDK.
-/// \param gadMobileAdsObject GADMobileAds object
-///
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDK:(id _Nullable)gadMobileAdsObject :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
-/// Initializes BridgewellMobile SDK.
-/// Checks the status of Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Bridgewell.shared.bridgewellServerHost</code>.
-/// Checks the version of GMA SDK. If the version is not supported - logs warning.
-/// Use this SDK initializer if you’re using Bridgewell SDK with GMA SDK.
-/// \param gadMobileAdsVersion GADMobileAds version string, use <code>GADGetStringFromVersionNumber(GADMobileAds.sharedInstance().versionNumber)</code> to get it
-///
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDKWithGadMobileAdsVersion:(NSString * _Nullable)gadMobileAdsVersion :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
-/// Initializes BridgewellMobile SDK.
-/// Checks the status of Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Bridgewell.shared.bridgewellServerHost</code>.
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
-/// Register WKWebview
-/// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
-/// within this web view.
-- (void)registerWebView:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -392,6 +312,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
+@class NSString;
 @class AdFormat;
 @protocol BwsBannerViewDelegate;
 @protocol BannerEventHandler;
@@ -783,89 +704,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class NSString;
-@class PBMLogLevel;
-@class ExternalUserId;
-@class NSNumber;
-@class WKWebView;
 
 SWIFT_CLASS("_TtC13BridgewellSDK10Bridgewell")
 @interface Bridgewell : NSObject
-@property (nonatomic) BOOL updatedTimeout;
-@property (nonatomic, copy) NSString * _Nonnull bridgewellServerAccountId;
-@property (nonatomic) BOOL bwsDebug;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull customRequestHeaders;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull cachedBidResponses;
-/// This property is set by the developer when he is willing to assign the assetID for Native ad.
-/// *
-@property (nonatomic) BOOL shouldAssignNativeAssetID;
-/// This property is set by the developer when he is willing to share the location for better ad targeting
-/// *
-@property (nonatomic) BOOL shareGeocoordinate;
-/// Set the desidered verbosity of the logs
-@property (nonatomic, strong) PBMLogLevel * _Nonnull logLevel;
-/// Enable print write log to file and print log message to console
-/// note:
-/// it is recommended to use it only while debugging, should not use it on when build release
-@property (nonatomic) BOOL enableLogging;
-/// Array  containing objects that hold External UserId parameters.
-@property (nonatomic, copy) NSArray<ExternalUserId *> * _Nonnull externalUserIds;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell * _Nonnull shared;)
-+ (Bridgewell * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSString * _Nonnull version;
-@property (nonatomic, readonly, copy) NSString * _Nonnull omsdkVersion;
-@property (nonatomic, copy) NSString * _Nullable customStatusEndpoint;
-@property (nonatomic) NSInteger timeoutMillis;
-@property (nonatomic, strong) NSNumber * _Nullable timeoutMillisecondDynamic;
-@property (nonatomic, copy) NSString * _Nullable cachedAuctionResponse;
-@property (nonatomic) BOOL useCacheForReportWithRenderingAPI;
-@property (nonatomic) NSTimeInterval creativeTimeout;
-@property (nonatomic) NSTimeInterval creativeTimeoutPreRenderContent;
-@property (nonatomic) BOOL useExternalClickThroughBrowser;
-@property (nonatomic) enum PBMClickbrowserType implementedClickbrowserType;
-@property (nonatomic) BOOL debugLogFileEnabled;
-@property (nonatomic) BOOL isLocationUpdatesEnabled;
-@property (nonatomic) BOOL isIncludeWinners;
-@property (nonatomic) BOOL isIncludeBidderKeys;
-- (BOOL)setCustomBridgewellServerWithUrl:(NSString * _Nonnull)url error:(NSError * _Nullable * _Nullable)error;
-- (void)addStoredBidResponseWithBidder:(NSString * _Nonnull)bidder responseId:(NSString * _Nonnull)responseId;
-- (void)clearStoredBidResponses;
-- (NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable)getStoredBidResponses SWIFT_WARN_UNUSED_RESULT;
-- (void)addCustomHeaderWithName:(NSString * _Nonnull)name value:(NSString * _Nonnull)value;
-- (void)clearCustomHeaders;
-/// Initializes BridgewellMobile SDK.
-/// Checks the status of Bridgewell Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Bridgewell.shared.bridgewellServerHost</code>.
-/// Checks the version of GMA SDK. If the version is not supported - logs warning.
-/// Use this SDK initializer if you’re using Bridgewell SDK with GMA SDK.
-/// \param gadMobileAdsObject GADMobileAds object
-///
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDK:(id _Nullable)gadMobileAdsObject :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
-/// Initializes BridgewellMobile SDK.
-/// Checks the status of Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Bridgewell.shared.bridgewellServerHost</code>.
-/// Checks the version of GMA SDK. If the version is not supported - logs warning.
-/// Use this SDK initializer if you’re using Bridgewell SDK with GMA SDK.
-/// \param gadMobileAdsVersion GADMobileAds version string, use <code>GADGetStringFromVersionNumber(GADMobileAds.sharedInstance().versionNumber)</code> to get it
-///
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDKWithGadMobileAdsVersion:(NSString * _Nullable)gadMobileAdsVersion :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
-/// Initializes BridgewellMobile SDK.
-/// Checks the status of Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Bridgewell.shared.bridgewellServerHost</code>.
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
-/// Register WKWebview
-/// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
-/// within this web view.
-- (void)registerWebView:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -873,6 +714,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
+@class NSString;
 @class AdFormat;
 @protocol BwsBannerViewDelegate;
 @protocol BannerEventHandler;

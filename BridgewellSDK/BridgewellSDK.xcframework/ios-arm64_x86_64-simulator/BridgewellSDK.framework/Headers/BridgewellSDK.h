@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <BridgewellSDK/WrappingObjC.h>
 
 //! Project version number for BridgewellSDK.
 FOUNDATION_EXPORT double BridgewellSDKVersionNumber;
