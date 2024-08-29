@@ -100,116 +100,116 @@ import _SwiftConcurrencyShims
 }
 public typealias BwsImageHelper = BridgewellSDK.Bridgewell.ImageHelper
 public typealias BwsAdUnit = BridgewellSDK.Bridgewell.BridgewellAdUnit
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Bridgewell : ObjectiveC.NSObject {
-  public var updatedTimeout: Swift.Bool {
-    get
-    set
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
+  @objc public var updatedTimeout: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var bridgewellServerAccountId: Swift.String {
-    get
-    set
+  @objc public var bridgewellServerAccountId: Swift.String {
+    @objc get
+    @objc set
   }
-  public var bwsDebug: Swift.Bool {
-    get
-    set
+  @objc public var bwsDebug: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var customRequestHeaders: [Swift.String : Swift.String] {
-    get
-    set
+  @objc public var customRequestHeaders: [Swift.String : Swift.String] {
+    @objc get
+    @objc set
   }
-  public var cachedBidResponses: [Swift.String : Swift.String] {
-    get
-    set
+  @objc public var cachedBidResponses: [Swift.String : Swift.String] {
+    @objc get
+    @objc set
   }
-  public var shouldAssignNativeAssetID: Swift.Bool {
-    get
-    set
+  @objc public var shouldAssignNativeAssetID: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var shareGeocoordinate: Swift.Bool {
-    get
-    set
+  @objc public var shareGeocoordinate: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var logLevel: PrebidMobile.LogLevel {
-    get
-    set
+  @objc public var logLevel: PrebidMobile.LogLevel {
+    @objc get
+    @objc set
   }
-  public var enableLogging: Swift.Bool {
-    get
-    set
+  @objc public var enableLogging: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var externalUserIds: [PrebidMobile.ExternalUserId] {
-    get
-    set
+  @objc public var externalUserIds: [PrebidMobile.ExternalUserId] {
+    @objc get
+    @objc set
   }
-  public static let shared: BridgewellSDK.Bridgewell
-  public var version: Swift.String {
-    get
+  @objc public static let shared: BridgewellSDK.Bridgewell
+  @objc public var version: Swift.String {
+    @objc get
   }
-  public var omsdkVersion: Swift.String {
-    get
+  @objc public var omsdkVersion: Swift.String {
+    @objc get
   }
-  public var customStatusEndpoint: Swift.String? {
-    get
-    set
+  @objc public var customStatusEndpoint: Swift.String? {
+    @objc get
+    @objc set
   }
-  public var timeoutMillis: Swift.Int {
-    get
-    set
+  @objc public var timeoutMillis: Swift.Int {
+    @objc get
+    @objc set
   }
-  public var timeoutMillisecondDynamic: Foundation.NSNumber? {
-    get
-    set
+  @objc public var timeoutMillisecondDynamic: Foundation.NSNumber? {
+    @objc get
+    @objc set
   }
-  public var cachedAuctionResponse: Swift.String? {
-    get
-    set
+  @objc public var cachedAuctionResponse: Swift.String? {
+    @objc get
+    @objc set
   }
-  public var useCacheForReportWithRenderingAPI: Swift.Bool {
-    get
-    set
+  @objc public var useCacheForReportWithRenderingAPI: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var creativeTimeout: Foundation.TimeInterval {
-    get
-    set
+  @objc public var creativeTimeout: Foundation.TimeInterval {
+    @objc get
+    @objc set
   }
-  public var creativeTimeoutPreRenderContent: Foundation.TimeInterval {
-    get
-    set
+  @objc public var creativeTimeoutPreRenderContent: Foundation.TimeInterval {
+    @objc get
+    @objc set
   }
-  public var useExternalClickThroughBrowser: Swift.Bool {
-    get
-    set
+  @objc public var useExternalClickThroughBrowser: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var implementedClickbrowserType: PrebidMobile.ClickbrowserType {
-    get
-    set
+  @objc public var implementedClickbrowserType: PrebidMobile.ClickbrowserType {
+    @objc get
+    @objc set
   }
-  public var debugLogFileEnabled: Swift.Bool {
-    get
-    set
+  @objc public var debugLogFileEnabled: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var isLocationUpdatesEnabled: Swift.Bool {
-    get
-    set
+  @objc public var isLocationUpdatesEnabled: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var isIncludeWinners: Swift.Bool {
-    get
-    set
+  @objc public var isIncludeWinners: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public var isIncludeBidderKeys: Swift.Bool {
-    get
-    set
+  @objc public var isIncludeBidderKeys: Swift.Bool {
+    @objc get
+    @objc set
   }
-  public func setCustomBridgewellServer(url: Swift.String) throws
-  public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
-  public func clearStoredBidResponses()
-  public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
-  public func addCustomHeader(name: Swift.String, value: Swift.String)
-  public func clearCustomHeaders()
-  public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
-  public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
-  public static func initializeSDK(_ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
-  public func registerWebView(_ webview: WebKit.WKWebView, completion: @escaping BridgewellSDK.Bridgewell.BridgewellRegisterWebviewCallback)
+  @objc public func setCustomBridgewellServer(url: Swift.String) throws
+  @objc public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
+  @objc public func clearStoredBidResponses()
+  @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
+  @objc public func addCustomHeader(name: Swift.String, value: Swift.String)
+  @objc public func clearCustomHeaders()
+  @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
+  @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
+  @objc public static func initializeSDK(_ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
+  @objc public func registerWebView(_ webview: WebKit.WKWebView, completion: @escaping BridgewellSDK.Bridgewell.BridgewellRegisterWebviewCallback)
   public typealias InterstitialAdUnitDelegate = PrebidMobile.InterstitialAdUnitDelegate
   public typealias InterstitialRenderingAdUnit = PrebidMobile.InterstitialRenderingAdUnit
   public typealias NativeRequest = PrebidMobile.NativeRequest
