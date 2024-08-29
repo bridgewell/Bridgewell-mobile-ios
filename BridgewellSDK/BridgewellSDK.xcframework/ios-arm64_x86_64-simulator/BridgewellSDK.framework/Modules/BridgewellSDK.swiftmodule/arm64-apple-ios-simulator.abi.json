@@ -54,8 +54,8 @@
             "sugared_genericSig": "<Self where Self : BridgewellSDK.BwsBannerViewDelegate>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -262,13 +262,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerView(py)adUnitConfig",
+            "usr": "s:13BridgewellSDK13BwsBannerViewC12adUnitConfig12PrebidMobile02AdgH0Cvp",
             "mangledName": "$s13BridgewellSDK13BwsBannerViewC12adUnitConfig12PrebidMobile02AdgH0Cvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "Custom",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -284,12 +283,9 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerView(im)adUnitConfig",
+                "usr": "s:13BridgewellSDK13BwsBannerViewC12adUnitConfig12PrebidMobile02AdgH0Cvg",
                 "mangledName": "$s13BridgewellSDK13BwsBannerViewC12adUnitConfig12PrebidMobile02AdgH0Cvg",
                 "moduleName": "BridgewellSDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -315,13 +311,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerView(py)eventHandler",
+            "usr": "s:13BridgewellSDK13BwsBannerViewC12eventHandler12PrebidMobile0d5EventG0_pSgvp",
             "mangledName": "$s13BridgewellSDK13BwsBannerViewC12eventHandler12PrebidMobile0d5EventG0_pSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "Custom",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -345,12 +340,9 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerView(im)eventHandler",
+                "usr": "s:13BridgewellSDK13BwsBannerViewC12eventHandler12PrebidMobile0d5EventG0_pSgvg",
                 "mangledName": "$s13BridgewellSDK13BwsBannerViewC12eventHandler12PrebidMobile0d5EventG0_pSgvg",
                 "moduleName": "BridgewellSDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -2082,7 +2074,6 @@
         "declAttributes": [
           "Custom",
           "AccessControl",
-          "ObjCMembers",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIView",
@@ -5249,6 +5240,7 @@
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -5577,42 +5569,42 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4169,
+      "offset": 4190,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4201,
+      "offset": 4222,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4300,
+      "offset": 4321,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4332,
+      "offset": 4353,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4451,
+      "offset": 4472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2091,
+      "offset": 2090,
       "length": 13,
       "value": "\"BridgewellSDK.BwsBannerView\""
     },
@@ -6137,35 +6129,35 @@
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
-      "offset": 596,
+      "offset": 448,
       "length": 10,
       "value": "\"appnexus\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "StringLiteral",
-      "offset": 657,
+      "offset": 509,
       "length": 9,
       "value": "\"rubicon\""
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3085,
+      "offset": 2937,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2989,
+      "offset": 2841,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/maiquan\/Documents\/Work\/VMO\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4085,
+      "offset": 3937,
       "length": 5,
       "value": "false"
     },

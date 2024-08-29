@@ -389,13 +389,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class AdUnitConfig;
-@protocol BannerEventHandler;
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
 @class AdFormat;
 @protocol BwsBannerViewDelegate;
+@protocol BannerEventHandler;
 @class NSCoder;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
@@ -404,8 +403,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 
 SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 @interface BwsBannerView : UIView <BannerViewDelegate>
-@property (nonatomic, readonly, strong) AdUnitConfig * _Nonnull adUnitConfig;
-@property (nonatomic, readonly, strong) id <BannerEventHandler> _Nullable eventHandler;
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
 @property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
@@ -873,13 +870,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class AdUnitConfig;
-@protocol BannerEventHandler;
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
 @class AdFormat;
 @protocol BwsBannerViewDelegate;
+@protocol BannerEventHandler;
 @class NSCoder;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
@@ -888,8 +884,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 
 SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 @interface BwsBannerView : UIView <BannerViewDelegate>
-@property (nonatomic, readonly, strong) AdUnitConfig * _Nonnull adUnitConfig;
-@property (nonatomic, readonly, strong) id <BannerEventHandler> _Nullable eventHandler;
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
 @property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;

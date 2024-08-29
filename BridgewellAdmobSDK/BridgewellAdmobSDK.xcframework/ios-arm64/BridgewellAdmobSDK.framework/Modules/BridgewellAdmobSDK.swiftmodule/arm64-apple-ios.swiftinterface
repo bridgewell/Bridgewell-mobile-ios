@@ -10,12 +10,25 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public typealias AdMobMediationRewardedUtils = PrebidMobileAdMobAdapters.AdMobMediationRewardedUtils
-public typealias AdMobMediationNativeUtils = PrebidMobileAdMobAdapters.AdMobMediationNativeUtils
-public typealias AdMobMediationInterstitialUtils = PrebidMobileAdMobAdapters.AdMobMediationInterstitialUtils
-public typealias AdMobMediationBannerUtils = PrebidMobileAdMobAdapters.AdMobMediationBannerUtils
-public typealias GAMBannerEventHandler = PrebidMobileGAMEventHandlers.GAMBannerEventHandler
-public typealias GAMInterstitialEventHandler = PrebidMobileGAMEventHandlers.GAMInterstitialEventHandler
-public typealias GAMRewardedAdEventHandler = PrebidMobileGAMEventHandlers.GAMRewardedAdEventHandler
-public typealias GAMEventHandlerError = PrebidMobileGAMEventHandlers.GAMEventHandlerError
-public typealias GAMUtils = PrebidMobileGAMEventHandlers.GAMUtils
+public typealias BwsAdMobMediationRewardedUtils = BridgewellAdmobSDK.BridgewellAdmob.AdMobMediationRewardedUtils
+public typealias BwsAdMobMediationNativeUtils = BridgewellAdmobSDK.BridgewellAdmob.AdMobMediationNativeUtils
+public typealias BwsAdMobMediationInterstitialUtils = BridgewellAdmobSDK.BridgewellAdmob.AdMobMediationInterstitialUtils
+public typealias BwsAdMobMediationBannerUtils = BridgewellAdmobSDK.BridgewellAdmob.AdMobMediationBannerUtils
+public typealias BwsGAMBannerEventHandler = BridgewellAdmobSDK.BridgewellAdmob.GAMBannerEventHandler
+public typealias BwsGAMInterstitialEventHandler = BridgewellAdmobSDK.BridgewellAdmob.GAMInterstitialEventHandler
+public typealias BwsGAMRewardedAdEventHandler = BridgewellAdmobSDK.BridgewellAdmob.GAMRewardedAdEventHandler
+public typealias BwsGAMEventHandlerError = BridgewellAdmobSDK.BridgewellAdmob.GAMEventHandlerError
+public typealias BwsGAMUtils = BridgewellAdmobSDK.BridgewellAdmob.GAMUtils
+@objc @_inheritsConvenienceInitializers @objcMembers public class BridgewellAdmob : ObjectiveC.NSObject {
+  public typealias AdMobMediationRewardedUtils = PrebidMobileAdMobAdapters.AdMobMediationRewardedUtils
+  public typealias AdMobMediationNativeUtils = PrebidMobileAdMobAdapters.AdMobMediationNativeUtils
+  public typealias AdMobMediationInterstitialUtils = PrebidMobileAdMobAdapters.AdMobMediationInterstitialUtils
+  public typealias AdMobMediationBannerUtils = PrebidMobileAdMobAdapters.AdMobMediationBannerUtils
+  public typealias GAMBannerEventHandler = PrebidMobileGAMEventHandlers.GAMBannerEventHandler
+  public typealias GAMInterstitialEventHandler = PrebidMobileGAMEventHandlers.GAMInterstitialEventHandler
+  public typealias GAMRewardedAdEventHandler = PrebidMobileGAMEventHandlers.GAMRewardedAdEventHandler
+  public typealias GAMEventHandlerError = PrebidMobileGAMEventHandlers.GAMEventHandlerError
+  public typealias GAMUtils = PrebidMobileGAMEventHandlers.GAMUtils
+  @objc override dynamic public init()
+  @objc deinit
+}
