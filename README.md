@@ -188,16 +188,20 @@ Bridgewell.shared.addStoredBidResponse(bidder: "rubicon", responseId: "221155")
 ```
 
 # Ad setup
+
 ## Custom Bidding Integration
+
 You can use Bridgewell SDK to monetize your app with a custom ad server or even without it. Use the Rendering API to display the winning bid without primary ad server and its SDK.
- 
+
 ### Banner API
+
  Integration example:
+
 ```swift
 // 1. Create an Ad View
-let banner = BannerView(frame: CGRect(origin: .zero, size: adSize),
-                        configID: CONFIG_ID,
-                        adSize: adSize)
+let banner = BwsBannerView(frame: CGRect(origin: .zero, size: adSize),
+                           configID: CONFIG_ID,
+                           adSize: adSize)
 
 banner.delegate = self
 
@@ -205,33 +209,38 @@ banner.delegate = self
 banner.loadAd()
 ```
 
-**Step 1: Create Ad View**
+__Step 1: Create Ad View__
 
 Initialize the BannerAdView with properties:
+
 - frame - the frame rectangle for the view
 - configID - an ID of the Stored Impression on the Bridgewell Server
 - size - the size of the ad unit which will be used in the bid request.
 
 <br>
 
-**Step 2: Load the Ad**
+__Step 2: Load the Ad__
 
 Call the method loadAd() which will:
+
 - make a bid request to the Bridgewell Server.
 - render the winning bid on display.
 
-**Outstream Video**
+__Outstream Video__
 
 For Banner Video you also need to specify the ad format:
+
 ```swift
 banner.adFormat = .video
 ```
 
 ### Interstitial API
+
 Integration example:
-```swift 
+
+```swift
 // 1. Create an Interstitial Ad Unit
-interstitial = InterstitialRenderingAdUnit(configID: CONFIG_ID,
+interstitial = BwsInterstitialRenderingAdUnit(configID: CONFIG_ID,
                                   minSizePercentage: CGSize(width: 30, height: 30))
 
 interstitial.delegate = self
@@ -246,7 +255,9 @@ if interstitial.isReady {
     interstitial.show(from: self)
 }
 ```
+
 The default ad format for interstitial is .banner. In order to make a multiformat bid request, set the respective values into the adFormats property.
+
 ```swift
 // Make bid request for video ad
 adUnit?.adFormats = [.video]
@@ -259,16 +270,20 @@ adUnit?.adFormats = [.banner]
 ```
 
 #### Step 1: Create an Ad Unit
+
 Initialize the Interstitial Ad Unit with properties:
+
 - configID - an ID of Stored Impression on the Bridgewell Server
 - minSizePercentage - specifies the minimum width and height percent an ad may occupy of a device’s real estate.
   
-**NOTE**: minSizePercentage - plays an important role in a bidding process for banner ads. If provided space is not enough demand partners won’t respond with the bids.
+__NOTE__: minSizePercentage - plays an important role in a bidding process for banner ads. If provided space is not enough demand partners won’t respond with the bids.
 
 #### Step 2: Load the Ad
-Call the method **loadAd()** which will make a bid request to Bridgewell server.
+
+Call the method __loadAd()__ which will make a bid request to Bridgewell server.
 
 #### Step 3: Show the Ad when it is ready
+
 Wait until the ad will be loaded and present it to the user in any suitable time.
 
 ```swift
@@ -280,10 +295,12 @@ func interstitialDidReceiveAd(_ interstitial: InterstitialRenderingAdUnit) {
 ```
 
 ### Rewarded API
+
 Integration example:
+
 ```swift
 // 1. Create an Ad Unit
-rewardedAd = RewardedAdUnit(configID: CONFIG_ID)
+rewardedAd = BwsRewardedAdUnit(configID: CONFIG_ID)
 rewardedAd.delegate = self
 
 // 2. Load an Ad
@@ -296,18 +313,25 @@ if rewardedAd.isReady {
     rewardedAd.show(from: self)
 }
 ```
+
 #### Step 1: Create Rewarded Ad Unit
+
 Create the RewardedAdUnit object with parameter:
+
 - configID - an ID of Stored Impression on the Bridgewell Server
+
 #### Step 2: Load the Ad
+
 Call the `loadAd()` method which will make a bid request to Bridgewell server.
+
 #### Step 3: Show the Ad when it is ready
+
 Wait until the ad will be loaded and present it to the user in any suitable time.
 
 ```swift
-// MARK: RewardedAdUnitDelegate
+// MARK: BwsRewardedAdUnitDelegate
 
-func rewardedAdDidReceiveAd(_ rewardedAd: RewardedAdUnit) {
+func rewardedAdDidReceiveAd(_ rewardedAd: BwsRewardedAdUnit) {
     // Now the ad is ready for display
 }
 ```
