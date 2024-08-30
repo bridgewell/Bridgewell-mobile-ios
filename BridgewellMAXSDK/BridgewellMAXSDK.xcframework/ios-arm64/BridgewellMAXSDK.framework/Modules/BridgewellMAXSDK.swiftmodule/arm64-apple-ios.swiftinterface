@@ -9,7 +9,15 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public typealias MAXMediationRewardedUtils = PrebidMobileMAXAdapters.MAXMediationRewardedUtils
-public typealias MAXMediationInterstitialUtils = PrebidMobileMAXAdapters.MAXMediationInterstitialUtils
-public typealias MAXMediationBannerUtils = PrebidMobileMAXAdapters.MAXMediationBannerUtils
-public typealias MAXMediationNativeUtils = PrebidMobileMAXAdapters.MAXMediationNativeUtils
+public typealias BwsMAXMediationRewardedUtils = BridgewellMAXSDK.BridgewellMax.MAXMediationRewardedUtils
+public typealias BwsMAXMediationInterstitialUtils = BridgewellMAXSDK.BridgewellMax.MAXMediationInterstitialUtils
+public typealias BwsMAXMediationBannerUtils = BridgewellMAXSDK.BridgewellMax.MAXMediationBannerUtils
+public typealias BwsMAXMediationNativeUtils = BridgewellMAXSDK.BridgewellMax.MAXMediationNativeUtils
+@objc @_inheritsConvenienceInitializers @objcMembers public class BridgewellMax : ObjectiveC.NSObject {
+  public typealias MAXMediationRewardedUtils = PrebidMobileMAXAdapters.MAXMediationRewardedUtils
+  public typealias MAXMediationInterstitialUtils = PrebidMobileMAXAdapters.MAXMediationInterstitialUtils
+  public typealias MAXMediationBannerUtils = PrebidMobileMAXAdapters.MAXMediationBannerUtils
+  public typealias MAXMediationNativeUtils = PrebidMobileMAXAdapters.MAXMediationNativeUtils
+  @objc override dynamic public init()
+  @objc deinit
+}

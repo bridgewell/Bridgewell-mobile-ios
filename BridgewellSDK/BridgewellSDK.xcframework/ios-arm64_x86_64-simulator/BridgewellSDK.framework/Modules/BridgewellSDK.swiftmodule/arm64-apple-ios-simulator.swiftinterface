@@ -17,25 +17,25 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public protocol BannerViewDelegate : ObjectiveC.NSObjectProtocol {
+@objc public protocol BwsBannerViewDelegate : ObjectiveC.NSObjectProtocol {
   @objc func bannerViewPresentationController() -> UIKit.UIViewController?
-  @objc optional func bannerView(_ bannerView: BridgewellSDK.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
-  @objc optional func bannerView(_ bannerView: BridgewellSDK.BannerView, didFailToReceiveAdWith error: any Swift.Error)
-  @objc optional func bannerViewWillLeaveApplication(_ bannerView: BridgewellSDK.BannerView)
-  @objc optional func bannerViewWillPresentModal(_ bannerView: BridgewellSDK.BannerView)
-  @objc optional func bannerViewDidDismissModal(_ bannerView: BridgewellSDK.BannerView)
+  @objc optional func bannerView(_ bannerView: BridgewellSDK.BwsBannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
+  @objc optional func bannerView(_ bannerView: BridgewellSDK.BwsBannerView, didFailToReceiveAdWith error: any Swift.Error)
+  @objc optional func bannerViewWillLeaveApplication(_ bannerView: BridgewellSDK.BwsBannerView)
+  @objc optional func bannerViewWillPresentModal(_ bannerView: BridgewellSDK.BwsBannerView)
+  @objc optional func bannerViewDidDismissModal(_ bannerView: BridgewellSDK.BwsBannerView)
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BwsBannerView : UIKit.UIView, PrebidMobile.BannerViewDelegate {
   @_Concurrency.MainActor(unsafe) public var adUnitConfig: PrebidMobile.AdUnitConfig {
     get
   }
   @_Concurrency.MainActor(unsafe) public var eventHandler: (any PrebidMobile.BannerEventHandler)? {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var bannerParameters: BridgewellSDK.BannerParameters {
+  @objc @_Concurrency.MainActor(unsafe) public var bannerParameters: PrebidMobile.BannerParameters {
     @objc get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var videoParameters: BridgewellSDK.VideoParameters {
+  @objc @_Concurrency.MainActor(unsafe) public var videoParameters: PrebidMobile.VideoParameters {
     @objc get
   }
   @objc @_Concurrency.MainActor(unsafe) public var lastBidResponse: PrebidMobile.BidResponse? {
@@ -52,11 +52,11 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var adFormat: PrebidMobile.AdFormat {
+  @objc @_Concurrency.MainActor(unsafe) public var adFormat: BridgewellSDK.Bridgewell.AdFormat {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var adPosition: PrebidMobile.AdPosition {
+  @objc @_Concurrency.MainActor(unsafe) public var adPosition: BridgewellSDK.Bridgewell.AdPosition {
     @objc get
     @objc set
   }
@@ -64,7 +64,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any BridgewellSDK.BannerViewDelegate)? {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any BridgewellSDK.BwsBannerViewDelegate)? {
     @objc get
     @objc set
   }
@@ -91,56 +91,15 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor(unsafe) public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
   @objc @_Concurrency.MainActor(unsafe) public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
   @objc @_Concurrency.MainActor(unsafe) public func clearUserData()
+  @_Concurrency.MainActor(unsafe) @objc public func bannerViewPresentationController() -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) @objc public func bannerView(_ bannerView: PrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) @objc public func bannerView(_ bannerView: PrebidMobile.BannerView, didFailToReceiveAdWith error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc public func bannerViewWillLeaveApplication(_ bannerView: PrebidMobile.BannerView)
+  @_Concurrency.MainActor(unsafe) @objc public func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
+  @_Concurrency.MainActor(unsafe) @objc public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
 }
-extension BridgewellSDK.BannerView : PrebidMobile.BannerViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func bannerViewPresentationController() -> UIKit.UIViewController?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func bannerView(_ bannerView: PrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func bannerView(_ bannerView: PrebidMobile.BannerView, didFailToReceiveAdWith error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func bannerViewWillLeaveApplication(_ bannerView: PrebidMobile.BannerView)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
-}
-public typealias InterstitialAdUnitDelegate = PrebidMobile.InterstitialAdUnitDelegate
-public typealias InterstitialRenderingAdUnit = PrebidMobile.InterstitialRenderingAdUnit
-public typealias NativeRequest = PrebidMobile.NativeRequest
-public typealias NativeAd = PrebidMobile.NativeAd
-public typealias NativeAsset = PrebidMobile.NativeAsset
-public typealias NativeAssetImage = PrebidMobile.NativeAssetImage
-public typealias ImageAsset = PrebidMobile.ImageAsset
-public typealias NativeAssetTitle = PrebidMobile.NativeAssetTitle
-public typealias NativeAssetData = PrebidMobile.NativeAssetData
-public typealias NativeEventTracker = PrebidMobile.NativeEventTracker
-public typealias ContextType = PrebidMobile.ContextType
-public typealias PlacementType = PrebidMobile.PlacementType
-public typealias ContextSubType = PrebidMobile.ContextSubType
-public typealias ImageHelper = PrebidMobile.ImageHelper
-public typealias RewardedVideoAdUnit = PrebidMobile.RewardedVideoAdUnit
-public typealias InstreamVideoAdUnit = PrebidMobile.InstreamVideoAdUnit
-public typealias IMAUtils = PrebidMobile.IMAUtils
-public typealias BridgewellHost = PrebidMobile.PrebidHost
-public typealias DataAsset = PrebidMobile.DataAsset
-public typealias EventType = PrebidMobile.EventType
-public typealias EventTracking = PrebidMobile.EventTracking
-public typealias RewardedAdUnitDelegate = PrebidMobile.RewardedAdUnitDelegate
-public typealias RewardedAdUnit = PrebidMobile.RewardedAdUnit
-public typealias MediationBannerAdUnit = PrebidMobile.MediationBannerAdUnit
-public typealias MediationInterstitialAdUnit = PrebidMobile.MediationInterstitialAdUnit
-public typealias MediationNativeAdUnit = PrebidMobile.MediationNativeAdUnit
-public typealias AdViewUtils = PrebidMobile.AdViewUtils
-public typealias BannerAdUnit = PrebidMobile.BannerAdUnit
-public typealias BannerParameters = PrebidMobile.BannerParameters
-public typealias Signals = PrebidMobile.Signals
-public typealias InterstitialAdUnit = PrebidMobile.InterstitialAdUnit
-public typealias VideoParameters = PrebidMobile.VideoParameters
-public typealias NativeAdDelegate = PrebidMobile.NativeAdDelegate
-public typealias BridgewellAdUnit = PrebidMobile.PrebidAdUnit
-public typealias NativeParameters = PrebidMobile.NativeParameters
-public typealias BridgewellRequest = PrebidMobile.PrebidRequest
-public typealias Utils = PrebidMobile.Utils
-public typealias PrebidAdUnit = PrebidMobile.PrebidAdUnit
-public typealias MediationRewardedAdUnit = PrebidMobile.MediationRewardedAdUnit
-public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
-public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
+public typealias BwsImageHelper = BridgewellSDK.Bridgewell.ImageHelper
+public typealias BwsAdUnit = BridgewellSDK.Bridgewell.BridgewellAdUnit
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public var updatedTimeout: Swift.Bool {
     @objc get
@@ -247,10 +206,53 @@ public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
   @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
   @objc public func addCustomHeader(name: Swift.String, value: Swift.String)
   @objc public func clearCustomHeaders()
-  @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.BridgewellInitializationCallback? = nil)
-  @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: BridgewellSDK.BridgewellInitializationCallback? = nil)
-  @objc public static func initializeSDK(_ completion: BridgewellSDK.BridgewellInitializationCallback? = nil)
-  @objc public func registerWebView(_ webview: WebKit.WKWebView, completion: @escaping BridgewellSDK.BridgewellRegisterWebviewCallback)
+  @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
+  @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
+  @objc public static func initializeSDK(_ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
+  @objc public func registerWebView(_ webview: WebKit.WKWebView, completion: @escaping BridgewellSDK.Bridgewell.BridgewellRegisterWebviewCallback)
+  public typealias InterstitialAdUnitDelegate = PrebidMobile.InterstitialAdUnitDelegate
+  public typealias InterstitialRenderingAdUnit = PrebidMobile.InterstitialRenderingAdUnit
+  public typealias NativeRequest = PrebidMobile.NativeRequest
+  public typealias NativeAd = PrebidMobile.NativeAd
+  public typealias NativeAsset = PrebidMobile.NativeAsset
+  public typealias NativeAssetImage = PrebidMobile.NativeAssetImage
+  public typealias ImageAsset = PrebidMobile.ImageAsset
+  public typealias NativeAssetTitle = PrebidMobile.NativeAssetTitle
+  public typealias NativeAssetData = PrebidMobile.NativeAssetData
+  public typealias NativeEventTracker = PrebidMobile.NativeEventTracker
+  public typealias ContextType = PrebidMobile.ContextType
+  public typealias PlacementType = PrebidMobile.PlacementType
+  public typealias ContextSubType = PrebidMobile.ContextSubType
+  public typealias ImageHelper = PrebidMobile.ImageHelper
+  public typealias RewardedVideoAdUnit = PrebidMobile.RewardedVideoAdUnit
+  public typealias InstreamVideoAdUnit = PrebidMobile.InstreamVideoAdUnit
+  public typealias IMAUtils = PrebidMobile.IMAUtils
+  public typealias BridgewellHost = PrebidMobile.PrebidHost
+  public typealias DataAsset = PrebidMobile.DataAsset
+  public typealias EventType = PrebidMobile.EventType
+  public typealias EventTracking = PrebidMobile.EventTracking
+  public typealias RewardedAdUnitDelegate = PrebidMobile.RewardedAdUnitDelegate
+  public typealias RewardedAdUnit = PrebidMobile.RewardedAdUnit
+  public typealias MediationBannerAdUnit = PrebidMobile.MediationBannerAdUnit
+  public typealias MediationInterstitialAdUnit = PrebidMobile.MediationInterstitialAdUnit
+  public typealias MediationNativeAdUnit = PrebidMobile.MediationNativeAdUnit
+  public typealias AdViewUtils = PrebidMobile.AdViewUtils
+  public typealias BannerAdUnit = PrebidMobile.BannerAdUnit
+  public typealias BannerParameters = PrebidMobile.BannerParameters
+  public typealias Signals = PrebidMobile.Signals
+  public typealias InterstitialAdUnit = PrebidMobile.InterstitialAdUnit
+  public typealias VideoParameters = PrebidMobile.VideoParameters
+  public typealias NativeAdDelegate = PrebidMobile.NativeAdDelegate
+  public typealias BridgewellAdUnit = PrebidMobile.PrebidAdUnit
+  public typealias NativeParameters = PrebidMobile.NativeParameters
+  public typealias BridgewellRequest = PrebidMobile.PrebidRequest
+  public typealias Utils = PrebidMobile.Utils
+  public typealias MediationRewardedAdUnit = PrebidMobile.MediationRewardedAdUnit
+  public typealias LogLevel = PrebidMobile.LogLevel
+  public typealias AdFormat = PrebidMobile.AdFormat
+  public typealias AdPosition = PrebidMobile.AdPosition
+  public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
+  public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
   @objc deinit
 }
 public let BridgewellLocalCacheIdKey: Swift.String
