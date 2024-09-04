@@ -396,10 +396,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 @class AdFormat;
 @protocol BwsBannerViewDelegate;
 @protocol BannerEventHandler;
+@class UIViewController;
 @class NSCoder;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
-@class UIViewController;
 @class BannerView;
 
 SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
@@ -414,9 +414,10 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, weak) id <BwsBannerViewDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
+- (nonnull instancetype)initWithFloatingBannerSize:(CGSize)floatingBannerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler from:(UIViewController * _Nonnull)from;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadAd;
 - (void)setStoredAuctionResponseWithStoredAuction:(NSString * _Nonnull)storedAuction;
@@ -445,6 +446,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 - (void)bannerViewDidDismissModal:(BannerView * _Nonnull)bannerView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP13BridgewellSDK21BwsBannerViewDelegate_")
@@ -878,10 +880,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 @class AdFormat;
 @protocol BwsBannerViewDelegate;
 @protocol BannerEventHandler;
+@class UIViewController;
 @class NSCoder;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
-@class UIViewController;
 @class BannerView;
 
 SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
@@ -896,9 +898,10 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, weak) id <BwsBannerViewDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
+- (nonnull instancetype)initWithFloatingBannerSize:(CGSize)floatingBannerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler from:(UIViewController * _Nonnull)from;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadAd;
 - (void)setStoredAuctionResponseWithStoredAuction:(NSString * _Nonnull)storedAuction;
@@ -927,6 +930,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 - (void)bannerViewDidDismissModal:(BannerView * _Nonnull)bannerView;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP13BridgewellSDK21BwsBannerViewDelegate_")
