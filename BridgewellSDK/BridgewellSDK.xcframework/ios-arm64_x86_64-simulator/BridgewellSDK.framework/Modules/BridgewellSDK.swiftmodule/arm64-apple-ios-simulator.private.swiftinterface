@@ -101,6 +101,24 @@ import _SwiftConcurrencyShims
 }
 public typealias BwsImageHelper = BridgewellSDK.Bridgewell.ImageHelper
 public typealias BwsAdUnit = BridgewellSDK.Bridgewell.BridgewellAdUnit
+public class BridgewellVisibilityCheckerUtils {
+  public var enableVisibilityChecks: Swift.Bool
+  public init()
+  public func meetsVisibilityThreshold(targetView: UIKit.UIView, acceptancePercentage: Swift.Int) -> Swift.Bool
+  public func startVisibilityChecksWithInterval(targetView: UIKit.UIView, acceptancePercentage: Swift.Int, intervalMillis: Swift.Double)
+  public func visibilityPercentage(targetView: UIKit.UIView) -> Swift.Int
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class BridgewellViewExposureChecker : ObjectiveC.NSObject {
+  public static func exposureOf(_ view: UIKit.UIView) -> BridgewellSDK.BridgewellViewExposure?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class BridgewellViewExposure : ObjectiveC.NSObject {
+  public var exposedPercentage: CoreFoundation.CGFloat {
+    get
+  }
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public var updatedTimeout: Swift.Bool {
     @objc get

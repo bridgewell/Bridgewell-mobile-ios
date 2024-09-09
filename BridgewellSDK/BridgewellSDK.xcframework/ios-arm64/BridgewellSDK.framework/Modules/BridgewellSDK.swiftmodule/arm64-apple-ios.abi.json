@@ -2328,6 +2328,242 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BridgewellVisibilityCheckerUtils",
+        "printedName": "BridgewellVisibilityCheckerUtils",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enableVisibilityChecks",
+            "printedName": "enableVisibilityChecks",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvp",
+            "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvg",
+                "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvg",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvs",
+                "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvs",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvM",
+                "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC06enableC6ChecksSbvM",
+                "moduleName": "BridgewellSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgewellVisibilityCheckerUtils",
+                "printedName": "BridgewellSDK.BridgewellVisibilityCheckerUtils",
+                "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsCACycfc",
+            "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsCACycfc",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "meetsVisibilityThreshold",
+            "printedName": "meetsVisibilityThreshold(targetView:acceptancePercentage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC05meetsC9Threshold10targetView20acceptancePercentageSbSo6UIViewC_SitF",
+            "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC05meetsC9Threshold10targetView20acceptancePercentageSbSo6UIViewC_SitF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVisibilityChecksWithInterval",
+            "printedName": "startVisibilityChecksWithInterval(targetView:acceptancePercentage:intervalMillis:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC05startC18ChecksWithInterval10targetView20acceptancePercentage14intervalMillisySo6UIViewC_SiSdtF",
+            "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC05startC18ChecksWithInterval10targetView20acceptancePercentage14intervalMillisySo6UIViewC_SiSdtF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "visibilityPercentage",
+            "printedName": "visibilityPercentage(targetView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC20visibilityPercentage10targetViewSiSo6UIViewC_tF",
+            "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC20visibilityPercentage10targetViewSiSo6UIViewC_tF",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13BridgewellSDK0A22VisibilityCheckerUtilsC",
+        "mangledName": "$s13BridgewellSDK0A22VisibilityCheckerUtilsC",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Network",
         "printedName": "Network",
         "declKind": "Import",
@@ -2400,6 +2636,294 @@
         "moduleName": "BridgewellSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BridgewellSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BridgewellViewExposureChecker",
+        "printedName": "BridgewellViewExposureChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "exposureOf",
+            "printedName": "exposureOf(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BridgewellSDK.BridgewellViewExposure?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BridgewellViewExposure",
+                    "printedName": "BridgewellSDK.BridgewellViewExposure",
+                    "usr": "c:@M@BridgewellSDK@objc(cs)BridgewellViewExposure"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BridgewellSDK0A19ViewExposureCheckerC10exposureOfyAA0acD0CSgSo6UIViewCFZ",
+            "mangledName": "$s13BridgewellSDK0A19ViewExposureCheckerC10exposureOfyAA0acD0CSgSo6UIViewCFZ",
+            "moduleName": "BridgewellSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgewellViewExposureChecker",
+                "printedName": "BridgewellSDK.BridgewellViewExposureChecker",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BridgewellViewExposureChecker"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BridgewellViewExposureChecker(im)init",
+            "mangledName": "$s13BridgewellSDK0A19ViewExposureCheckerCACycfc",
+            "moduleName": "BridgewellSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BridgewellSDK@objc(cs)BridgewellViewExposureChecker",
+        "mangledName": "$s13BridgewellSDK0A19ViewExposureCheckerC",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BridgewellViewExposure",
+        "printedName": "BridgewellViewExposure",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "exposedPercentage",
+            "printedName": "exposedPercentage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BridgewellSDK0A12ViewExposureC17exposedPercentage14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s13BridgewellSDK0A12ViewExposureC17exposedPercentage12CoreGraphics7CGFloatVvp",
+            "moduleName": "BridgewellSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BridgewellSDK0A12ViewExposureC17exposedPercentage14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s13BridgewellSDK0A12ViewExposureC17exposedPercentage12CoreGraphics7CGFloatVvg",
+                "moduleName": "BridgewellSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgewellViewExposure",
+                "printedName": "BridgewellSDK.BridgewellViewExposure",
+                "usr": "c:@M@BridgewellSDK@objc(cs)BridgewellViewExposure"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BridgewellViewExposure(im)init",
+            "mangledName": "$s13BridgewellSDK0A12ViewExposureCACycfc",
+            "moduleName": "BridgewellSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BridgewellSDK@objc(cs)BridgewellViewExposure",
+        "mangledName": "$s13BridgewellSDK0A12ViewExposureC",
+        "moduleName": "BridgewellSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -6199,6 +6723,34 @@
       "value": "\"connection_type\""
     },
     {
+      "filePath": "\/Volumes\/GRVI\/1.WorkSpace\/5.VMO\/Bridwell\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellVisibilityCheckerUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 230,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/GRVI\/1.WorkSpace\/5.VMO\/Bridwell\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellViewExposureChecker.swift",
+      "kind": "Array",
+      "offset": 332,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/GRVI\/1.WorkSpace\/5.VMO\/Bridwell\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellViewExposureChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 154,
+      "length": 29,
+      "value": "\"BridgewellSDK.BridgewellViewExposureChecker\""
+    },
+    {
+      "filePath": "\/Volumes\/GRVI\/1.WorkSpace\/5.VMO\/Bridwell\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellViewExposureChecker.swift",
+      "kind": "StringLiteral",
+      "offset": 8588,
+      "length": 22,
+      "value": "\"BridgewellSDK.BridgewellViewExposure\""
+    },
+    {
       "filePath": "\/Volumes\/GRVI\/1.WorkSpace\/5.VMO\/Bridwell\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
       "offset": 183,
@@ -6266,7 +6818,7 @@
       "kind": "StringLiteral",
       "offset": 317,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"2.0.1\""
     },
     {
       "filePath": "\/Users\/grvi\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-fqcypezxhqtcjzeqlkgzsbmhudsn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",

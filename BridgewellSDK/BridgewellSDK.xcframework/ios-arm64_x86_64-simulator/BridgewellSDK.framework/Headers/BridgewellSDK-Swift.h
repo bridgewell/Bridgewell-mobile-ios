@@ -390,6 +390,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC13BridgewellSDK22BridgewellViewExposure")
+@interface BridgewellViewExposure : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
+@interface BridgewellViewExposureChecker : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
@@ -870,6 +884,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 /// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
 /// within this web view.
 - (void)registerWebView:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK22BridgewellViewExposure")
+@interface BridgewellViewExposure : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
+@interface BridgewellViewExposureChecker : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

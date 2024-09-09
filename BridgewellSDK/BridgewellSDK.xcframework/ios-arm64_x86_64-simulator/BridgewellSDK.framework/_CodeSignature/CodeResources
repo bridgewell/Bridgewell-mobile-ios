@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/BridgewellSDK-Swift.h</key>
 		<data>
-		KGRXPjFTlkKzjrbSzNkXPsKqLSU=
+		ZHSIX48sd0mw4LnpfI0L7NdqMZA=
 		</data>
 		<key>Headers/BridgewellSDK.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		2wvvQ2o1itDBg/aPnVgFg0Uqkhs=
+		uxicfGhkEWarK0IZSAXJMRNrNVk=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xZ8cJ2JAvLef0u7IRHsHqWK3CPs=
+		pVqn8w8VoQzBkdattif3RLYGkG4=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xZ8cJ2JAvLef0u7IRHsHqWK3CPs=
+		pVqn8w8VoQzBkdattif3RLYGkG4=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kH37x6G8zZbWGYTisYjlqRNwhFM=
+		S5Xz8d6ahMsOvINdHqxCEmQdYh8=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		2wvvQ2o1itDBg/aPnVgFg0Uqkhs=
+		uxicfGhkEWarK0IZSAXJMRNrNVk=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GIBfi0h2ll0yEyFPhYSFiU93ZXE=
+		ma2ZwIzPsg5AegiV8/E6j0sofTM=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GIBfi0h2ll0yEyFPhYSFiU93ZXE=
+		ma2ZwIzPsg5AegiV8/E6j0sofTM=
 		</data>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hZ0H4hMo6mqjOgmSvGTJRSWUPl0=
+		TYbFCgqAqTfdDXeD8m5WLxAaqO0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jHtEgGJKKkUMKByE/90UUm3FzB/ysowgRR8s13cvn9I=
+			Qj2U1zQFrZPwksLeIUJpeTlttV0QwwX11urgopmWX40=
 			</data>
 		</dict>
 		<key>Headers/BridgewellSDK.h</key>
@@ -103,14 +103,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QgmnGnjg8c7Q/ZwhK/hhGDMy7i1AbISf+R9j5nplnfk=
+			VLC3aKQzEr0ZvG0eUgIOMIZT2WZ3KS9FqY7d6cZImlA=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BQyvgYEvaE3CxHW8tbNwK+z/k+jYMFbe8e+8znw+Ogw=
+			fjPVJoPlJrOer7CUIj49mFZk3Q6yWPaCJA4Nh7TLUlc=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -124,28 +124,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BQyvgYEvaE3CxHW8tbNwK+z/k+jYMFbe8e+8znw+Ogw=
+			fjPVJoPlJrOer7CUIj49mFZk3Q6yWPaCJA4Nh7TLUlc=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			viXHYwOqggp4N+RHl5Lewpxb39aJpixVF385VqgveC4=
+			nZ1+ao2eJaXm6bJI7PTFVLRbHjIjZDoG7gZT3xJ0Jd4=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QgmnGnjg8c7Q/ZwhK/hhGDMy7i1AbISf+R9j5nplnfk=
+			VLC3aKQzEr0ZvG0eUgIOMIZT2WZ3KS9FqY7d6cZImlA=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DcK4zQFxDT4fCsB8yyJlSBOJNUtI5voL5pFklRipW8U=
+			yegPIsYBZZ/UNqAFZNY/tKuv4aloBdQPJKLILPmWfxE=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DcK4zQFxDT4fCsB8yyJlSBOJNUtI5voL5pFklRipW8U=
+			yegPIsYBZZ/UNqAFZNY/tKuv4aloBdQPJKLILPmWfxE=
 			</data>
 		</dict>
 		<key>Modules/BridgewellSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vt3dZAJaC1QoU+5l/MmwIQYc63MhM5SvC59K74hvjU0=
+			uLQCazgy3lowOjTmCNPbRSYUjrUpwn+Swy/atvNoiWY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
