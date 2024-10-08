@@ -68,9 +68,11 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(configID: Swift.String, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(floatingBannerSize: CoreFoundation.CGSize, configId: Swift.String, eventHandler: (any PrebidMobile.BannerEventHandler)? = nil, from: UIKit.UIViewController)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(centerSize: CoreFoundation.CGSize, configId: Swift.String, eventHandler: (any PrebidMobile.BannerEventHandler)? = nil)
   @objc deinit
   @objc @_Concurrency.MainActor(unsafe) public func loadAd()
   @objc @_Concurrency.MainActor(unsafe) public func setStoredAuctionResponse(storedAuction: Swift.String)
@@ -100,6 +102,24 @@ import _SwiftConcurrencyShims
 }
 public typealias BwsImageHelper = BridgewellSDK.Bridgewell.ImageHelper
 public typealias BwsAdUnit = BridgewellSDK.Bridgewell.BridgewellAdUnit
+public class BridgewellVisibilityCheckerUtils {
+  public var enableVisibilityChecks: Swift.Bool
+  public init()
+  public func meetsVisibilityThreshold(targetView: UIKit.UIView, acceptancePercentage: Swift.Int) -> Swift.Bool
+  public func startVisibilityChecksWithInterval(targetView: UIKit.UIView, acceptancePercentage: Swift.Int, intervalMillis: Swift.Double)
+  public func visibilityPercentage(targetView: UIKit.UIView) -> Swift.Int
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class BridgewellViewExposureChecker : ObjectiveC.NSObject {
+  public static func exposureOf(_ view: UIKit.UIView) -> BridgewellSDK.BridgewellViewExposure?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class BridgewellViewExposure : ObjectiveC.NSObject {
+  public var exposedPercentage: CoreFoundation.CGFloat {
+    get
+  }
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public var updatedTimeout: Swift.Bool {
     @objc get
