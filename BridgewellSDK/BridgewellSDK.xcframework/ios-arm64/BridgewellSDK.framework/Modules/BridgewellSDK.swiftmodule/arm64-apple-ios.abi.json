@@ -1362,13 +1362,19 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(centerSize:configId:eventHandler:)",
+            "printedName": "init(from:centerSize:configId:eventHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "BwsBannerView",
                 "printedName": "BridgewellSDK.BwsBannerView",
                 "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
               },
               {
                 "kind": "TypeNominal",
@@ -1399,10 +1405,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerView(im)initWithCenterSize:configId:eventHandler:",
-            "mangledName": "$s13BridgewellSDK13BwsBannerViewC10centerSize8configId12eventHandlerACSo6CGSizeV_SS12PrebidMobile0d5EventK0_pSgtcfc",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerView(im)initFrom:centerSize:configId:eventHandler:",
+            "mangledName": "$s13BridgewellSDK13BwsBannerViewC4from10centerSize8configId12eventHandlerACSo16UIViewControllerC_So6CGSizeVSS12PrebidMobile0d5EventL0_pSgtcfc",
             "moduleName": "BridgewellSDK",
-            "objc_name": "initWithCenterSize:configId:eventHandler:",
+            "objc_name": "initFrom:centerSize:configId:eventHandler:",
             "declAttributes": [
               "Custom",
               "Convenience",
@@ -6884,7 +6890,7 @@
       "kind": "StringLiteral",
       "offset": 317,
       "length": 7,
-      "value": "\"2.1.0\""
+      "value": "\"2.2.0\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-babtsapjeqqgrzaunrvqvgdahidz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",

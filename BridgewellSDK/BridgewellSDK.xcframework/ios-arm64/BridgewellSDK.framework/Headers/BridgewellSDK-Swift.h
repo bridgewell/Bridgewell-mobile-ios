@@ -432,7 +432,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
 - (nonnull instancetype)initWithFloatingBannerSize:(CGSize)floatingBannerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler from:(UIViewController * _Nonnull)from;
-- (nonnull instancetype)initWithCenterSize:(CGSize)centerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler;
+- (nonnull instancetype)initFrom:(UIViewController * _Nonnull)vc centerSize:(CGSize)centerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadAd;
 - (void)setStoredAuctionResponseWithStoredAuction:(NSString * _Nonnull)storedAuction;
