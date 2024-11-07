@@ -313,7 +313,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK10Bridgewell")
 @interface Bridgewell : NSObject
 @property (nonatomic) BOOL updatedTimeout;
 @property (nonatomic, copy) NSString * _Nonnull bridgewellServerAccountId;
-@property (nonatomic) BOOL bwsDebug;
+@property (nonatomic) BOOL bwPbsDebug;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull customRequestHeaders;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull cachedBidResponses;
 /// This property is set by the developer when he is willing to assign the assetID for Native ad.
@@ -385,7 +385,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 /// Register WKWebview
 /// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
 /// within this web view.
-- (void)registerWebView:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
+- (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -408,16 +408,16 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 @class VideoParameters;
 @class BidResponse;
 @class AdFormat;
-@protocol BwsBannerViewDelegate;
+@protocol BwsAdViewDelegate;
 @protocol BannerEventHandler;
-@class UIViewController;
 @class NSCoder;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
+@class UIViewController;
 @class BannerView;
 
-SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
-@interface BwsBannerView : UIView <BannerViewDelegate>
+SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
+@interface BwsAdView : UIView <BannerViewDelegate>
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
 @property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
@@ -427,12 +427,9 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 @property (nonatomic, strong) AdFormat * _Nonnull adFormat;
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
-@property (nonatomic, weak) id <BwsBannerViewDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <BwsAdViewDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
-- (nonnull instancetype)initWithFloatingBannerSize:(CGSize)floatingBannerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler from:(UIViewController * _Nonnull)from;
-- (nonnull instancetype)initFrom:(UIViewController * _Nonnull)vc centerSize:(CGSize)centerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadAd;
 - (void)setStoredAuctionResponseWithStoredAuction:(NSString * _Nonnull)storedAuction;
@@ -464,15 +461,21 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 
 
 
-SWIFT_PROTOCOL("_TtP13BridgewellSDK21BwsBannerViewDelegate_")
-@protocol BwsBannerViewDelegate <NSObject>
-- (UIViewController * _Nullable)bannerViewPresentationController SWIFT_WARN_UNUSED_RESULT;
+SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
+@protocol BwsAdViewDelegate <NSObject>
+- (UIViewController * _Nullable)adViewPresentationController SWIFT_WARN_UNUSED_RESULT;
 @optional
-- (void)bannerView:(BwsBannerView * _Nonnull)bannerView didReceiveAdWithAdSize:(CGSize)adSize;
-- (void)bannerView:(BwsBannerView * _Nonnull)bannerView didFailToReceiveAdWith:(NSError * _Nonnull)error;
-- (void)bannerViewWillLeaveApplication:(BwsBannerView * _Nonnull)bannerView;
-- (void)bannerViewWillPresentModal:(BwsBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidDismissModal:(BwsBannerView * _Nonnull)bannerView;
+- (void)adViewDisplayed:(BwsAdView * _Nonnull)adView;
+- (void)adViewFailed:(BwsAdView * _Nonnull)adView didFailToReceiveAdWith:(NSError * _Nonnull)error;
+- (void)adViewClicked:(BwsAdView * _Nonnull)adView;
+- (void)adViewClosed:(BwsAdView * _Nonnull)adView;
+- (void)adViewDidDismissModal:(BwsAdView * _Nonnull)adView;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK11BwsBannerAd")
+@interface BwsBannerAd : BwsAdView
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
 @end
 
 
@@ -481,6 +484,26 @@ SWIFT_CLASS("_TtC13BridgewellSDK12BwsConstants")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull BWS_VERSION;)
 + (NSString * _Nonnull)BWS_VERSION SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK17BwsMobileStickyAd")
+@interface BwsMobileStickyAd : BwsAdView
+- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID bottomMargin:(CGFloat)bottomMargin from:(UIViewController * _Nonnull)vc;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK10BwsPopupAd")
+@interface BwsPopupAd : BwsAdView
+- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID from:(UIViewController * _Nonnull)vc;
+- (void)loadAd;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK20BwsRightSideStickyAd")
+@interface BwsRightSideStickyAd : BwsAdView
+- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID from:(UIViewController * _Nonnull)from;
+- (void)loadAd;
 @end
 
 
@@ -812,7 +835,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK10Bridgewell")
 @interface Bridgewell : NSObject
 @property (nonatomic) BOOL updatedTimeout;
 @property (nonatomic, copy) NSString * _Nonnull bridgewellServerAccountId;
-@property (nonatomic) BOOL bwsDebug;
+@property (nonatomic) BOOL bwPbsDebug;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull customRequestHeaders;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull cachedBidResponses;
 /// This property is set by the developer when he is willing to assign the assetID for Native ad.
@@ -884,7 +907,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 /// Register WKWebview
 /// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
 /// within this web view.
-- (void)registerWebView:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
+- (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -907,16 +930,16 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 @class VideoParameters;
 @class BidResponse;
 @class AdFormat;
-@protocol BwsBannerViewDelegate;
+@protocol BwsAdViewDelegate;
 @protocol BannerEventHandler;
-@class UIViewController;
 @class NSCoder;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
+@class UIViewController;
 @class BannerView;
 
-SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
-@interface BwsBannerView : UIView <BannerViewDelegate>
+SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
+@interface BwsAdView : UIView <BannerViewDelegate>
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
 @property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
@@ -926,12 +949,9 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 @property (nonatomic, strong) AdFormat * _Nonnull adFormat;
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
-@property (nonatomic, weak) id <BwsBannerViewDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <BwsAdViewDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
-- (nonnull instancetype)initWithFloatingBannerSize:(CGSize)floatingBannerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler from:(UIViewController * _Nonnull)from;
-- (nonnull instancetype)initFrom:(UIViewController * _Nonnull)vc centerSize:(CGSize)centerSize configId:(NSString * _Nonnull)configId eventHandler:(id <BannerEventHandler> _Nullable)eventHandler;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadAd;
 - (void)setStoredAuctionResponseWithStoredAuction:(NSString * _Nonnull)storedAuction;
@@ -963,15 +983,21 @@ SWIFT_CLASS("_TtC13BridgewellSDK13BwsBannerView")
 
 
 
-SWIFT_PROTOCOL("_TtP13BridgewellSDK21BwsBannerViewDelegate_")
-@protocol BwsBannerViewDelegate <NSObject>
-- (UIViewController * _Nullable)bannerViewPresentationController SWIFT_WARN_UNUSED_RESULT;
+SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
+@protocol BwsAdViewDelegate <NSObject>
+- (UIViewController * _Nullable)adViewPresentationController SWIFT_WARN_UNUSED_RESULT;
 @optional
-- (void)bannerView:(BwsBannerView * _Nonnull)bannerView didReceiveAdWithAdSize:(CGSize)adSize;
-- (void)bannerView:(BwsBannerView * _Nonnull)bannerView didFailToReceiveAdWith:(NSError * _Nonnull)error;
-- (void)bannerViewWillLeaveApplication:(BwsBannerView * _Nonnull)bannerView;
-- (void)bannerViewWillPresentModal:(BwsBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidDismissModal:(BwsBannerView * _Nonnull)bannerView;
+- (void)adViewDisplayed:(BwsAdView * _Nonnull)adView;
+- (void)adViewFailed:(BwsAdView * _Nonnull)adView didFailToReceiveAdWith:(NSError * _Nonnull)error;
+- (void)adViewClicked:(BwsAdView * _Nonnull)adView;
+- (void)adViewClosed:(BwsAdView * _Nonnull)adView;
+- (void)adViewDidDismissModal:(BwsAdView * _Nonnull)adView;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK11BwsBannerAd")
+@interface BwsBannerAd : BwsAdView
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
 @end
 
 
@@ -980,6 +1006,26 @@ SWIFT_CLASS("_TtC13BridgewellSDK12BwsConstants")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull BWS_VERSION;)
 + (NSString * _Nonnull)BWS_VERSION SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK17BwsMobileStickyAd")
+@interface BwsMobileStickyAd : BwsAdView
+- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID bottomMargin:(CGFloat)bottomMargin from:(UIViewController * _Nonnull)vc;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK10BwsPopupAd")
+@interface BwsPopupAd : BwsAdView
+- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID from:(UIViewController * _Nonnull)vc;
+- (void)loadAd;
+@end
+
+
+SWIFT_CLASS("_TtC13BridgewellSDK20BwsRightSideStickyAd")
+@interface BwsRightSideStickyAd : BwsAdView
+- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID from:(UIViewController * _Nonnull)from;
+- (void)loadAd;
 @end
 
 
