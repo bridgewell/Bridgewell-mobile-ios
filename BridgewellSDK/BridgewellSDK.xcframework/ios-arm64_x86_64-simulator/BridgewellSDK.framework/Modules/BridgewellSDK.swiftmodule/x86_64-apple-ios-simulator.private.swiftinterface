@@ -24,6 +24,7 @@ import _SwiftConcurrencyShims
   @objc optional func adViewClicked(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewClosed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewDidDismissModal(_ adView: BridgewellSDK.BwsAdView)
+  @objc optional func adViewRedirect(_ adView: BridgewellSDK.BwsAdView, openUrl: Swift.String, useInAppBrowser: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BwsAdView : UIKit.UIView, PrebidMobile.BannerViewDelegate {
   @_Concurrency.MainActor(unsafe) public var adUnitConfig: PrebidMobile.AdUnitConfig {
@@ -68,6 +69,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
+  @objc @_Concurrency.MainActor(unsafe) public var redirectJsCallback: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(configID: Swift.String, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc deinit
@@ -97,8 +99,14 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor(unsafe) @objc public func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
   @_Concurrency.MainActor(unsafe) @objc public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
 }
+extension BridgewellSDK.BwsAdView : WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BwsBannerAd : BridgewellSDK.BwsAdView {
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, throttleTimeSeconds: Swift.Int = 30)
+  @_Concurrency.MainActor(unsafe) @objc override public func loadAd()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BwsPopupAd : BridgewellSDK.BwsAdView {
@@ -117,6 +125,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class BwsMobileStickyAd : BridgewellSDK.BwsAdView {
   @objc @_Concurrency.MainActor(unsafe) convenience public init(configID: Swift.String, bottomMargin: CoreFoundation.CGFloat, from vc: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override public func loadAd()
   @objc deinit
 }
 public typealias BwsImageHelper = BridgewellSDK.Bridgewell.ImageHelper
@@ -292,6 +301,10 @@ public class BridgewellVisibilityCheckerUtils {
   public typealias AdPosition = PrebidMobile.AdPosition
   public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
   public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BridgewellAdFrequencyHandler {
+  public static var shared: BridgewellSDK.BridgewellAdFrequencyHandler
   @objc deinit
 }
 public let BridgewellLocalCacheIdKey: Swift.String

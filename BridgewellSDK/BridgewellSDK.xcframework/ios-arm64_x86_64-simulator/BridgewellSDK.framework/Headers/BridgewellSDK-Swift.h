@@ -282,6 +282,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import PrebidMobile;
 @import UIKit;
+@import WebKit;
 #endif
 
 #import <BridgewellSDK/BridgewellSDK.h>
@@ -428,6 +429,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, weak) id <BwsAdViewDelegate> _Nullable delegate;
+@property (nonatomic) BOOL redirectJsCallback;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -460,6 +462,19 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @end
 
 
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
+@class WKNavigation;
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 
 SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 @protocol BwsAdViewDelegate <NSObject>
@@ -470,12 +485,23 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 - (void)adViewClicked:(BwsAdView * _Nonnull)adView;
 - (void)adViewClosed:(BwsAdView * _Nonnull)adView;
 - (void)adViewDidDismissModal:(BwsAdView * _Nonnull)adView;
+/// Called when the ad view requests to redirect to a URL.
+/// This method allows the delegate to handle the redirection logic.
+/// If implemented, it can customize how the URL is opened based on the app’s requirements.
+/// \param adView The <code>BwsAdView</code> instance triggering the redirect.
+///
+/// \param openUrl The URL to which the redirection should occur.
+///
+/// \param useInAppBrowser A boolean indicating whether the URL should be opened in an in-app browser or an external browser.
+///
+- (void)adViewRedirect:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nonnull)openUrl useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
 
 SWIFT_CLASS("_TtC13BridgewellSDK11BwsBannerAd")
 @interface BwsBannerAd : BwsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds;
+- (void)loadAd;
 @end
 
 
@@ -490,6 +516,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS("_TtC13BridgewellSDK17BwsMobileStickyAd")
 @interface BwsMobileStickyAd : BwsAdView
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID bottomMargin:(CGFloat)bottomMargin from:(UIViewController * _Nonnull)vc;
+- (void)loadAd;
 @end
 
 
@@ -804,6 +831,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import PrebidMobile;
 @import UIKit;
+@import WebKit;
 #endif
 
 #import <BridgewellSDK/BridgewellSDK.h>
@@ -950,6 +978,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, weak) id <BwsAdViewDelegate> _Nullable delegate;
+@property (nonatomic) BOOL redirectJsCallback;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -982,6 +1011,19 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @end
 
 
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
+@class WKNavigation;
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 
 SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 @protocol BwsAdViewDelegate <NSObject>
@@ -992,12 +1034,23 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 - (void)adViewClicked:(BwsAdView * _Nonnull)adView;
 - (void)adViewClosed:(BwsAdView * _Nonnull)adView;
 - (void)adViewDidDismissModal:(BwsAdView * _Nonnull)adView;
+/// Called when the ad view requests to redirect to a URL.
+/// This method allows the delegate to handle the redirection logic.
+/// If implemented, it can customize how the URL is opened based on the app’s requirements.
+/// \param adView The <code>BwsAdView</code> instance triggering the redirect.
+///
+/// \param openUrl The URL to which the redirection should occur.
+///
+/// \param useInAppBrowser A boolean indicating whether the URL should be opened in an in-app browser or an external browser.
+///
+- (void)adViewRedirect:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nonnull)openUrl useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
 
 SWIFT_CLASS("_TtC13BridgewellSDK11BwsBannerAd")
 @interface BwsBannerAd : BwsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds;
+- (void)loadAd;
 @end
 
 
@@ -1012,6 +1065,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS("_TtC13BridgewellSDK17BwsMobileStickyAd")
 @interface BwsMobileStickyAd : BwsAdView
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID bottomMargin:(CGFloat)bottomMargin from:(UIViewController * _Nonnull)vc;
+- (void)loadAd;
 @end
 
 
