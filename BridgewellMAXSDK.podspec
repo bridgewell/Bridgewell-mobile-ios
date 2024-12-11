@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BridgewellMAXSDK"
-  s.version      = "3.1.1"
+  s.version      = "3.1.2"
   s.summary      = "BridgewellMAXSDK is a lightweight framework that integrates directly with Prebid Server."
 
   s.description  = <<-DESC
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   s.author                  = { "bridgewell.com, Inc." => 'https://www.bridgewell.com/en/contact/'}
   s.platform     	          = :ios, "12.0"
-  s.swift_version 	        = '6.0'
+  s.swift_version 	        = '5.0'
   s.source                  = { :git => "https://github.com/bridgewell/Bridgewell-mobile-ios.git", :tag => "#{s.version}" }
   s.xcconfig 		            = { :LIBRARY_SEARCH_PATHS => '$(inherited)',  
 			                          :OTHER_CFLAGS => '$(inherited)',
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
   # Dependencies
-  s.dependency 'BridgewellSDK', '3.1.1'
+  s.dependency 'BridgewellSDK', '3.1.2'
   s.dependency 'PrebidMobileMAXAdapters', '2.2.1'
   s.dependency 'AppLovinSDK', '12.4.2'
 
