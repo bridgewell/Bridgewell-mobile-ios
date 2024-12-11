@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BridgewellSDK",
+    "printedName": "BridgewellSDK",
     "children": [
       {
         "kind": "Import",
@@ -287,6 +287,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -311,6 +327,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC12adUnitConfig12PrebidMobile0dgH0Cvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -360,6 +377,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC12eventHandler12PrebidMobile011BannerEventG0_pSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -409,6 +427,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC16bannerParameters12PrebidMobile06BannerG0Cvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -455,6 +474,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC15videoParameters12PrebidMobile05VideoG0Cvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -508,6 +528,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC15lastBidResponse12PrebidMobile0gH0CSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -561,6 +582,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC8configIDSSvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -606,6 +628,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC15refreshIntervalSdvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -711,6 +734,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC15additionalSizesSaySo6CGSizeVGSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -832,6 +856,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC8adFormat12PrebidMobile0dG0Cvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -921,6 +946,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC10adPosition12PrebidMobile0dG0Ovp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1018,6 +1044,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC10ortbConfigSSSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1123,8 +1150,9 @@
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC"
@@ -1235,8 +1263,9 @@
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -1353,6 +1382,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithFrame:configID:adSize:eventHandler:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -1390,6 +1420,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithConfigID:eventHandler:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -1413,6 +1444,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC04loadD0yyF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1442,6 +1474,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "setStoredAuctionResponseWithStoredAuction:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1464,6 +1497,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC11stopRefreshyyF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1499,6 +1533,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "addExtDataWithKey:value:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1543,6 +1578,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "updateExtDataWithKey:value:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1572,6 +1608,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "removeExtDataForKey:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1594,6 +1631,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC12clearExtDatayyF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1622,6 +1660,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC13addExtKeywordyySSF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1659,6 +1698,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC14addExtKeywordsyyShySSGF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1687,6 +1727,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC16removeExtKeywordyySSF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1709,6 +1750,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC16clearExtKeywordsyyF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1737,6 +1779,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC13setAppContentyySo010PBMORTBAppH0CF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1760,6 +1803,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC15clearAppContentyyF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1796,6 +1840,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC17addAppContentDatayySaySo014PBMORTBContentI0CGF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1824,6 +1869,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC26removeAppContentDataObjectyySo014PBMORTBContentI0CF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1846,6 +1892,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC26clearAppContentDataObjectsyyF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1882,6 +1929,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC11addUserDatayySaySo014PBMORTBContentH0CGF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -1911,6 +1959,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC14removeUserDatayySo014PBMORTBContentH0CF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1933,6 +1982,7 @@
             "mangledName": "$s13BridgewellSDK9BwsAdViewC13clearUserDatayyF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1966,6 +2016,7 @@
             "objc_name": "bannerViewPresentationController",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -2002,6 +2053,7 @@
             "objc_name": "bannerView:didReceiveAdWithAdSize:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2037,6 +2089,7 @@
             "objc_name": "bannerView:didFailToReceiveAdWith:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2066,6 +2119,7 @@
             "objc_name": "bannerViewWillLeaveApplication:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2095,6 +2149,7 @@
             "objc_name": "bannerViewWillPresentModal:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2124,6 +2179,7 @@
             "objc_name": "bannerViewDidDismissModal:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2157,6 +2213,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -2214,6 +2271,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -2260,6 +2318,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2297,6 +2356,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2309,6 +2369,7 @@
         "mangledName": "$s13BridgewellSDK9BwsAdViewC",
         "moduleName": "BridgewellSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -2327,6 +2388,20 @@
             "printedName": "BannerViewDelegate",
             "usr": "c:@M@PrebidMobile@objc(pl)BannerViewDelegate",
             "mangledName": "$s12PrebidMobile18BannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2441,6 +2516,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithFrame:configID:adSize:throttleTimeSeconds:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -2467,6 +2543,7 @@
             "objc_name": "loadAd",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -2479,6 +2556,7 @@
         "mangledName": "$s13BridgewellSDK11BwsBannerAdC",
         "moduleName": "BridgewellSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -2499,6 +2577,20 @@
             "printedName": "BannerViewDelegate",
             "usr": "c:@M@PrebidMobile@objc(pl)BannerViewDelegate",
             "mangledName": "$s12PrebidMobile18BannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2607,6 +2699,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithConfigID:from:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -2633,6 +2726,7 @@
             "objc_name": "loadAd",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -2663,6 +2757,7 @@
             "moduleName": "BridgewellSDK",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Final",
               "AccessControl"
@@ -2675,6 +2770,7 @@
         "mangledName": "$s13BridgewellSDK10BwsPopupAdC",
         "moduleName": "BridgewellSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -2696,6 +2792,20 @@
             "printedName": "BannerViewDelegate",
             "usr": "c:@M@PrebidMobile@objc(pl)BannerViewDelegate",
             "mangledName": "$s12PrebidMobile18BannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2793,6 +2903,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2851,6 +2962,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithConfigID:from:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -2877,6 +2989,7 @@
             "objc_name": "loadAd",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -2889,6 +3002,7 @@
         "mangledName": "$s13BridgewellSDK20BwsRightSideStickyAdC",
         "moduleName": "BridgewellSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -2910,6 +3024,20 @@
             "printedName": "BannerViewDelegate",
             "usr": "c:@M@PrebidMobile@objc(pl)BannerViewDelegate",
             "mangledName": "$s12PrebidMobile18BannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3024,6 +3152,7 @@
             "moduleName": "BridgewellSDK",
             "objc_name": "initWithConfigID:bottomMargin:from:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -3050,6 +3179,7 @@
             "objc_name": "loadAd",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -3062,6 +3192,7 @@
         "mangledName": "$s13BridgewellSDK17BwsMobileStickyAdC",
         "moduleName": "BridgewellSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -3083,6 +3214,20 @@
             "printedName": "BannerViewDelegate",
             "usr": "c:@M@PrebidMobile@objc(pl)BannerViewDelegate",
             "mangledName": "$s12PrebidMobile18BannerViewDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3502,6 +3647,22 @@
         "moduleName": "BridgewellSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3692,6 +3853,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3827,6 +4002,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6786,6 +6975,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6958,7 +7161,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -7117,6 +7336,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7238,27 +7471,6 @@
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 200,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 216,
-      "length": 6,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 232,
-      "length": 11,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "BooleanLiteral",
       "offset": 4581,
       "length": 5,
@@ -7347,13 +7559,6 @@
       "offset": 6390,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 2657,
-      "length": 9,
-      "value": "\"BridgewellSDK.BwsAdView\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
@@ -21448,27 +21653,6 @@
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 41110,
-      "length": 8,
-      "value": "\"is_app\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 41148,
-      "length": 8,
-      "value": "\"app_id\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 41186,
-      "length": 6,
-      "value": "\"idfa\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
       "kind": "IntegerLiteral",
       "offset": 41976,
       "length": 1,
@@ -21487,104 +21671,6 @@
       "offset": 42021,
       "length": 1,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 41976,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 41998,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42021,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 41976,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 41998,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42021,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42353,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42377,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42397,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42421,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42353,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42377,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42397,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42421,
-      "length": 1,
-      "value": "3"
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
@@ -21669,188 +21755,6 @@
       "offset": 42775,
       "length": 1,
       "value": "7"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42625,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42647,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42665,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42691,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42712,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42733,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42754,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42775,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42625,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42647,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42665,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42691,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42712,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42733,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42754,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "IntegerLiteral",
-      "offset": 42775,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43401,
-      "length": 12,
-      "value": "\"os_version\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43437,
-      "length": 9,
-      "value": "\"carrier\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43474,
-      "length": 14,
-      "value": "\"screen_width\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43517,
-      "length": 15,
-      "value": "\"screen_height\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43560,
-      "length": 27,
-      "value": "\"screen_pixel_ratio_millis\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43621,
-      "length": 20,
-      "value": "\"screen_orientation\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43673,
-      "length": 18,
-      "value": "\"hardware_version\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43723,
-      "length": 19,
-      "value": "\"limit_ad_tracking\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43776,
-      "length": 35,
-      "value": "\"app_tracking_authorization_status\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
-      "kind": "StringLiteral",
-      "offset": 43838,
-      "length": 17,
-      "value": "\"connection_type\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellModels.swift",
@@ -21935,20 +21839,6 @@
       "offset": 332,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellViewExposureChecker.swift",
-      "kind": "StringLiteral",
-      "offset": 154,
-      "length": 29,
-      "value": "\"BridgewellSDK.BridgewellViewExposureChecker\""
-    },
-    {
-      "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellViewExposureChecker.swift",
-      "kind": "StringLiteral",
-      "offset": 8588,
-      "length": 22,
-      "value": "\"BridgewellSDK.BridgewellViewExposure\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
@@ -22053,7 +21943,7 @@
       "kind": "StringLiteral",
       "offset": 361,
       "length": 7,
-      "value": "\"3.1.0\""
+      "value": "\"3.1.1\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-babtsapjeqqgrzaunrvqvgdahidz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
