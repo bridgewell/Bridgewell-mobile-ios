@@ -120,7 +120,7 @@ extension BridgewellSDK.BwsAdView : WebKit.WKUIDelegate, WebKit.WKNavigationDele
   @_Concurrency.MainActor @preconcurrency public static var containerSize: CoreFoundation.CGSize {
     get
   }
-  @objc @_Concurrency.MainActor @preconcurrency convenience public init(configID: Swift.String, from: UIKit.UIViewController)
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(configID: Swift.String, from: UIKit.UIViewController, bottomMargin: CoreFoundation.CGFloat)
   @_Concurrency.MainActor @preconcurrency @objc override public func loadAd()
   @objc deinit
 }

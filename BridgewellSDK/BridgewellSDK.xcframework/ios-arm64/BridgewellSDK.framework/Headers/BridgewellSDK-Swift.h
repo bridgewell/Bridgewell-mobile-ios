@@ -533,7 +533,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK10BwsPopupAd")
 
 SWIFT_CLASS("_TtC13BridgewellSDK20BwsRightSideStickyAd")
 @interface BwsRightSideStickyAd : BwsAdView
-- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID from:(UIViewController * _Nonnull)from;
+- (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID from:(UIViewController * _Nonnull)from bottomMargin:(CGFloat)bottomMargin;
 - (void)loadAd;
 @end
 

@@ -2935,7 +2935,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(configID:from:)",
+            "printedName": "init(configID:from:bottomMargin:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2954,13 +2954,19 @@
                 "name": "UIViewController",
                 "printedName": "UIKit.UIViewController",
                 "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BwsRightSideStickyAd(im)initWithConfigID:from:",
-            "mangledName": "$s13BridgewellSDK20BwsRightSideStickyAdC8configID4fromACSS_So16UIViewControllerCtcfc",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BwsRightSideStickyAd(im)initWithConfigID:from:bottomMargin:",
+            "mangledName": "$s13BridgewellSDK20BwsRightSideStickyAdC8configID4from12bottomMarginACSS_So16UIViewControllerC12CoreGraphics7CGFloatVtcfc",
             "moduleName": "BridgewellSDK",
-            "objc_name": "initWithConfigID:from:",
+            "objc_name": "initWithConfigID:from:bottomMargin:",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -21943,7 +21949,7 @@
       "kind": "StringLiteral",
       "offset": 361,
       "length": 7,
-      "value": "\"3.2.0\""
+      "value": "\"3.3.0\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-babtsapjeqqgrzaunrvqvgdahidz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
