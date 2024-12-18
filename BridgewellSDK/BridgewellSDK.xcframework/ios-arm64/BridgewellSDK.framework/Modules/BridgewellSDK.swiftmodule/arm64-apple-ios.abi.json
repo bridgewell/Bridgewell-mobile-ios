@@ -7563,7 +7563,7 @@
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25237,
+      "offset": 25286,
       "length": 2,
       "value": "30"
     },
@@ -21943,7 +21943,7 @@
       "kind": "StringLiteral",
       "offset": 361,
       "length": 7,
-      "value": "\"3.1.2\""
+      "value": "\"3.2.0\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Library\/Developer\/Xcode\/DerivedData\/BridgewellSDK-babtsapjeqqgrzaunrvqvgdahidz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/BridgewellSDK\/IntermediateBuildFilesPath\/BridgewellSDK.build\/Release-iphoneos\/BridgewellSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
