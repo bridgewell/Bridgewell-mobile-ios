@@ -9,6 +9,7 @@
 #define WrappingObjC_h
 #import <Foundation/Foundation.h>
 #import <PrebidMobile/PrebidMobile.h>
+#import <PrebidMobile/PrebidMobile-Swift.h>
 
 typedef id<InterstitialAdUnitDelegate> BwsInterstitialAdUnitDelegate;
 typedef InterstitialRenderingAdUnit* BwsInterstitialRenderingAdUnit;

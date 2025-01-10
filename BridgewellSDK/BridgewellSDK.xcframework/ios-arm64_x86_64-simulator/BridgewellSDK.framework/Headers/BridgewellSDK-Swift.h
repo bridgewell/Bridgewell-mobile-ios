@@ -309,6 +309,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
 @class NSString;
 @class ExternalUserId;
 @class NSNumber;
@@ -395,6 +396,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class AdFormat;
+
+SWIFT_CLASS("_TtC13BridgewellSDK18BridgewellAdFormat")
+@interface BridgewellAdFormat : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdFormat * _Nonnull hybrid;)
++ (AdFormat * _Nonnull)hybrid SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13BridgewellSDK22BridgewellViewExposure")
 @interface BridgewellViewExposure : NSObject
@@ -412,7 +422,6 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
-@class AdFormat;
 @protocol BwsAdViewDelegate;
 @protocol BannerEventHandler;
 @class NSCoder;
@@ -862,6 +871,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
 @class NSString;
 @class ExternalUserId;
 @class NSNumber;
@@ -948,6 +958,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class AdFormat;
+
+SWIFT_CLASS("_TtC13BridgewellSDK18BridgewellAdFormat")
+@interface BridgewellAdFormat : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdFormat * _Nonnull hybrid;)
++ (AdFormat * _Nonnull)hybrid SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC13BridgewellSDK22BridgewellViewExposure")
 @interface BridgewellViewExposure : NSObject
@@ -965,7 +984,6 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
-@class AdFormat;
 @protocol BwsAdViewDelegate;
 @protocol BannerEventHandler;
 @class NSCoder;

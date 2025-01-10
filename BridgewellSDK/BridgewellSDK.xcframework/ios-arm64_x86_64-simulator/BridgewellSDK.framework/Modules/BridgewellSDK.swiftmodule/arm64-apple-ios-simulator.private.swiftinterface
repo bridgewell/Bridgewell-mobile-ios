@@ -129,6 +129,14 @@ extension BridgewellSDK.BwsAdView : WebKit.WKUIDelegate, WebKit.WKNavigationDele
   @_Concurrency.MainActor @preconcurrency @objc override public func loadAd()
   @objc deinit
 }
+extension PrebidMobile.AdFormat {
+  public static let hybrid: PrebidMobile.AdFormat
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class BridgewellAdFormat : ObjectiveC.NSObject {
+  @objc public static let hybrid: PrebidMobile.AdFormat
+  @objc override dynamic public init()
+  @objc deinit
+}
 public typealias BwsImageHelper = BridgewellSDK.Bridgewell.ImageHelper
 public typealias BwsAdUnit = BridgewellSDK.Bridgewell.BridgewellAdUnit
 public class BridgewellVisibilityCheckerUtils {
