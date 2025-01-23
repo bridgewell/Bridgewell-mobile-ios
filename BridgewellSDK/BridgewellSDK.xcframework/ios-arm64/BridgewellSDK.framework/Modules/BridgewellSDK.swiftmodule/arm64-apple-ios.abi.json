@@ -7815,7 +7815,7 @@
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25308,
+      "offset": 25484,
       "length": 2,
       "value": "30"
     },
@@ -22216,7 +22216,7 @@
       "kind": "StringLiteral",
       "offset": 361,
       "length": 7,
-      "value": "\"3.7.0\""
+      "value": "\"3.7.1\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
