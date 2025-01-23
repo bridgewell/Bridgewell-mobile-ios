@@ -442,7 +442,6 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, weak) id <BwsAdViewDelegate> _Nullable delegate;
-@property (nonatomic) BOOL redirectJsCallback;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -474,19 +473,19 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class UIGestureRecognizer;
 
-@class WKWebViewConfiguration;
-@class WKNavigationAction;
-@class WKWindowFeatures;
-@class WKNavigation;
+@interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <UIGestureRecognizerDelegate>
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class WKUserContentController;
 @class WKScriptMessage;
 
 @interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
-- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
@@ -495,19 +494,24 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 @optional
 - (void)adViewDisplayed:(BwsAdView * _Nonnull)adView;
 - (void)adViewFailed:(BwsAdView * _Nonnull)adView didFailToReceiveAdWith:(NSError * _Nonnull)error;
-- (void)adViewClicked:(BwsAdView * _Nonnull)adView;
+/// This optional method is triggered when the user clicks on an ad view.
+/// \param adView The <code>BwsAdView</code> instance that was clicked. This provides context about the specific ad view being interacted with.
+///
+/// \param openUrl An optional <code>String</code> representing the destination URL of the ad. If <code>nil</code>, no specific URL is associated with the click.
+///
+/// \param useInAppBrowser A <code>Bool</code> indicating whether the destination URL should be opened externally (e.g., in a browser) or handled within the app.
+/// <ul>
+///   <li>
+///     <code>true</code>: The URL is intended to be opened externally, such as in Safari.
+///   </li>
+///   <li>
+///     <code>false</code>: The URL is meant to be handled internally, possibly within the app’s own web view.
+///   </li>
+/// </ul>
+///
+- (void)adViewClicked:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nullable)openUrl useInAppBrowser:(BOOL)useInAppBrowser;
 - (void)adViewClosed:(BwsAdView * _Nonnull)adView;
 - (void)adViewDidDismissModal:(BwsAdView * _Nonnull)adView;
-/// Called when the ad view requests to redirect to a URL.
-/// This method allows the delegate to handle the redirection logic.
-/// If implemented, it can customize how the URL is opened based on the app’s requirements.
-/// \param adView The <code>BwsAdView</code> instance triggering the redirect.
-///
-/// \param openUrl The URL to which the redirection should occur.
-///
-/// \param useInAppBrowser A boolean indicating whether the URL should be opened in an in-app browser or an external browser.
-///
-- (void)adViewRedirect:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nonnull)openUrl useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
 
@@ -1004,7 +1008,6 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, weak) id <BwsAdViewDelegate> _Nullable delegate;
-@property (nonatomic) BOOL redirectJsCallback;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -1036,19 +1039,19 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class UIGestureRecognizer;
 
-@class WKWebViewConfiguration;
-@class WKNavigationAction;
-@class WKWindowFeatures;
-@class WKNavigation;
+@interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <UIGestureRecognizerDelegate>
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class WKUserContentController;
 @class WKScriptMessage;
 
 @interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
-- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
@@ -1057,19 +1060,24 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 @optional
 - (void)adViewDisplayed:(BwsAdView * _Nonnull)adView;
 - (void)adViewFailed:(BwsAdView * _Nonnull)adView didFailToReceiveAdWith:(NSError * _Nonnull)error;
-- (void)adViewClicked:(BwsAdView * _Nonnull)adView;
+/// This optional method is triggered when the user clicks on an ad view.
+/// \param adView The <code>BwsAdView</code> instance that was clicked. This provides context about the specific ad view being interacted with.
+///
+/// \param openUrl An optional <code>String</code> representing the destination URL of the ad. If <code>nil</code>, no specific URL is associated with the click.
+///
+/// \param useInAppBrowser A <code>Bool</code> indicating whether the destination URL should be opened externally (e.g., in a browser) or handled within the app.
+/// <ul>
+///   <li>
+///     <code>true</code>: The URL is intended to be opened externally, such as in Safari.
+///   </li>
+///   <li>
+///     <code>false</code>: The URL is meant to be handled internally, possibly within the app’s own web view.
+///   </li>
+/// </ul>
+///
+- (void)adViewClicked:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nullable)openUrl useInAppBrowser:(BOOL)useInAppBrowser;
 - (void)adViewClosed:(BwsAdView * _Nonnull)adView;
 - (void)adViewDidDismissModal:(BwsAdView * _Nonnull)adView;
-/// Called when the ad view requests to redirect to a URL.
-/// This method allows the delegate to handle the redirection logic.
-/// If implemented, it can customize how the URL is opened based on the app’s requirements.
-/// \param adView The <code>BwsAdView</code> instance triggering the redirect.
-///
-/// \param openUrl The URL to which the redirection should occur.
-///
-/// \param useInAppBrowser A boolean indicating whether the URL should be opened in an in-app browser or an external browser.
-///
-- (void)adViewRedirect:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nonnull)openUrl useInAppBrowser:(BOOL)useInAppBrowser;
 @end
 
 

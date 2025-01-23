@@ -11,6 +11,7 @@ import DeveloperToolsSupport
 import Foundation
 import Network
 import PrebidMobile
+import SafariServices
 import Swift
 import SwiftUI
 import UIKit
@@ -22,10 +23,9 @@ import _SwiftConcurrencyShims
   @objc func adViewPresentationController() -> UIKit.UIViewController?
   @objc optional func adViewDisplayed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewFailed(_ adView: BridgewellSDK.BwsAdView, didFailToReceiveAdWith error: any Swift.Error)
-  @objc optional func adViewClicked(_ adView: BridgewellSDK.BwsAdView)
+  @objc optional func adViewClicked(_ adView: BridgewellSDK.BwsAdView, openUrl: Swift.String?, useInAppBrowser: Swift.Bool)
   @objc optional func adViewClosed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewDidDismissModal(_ adView: BridgewellSDK.BwsAdView)
-  @objc optional func adViewRedirect(_ adView: BridgewellSDK.BwsAdView, openUrl: Swift.String, useInAppBrowser: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsAdView : UIKit.UIView, PrebidMobile.BannerViewDelegate {
   @_Concurrency.MainActor @preconcurrency public var adUnitConfig: PrebidMobile.AdUnitConfig {
@@ -70,7 +70,6 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor @preconcurrency public var redirectJsCallback: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(configID: Swift.String, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc deinit
@@ -100,9 +99,10 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
 }
+extension BridgewellSDK.BwsAdView : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
 extension BridgewellSDK.BwsAdView : WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsBannerAd : BridgewellSDK.BwsAdView {
@@ -320,5 +320,9 @@ public let BridgewellLocalCacheIdKey: Swift.String
 @_inheritsConvenienceInitializers @objc public class BwsConstants : ObjectiveC.NSObject {
   @objc public static let BWS_VERSION: Swift.String
   @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objcMembers public class BwsTrackAdEvent : Swift.AnyObject {
+  @objc public class func trackURL(_ url: Swift.String?)
   @objc deinit
 }
