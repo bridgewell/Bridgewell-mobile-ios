@@ -429,9 +429,12 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 @class PBMORTBContentData;
 @class UIViewController;
 @class BannerView;
+@class UIGestureRecognizer;
+@class WKUserContentController;
+@class WKScriptMessage;
 
 SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
-@interface BwsAdView : UIView <BannerViewDelegate>
+@interface BwsAdView : UIView <BannerViewDelegate, UIGestureRecognizerDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
 @property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
@@ -470,22 +473,10 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 - (void)bannerViewWillLeaveApplication:(BannerView * _Nonnull)bannerView;
 - (void)bannerViewWillPresentModal:(BannerView * _Nonnull)bannerView;
 - (void)bannerViewDidDismissModal:(BannerView * _Nonnull)bannerView;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
-
-@class UIGestureRecognizer;
-
-@interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <UIGestureRecognizerDelegate>
-- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
-@end
-
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface BwsAdView (SWIFT_EXTENSION(BridgewellSDK)) <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-@end
-
 
 
 SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")

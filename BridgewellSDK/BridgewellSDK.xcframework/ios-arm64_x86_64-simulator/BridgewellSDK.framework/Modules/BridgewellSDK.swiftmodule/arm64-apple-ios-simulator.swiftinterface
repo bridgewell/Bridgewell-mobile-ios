@@ -27,7 +27,7 @@ import _SwiftConcurrencyShims
   @objc optional func adViewClosed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewDidDismissModal(_ adView: BridgewellSDK.BwsAdView)
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsAdView : UIKit.UIView, PrebidMobile.BannerViewDelegate {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsAdView : UIKit.UIView, PrebidMobile.BannerViewDelegate, UIKit.UIGestureRecognizerDelegate, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
   @_Concurrency.MainActor @preconcurrency public var adUnitConfig: PrebidMobile.AdUnitConfig {
     get
   }
@@ -98,12 +98,8 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewWillLeaveApplication(_ bannerView: PrebidMobile.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
-}
-extension BridgewellSDK.BwsAdView : UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-}
-extension BridgewellSDK.BwsAdView : WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsBannerAd : BridgewellSDK.BwsAdView {
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, throttleTimeSeconds: Swift.Int = 30)
