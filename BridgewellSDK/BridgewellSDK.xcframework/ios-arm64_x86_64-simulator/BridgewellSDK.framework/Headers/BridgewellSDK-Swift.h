@@ -432,6 +432,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 @class UIGestureRecognizer;
 @class WKUserContentController;
 @class WKScriptMessage;
+@class WKNavigation;
 
 SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @interface BwsAdView : UIView <BannerViewDelegate, UIGestureRecognizerDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
@@ -475,6 +476,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 - (void)bannerViewDidDismissModal:(BannerView * _Nonnull)bannerView;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -989,6 +991,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 @class UIGestureRecognizer;
 @class WKUserContentController;
 @class WKScriptMessage;
+@class WKNavigation;
 
 SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 @interface BwsAdView : UIView <BannerViewDelegate, UIGestureRecognizerDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
@@ -1032,6 +1035,7 @@ SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdView")
 - (void)bannerViewDidDismissModal:(BannerView * _Nonnull)bannerView;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 

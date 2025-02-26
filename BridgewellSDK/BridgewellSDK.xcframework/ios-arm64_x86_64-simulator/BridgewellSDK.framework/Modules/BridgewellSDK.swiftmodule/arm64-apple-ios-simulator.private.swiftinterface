@@ -100,6 +100,7 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsBannerAd : BridgewellSDK.BwsAdView {
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, throttleTimeSeconds: Swift.Int = 30)
