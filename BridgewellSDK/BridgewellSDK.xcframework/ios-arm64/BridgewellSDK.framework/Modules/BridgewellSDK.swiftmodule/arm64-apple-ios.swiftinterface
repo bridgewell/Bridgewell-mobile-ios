@@ -23,7 +23,7 @@ import _SwiftConcurrencyShims
   @objc func adViewPresentationController() -> UIKit.UIViewController?
   @objc optional func adViewDisplayed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewFailed(_ adView: BridgewellSDK.BwsAdView, didFailToReceiveAdWith error: any Swift.Error)
-  @objc optional func adViewClicked(_ adView: BridgewellSDK.BwsAdView, openUrl: Swift.String?, useInAppBrowser: Swift.Bool)
+  @objc optional func adViewClicked(_ adView: BridgewellSDK.BwsAdView, openUrl: Swift.String?, linkOpenMethod: Swift.String?)
   @objc optional func adViewClosed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewDidDismissModal(_ adView: BridgewellSDK.BwsAdView)
 }

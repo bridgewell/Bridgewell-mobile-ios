@@ -6,15 +6,15 @@
 	<dict>
 		<key>Frameworks/PrebidMobileMAXAdapters.framework/Info.plist</key>
 		<data>
-		B0VtPhnAeWSMFxmI2MmQ5yYQ6CQ=
+		LMvN/qFKLX4tAmzUD0Gwp6OqhFQ=
 		</data>
 		<key>Frameworks/PrebidMobileMAXAdapters.framework/PrebidMobileMAXAdapters</key>
 		<data>
-		fIJwtHK4Md5+Ew+2dIc2wxOuv/4=
+		ZQh2MDPHz5T+vcfVzoiZ39nfDbo=
 		</data>
 		<key>Frameworks/PrebidMobileMAXAdapters.framework/_CodeSignature/CodeResources</key>
 		<data>
-		hRTs6UiMWfiEtnKOAqy1cWtWBNM=
+		vY5/SWCJ/jWHT/k1TxEh7X3+JEw=
 		</data>
 		<key>Headers/BridgewellMAXSDK.h</key>
 		<data>
@@ -75,21 +75,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sNV+bwZTR0YfcHZ0n9lCv3VsTpPy/ivkCObRvm0cg1c=
+			qB1HvpVfuozsAxX+mXBQNZ9tV+tAo5tqozBaY/oXpxo=
 			</data>
 		</dict>
 		<key>Frameworks/PrebidMobileMAXAdapters.framework/PrebidMobileMAXAdapters</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ePtn2AFKVzi/wz8BNZZw+ExakMygcCZfQc2UApdB6Q=
+			GLkq2pfFinw/OcVvuTSOBDebAs6qXmLRibxUuQ3YW6k=
 			</data>
 		</dict>
 		<key>Frameworks/PrebidMobileMAXAdapters.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qAoDw67ytJX1IrCJL1S3bhadCAWyc2De+nnPy7LB6M8=
+			USjbRNWRU/WJpjZOW+3KU/Quu1iXAJXjgEAf1/Y9U6Q=
 			</data>
 		</dict>
 		<key>Headers/BridgewellMAXSDK.h</key>

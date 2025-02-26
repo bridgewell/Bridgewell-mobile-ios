@@ -147,7 +147,7 @@
           {
             "kind": "Function",
             "name": "adViewClicked",
-            "printedName": "adViewClicked(_:openUrl:useInAppBrowser:)",
+            "printedName": "adViewClicked(_:openUrl:linkOpenMethod:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -176,14 +176,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BridgewellSDK@objc(pl)BwsAdViewDelegate(im)adViewClicked:openUrl:useInAppBrowser:",
-            "mangledName": "$s13BridgewellSDK17BwsAdViewDelegateP02adE7Clicked_7openUrl15useInAppBrowseryAA0cdE0C_SSSgSbtF",
+            "usr": "c:@M@BridgewellSDK@objc(pl)BwsAdViewDelegate(im)adViewClicked:openUrl:linkOpenMethod:",
+            "mangledName": "$s13BridgewellSDK17BwsAdViewDelegateP02adE7Clicked_7openUrl14linkOpenMethodyAA0cdE0C_SSSgAItF",
             "moduleName": "BridgewellSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BridgewellSDK.BwsAdViewDelegate>",
             "sugared_genericSig": "<Self where Self : BridgewellSDK.BwsAdViewDelegate>",
@@ -7734,84 +7742,84 @@
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4894,
+      "offset": 4897,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4926,
+      "offset": 4929,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5024,
+      "offset": 5027,
       "length": 7,
       "value": "\"ic_ad\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5056,
+      "offset": 5059,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5174,
+      "offset": 5177,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5432,
+      "offset": 5435,
       "length": 10,
       "value": "\"ic_close\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5467,
+      "offset": 5470,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5598,
+      "offset": 5601,
       "length": 10,
       "value": "\"ic_close\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5633,
+      "offset": 5636,
       "length": 25,
       "value": "\"com.bridgewell.bwmobile\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5921,
+      "offset": 5924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6323,
+      "offset": 6325,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25349,
+      "offset": 26283,
       "length": 2,
       "value": "30"
     },
@@ -22212,26 +22220,26 @@
       "kind": "StringLiteral",
       "offset": 361,
       "length": 7,
-      "value": "\"3.7.2\""
+      "value": "\"4.0.0\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 430,
+      "offset": 429,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 446,
+      "offset": 445,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 462,
+      "offset": 461,
       "length": 11,
       "value": "3"
     },

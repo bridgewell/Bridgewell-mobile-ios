@@ -490,7 +490,7 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 ///
 /// \param openUrl An optional <code>String</code> representing the destination URL of the ad. If <code>nil</code>, no specific URL is associated with the click.
 ///
-/// \param useInAppBrowser A <code>Bool</code> indicating whether the destination URL should be opened externally (e.g., in a browser) or handled within the app.
+/// \param linkOpenMethod A <code>String</code> indicating whether the destination URL should be opened externally (e.g., in a browser) or handled within the app.
 /// <ul>
 ///   <li>
 ///     <code>true</code>: The URL is intended to be opened externally, such as in Safari.
@@ -500,7 +500,7 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 ///   </li>
 /// </ul>
 ///
-- (void)adViewClicked:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nullable)openUrl useInAppBrowser:(BOOL)useInAppBrowser;
+- (void)adViewClicked:(BwsAdView * _Nonnull)adView openUrl:(NSString * _Nullable)openUrl linkOpenMethod:(NSString * _Nullable)linkOpenMethod;
 - (void)adViewClosed:(BwsAdView * _Nonnull)adView;
 - (void)adViewDidDismissModal:(BwsAdView * _Nonnull)adView;
 @end
