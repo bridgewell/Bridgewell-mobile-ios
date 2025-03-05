@@ -2687,7 +2687,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(frame:configId:adSize:throttleTimeSeconds:)",
+            "printedName": "init(frame:configID:bwsAdSize:throttleTimeSeconds:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2722,10 +2722,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerAd(im)initWithFrame:configId:adSize:throttleTimeSeconds:",
-            "mangledName": "$s13BridgewellSDK11BwsBannerAdC5frame8configId6adSize19throttleTimeSecondsACSo6CGRectV_SSAA0ceJ0CSitcfc",
+            "usr": "c:@M@BridgewellSDK@objc(cs)BwsBannerAd(im)initWithFrame:configID:bwsAdSize:throttleTimeSeconds:",
+            "mangledName": "$s13BridgewellSDK11BwsBannerAdC5frame8configID03bwsE4Size19throttleTimeSecondsACSo6CGRectV_SSAA0ceJ0CSitcfc",
             "moduleName": "BridgewellSDK",
-            "objc_name": "initWithFrame:configId:adSize:throttleTimeSeconds:",
+            "objc_name": "initWithFrame:configID:bwsAdSize:throttleTimeSeconds:",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -8212,7 +8212,7 @@
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/bwsBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 27282,
+      "offset": 27285,
       "length": 2,
       "value": "30"
     },
@@ -22613,7 +22613,7 @@
       "kind": "StringLiteral",
       "offset": 361,
       "length": 7,
-      "value": "\"4.1.0\""
+      "value": "\"4.2.0\""
     },
     {
       "filePath": "\/Users\/mac-mini-01\/Documents\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",

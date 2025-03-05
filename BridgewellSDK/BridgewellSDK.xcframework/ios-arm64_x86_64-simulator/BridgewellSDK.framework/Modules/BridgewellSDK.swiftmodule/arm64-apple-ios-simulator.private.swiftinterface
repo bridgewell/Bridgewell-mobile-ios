@@ -114,7 +114,7 @@ import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsBannerAd : BridgewellSDK.BwsAdView {
   @available(*, deprecated, renamed: "BwsAdSize", message: "Parametter adSide: CGSize is deprecated, use init function with BwsAdSize object instead")
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, throttleTimeSeconds: Swift.Int = 30)
-  @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configId: Swift.String, adSize: BridgewellSDK.BwsAdSize, throttleTimeSeconds: Swift.Int = 30)
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, bwsAdSize: BridgewellSDK.BwsAdSize, throttleTimeSeconds: Swift.Int = 30)
   @_Concurrency.MainActor @preconcurrency @objc override public func loadAd()
   @objc deinit
 }
