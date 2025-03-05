@@ -419,6 +419,17 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdSize")
+@interface BwsAdSize : NSObject
+@property (nonatomic, readonly) NSInteger width;
+@property (nonatomic, readonly) NSInteger height;
+@property (nonatomic, readonly) CGSize cgSize;
+- (nonnull instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
@@ -510,7 +521,8 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 
 SWIFT_CLASS("_TtC13BridgewellSDK11BwsBannerAd")
 @interface BwsBannerAd : BwsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds SWIFT_DEPRECATED_MSG("Parametter adSide: CGSize is deprecated, use init function with BwsAdSize object instead", "BwsAdSize");
+- (nonnull instancetype)initWithFrame:(CGRect)frame configId:(NSString * _Nonnull)configId adSize:(BwsAdSize * _Nonnull)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds;
 - (void)loadAd;
 @end
 
@@ -978,6 +990,17 @@ SWIFT_CLASS("_TtC13BridgewellSDK29BridgewellViewExposureChecker")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC13BridgewellSDK9BwsAdSize")
+@interface BwsAdSize : NSObject
+@property (nonatomic, readonly) NSInteger width;
+@property (nonatomic, readonly) NSInteger height;
+@property (nonatomic, readonly) CGSize cgSize;
+- (nonnull instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class BannerParameters;
 @class VideoParameters;
 @class BidResponse;
@@ -1069,7 +1092,8 @@ SWIFT_PROTOCOL("_TtP13BridgewellSDK17BwsAdViewDelegate_")
 
 SWIFT_CLASS("_TtC13BridgewellSDK11BwsBannerAd")
 @interface BwsBannerAd : BwsAdView
-- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds SWIFT_DEPRECATED_MSG("Parametter adSide: CGSize is deprecated, use init function with BwsAdSize object instead", "BwsAdSize");
+- (nonnull instancetype)initWithFrame:(CGRect)frame configId:(NSString * _Nonnull)configId adSize:(BwsAdSize * _Nonnull)adSize throttleTimeSeconds:(NSInteger)throttleTimeSeconds;
 - (void)loadAd;
 @end
 

@@ -19,6 +19,15 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @objcMembers public class BwsAdSize : ObjectiveC.NSObject {
+  @objc final public let width: Swift.Int
+  @objc final public let height: Swift.Int
+  @objc public var cgSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc public init(width: Swift.Int, height: Swift.Int)
+  @objc deinit
+}
 @objc public protocol BwsAdViewDelegate : ObjectiveC.NSObjectProtocol {
   @objc func adViewPresentationController() -> UIKit.UIViewController?
   @objc optional func adViewDisplayed(_ adView: BridgewellSDK.BwsAdView)
@@ -103,7 +112,9 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsBannerAd : BridgewellSDK.BwsAdView {
+  @available(*, deprecated, renamed: "BwsAdSize", message: "Parametter adSide: CGSize is deprecated, use init function with BwsAdSize object instead")
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, throttleTimeSeconds: Swift.Int = 30)
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configId: Swift.String, adSize: BridgewellSDK.BwsAdSize, throttleTimeSeconds: Swift.Int = 30)
   @_Concurrency.MainActor @preconcurrency @objc override public func loadAd()
   @objc deinit
 }
