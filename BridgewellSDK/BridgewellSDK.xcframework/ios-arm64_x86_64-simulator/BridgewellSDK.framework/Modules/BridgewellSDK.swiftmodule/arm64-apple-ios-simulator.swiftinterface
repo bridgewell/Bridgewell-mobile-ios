@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BridgewellSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BridgewellSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import AVFoundation
 import AdSupport
 import AppTrackingTransparency
 @_exported import BridgewellSDK
@@ -36,7 +37,7 @@ import _SwiftConcurrencyShims
   @objc optional func adViewClosed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewDidDismissModal(_ adView: BridgewellSDK.BwsAdView)
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsAdView : UIKit.UIView, PrebidMobile.BannerViewDelegate, UIKit.UIGestureRecognizerDelegate, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsAdView : UIKit.UIView, PrebidMobile.BannerViewDelegate, UIKit.UIGestureRecognizerDelegate, WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler, SafariServices.SFSafariViewControllerDelegate {
   @_Concurrency.MainActor @preconcurrency public var adUnitConfig: PrebidMobile.AdUnitConfig {
     get
   }
@@ -101,27 +102,35 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor @preconcurrency public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
   @objc @_Concurrency.MainActor @preconcurrency public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
   @objc @_Concurrency.MainActor @preconcurrency public func clearUserData()
+  @objc @_Concurrency.MainActor @preconcurrency public func getAdTrackingURL() -> Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency public func getVideoBgTracking() -> Swift.String?
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewPresentationController() -> UIKit.UIViewController?
   @_Concurrency.MainActor @preconcurrency @objc public func bannerView(_ bannerView: PrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
+  @objc @_Concurrency.MainActor @preconcurrency public func handleTapOnVideo()
   @_Concurrency.MainActor @preconcurrency @objc public func bannerView(_ bannerView: PrebidMobile.BannerView, didFailToReceiveAdWith error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewWillLeaveApplication(_ bannerView: PrebidMobile.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
+  @objc @_Concurrency.MainActor @preconcurrency public func handleTapOnBackground()
   @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+  @objc @_Concurrency.MainActor @preconcurrency public func didTapOnAd()
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsBannerAd : BridgewellSDK.BwsAdView {
   @available(*, deprecated, renamed: "BwsAdSize", message: "Parametter adSide: CGSize is deprecated, use init function with BwsAdSize object instead")
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, throttleTimeSeconds: Swift.Int = 30)
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, bwsAdSize: BridgewellSDK.BwsAdSize, throttleTimeSeconds: Swift.Int = 30)
   @_Concurrency.MainActor @preconcurrency @objc override public func loadAd()
+  @_Concurrency.MainActor @preconcurrency @objc override public func bannerView(_ bannerView: PrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsPopupAd : BridgewellSDK.BwsAdView {
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(configID: Swift.String, from vc: UIKit.UIViewController)
   @_Concurrency.MainActor @preconcurrency @objc override public func loadAd()
   @_Concurrency.MainActor @preconcurrency public static func canLoadAdView(_ configID: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override public func bannerView(_ bannerView: PrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class BwsRightSideStickyAd : BridgewellSDK.BwsAdView {
@@ -166,6 +175,15 @@ public class BridgewellVisibilityCheckerUtils {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
+  @objc public static let shared: BridgewellSDK.Bridgewell
+  @objc public var userHashedEmail: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var userHashedPhone: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc public var updatedTimeout: Swift.Bool {
     @objc get
     @objc set
@@ -206,7 +224,6 @@ public class BridgewellVisibilityCheckerUtils {
     @objc get
     @objc set
   }
-  @objc public static let shared: BridgewellSDK.Bridgewell
   @objc public var version: Swift.String {
     @objc get
   }
@@ -317,7 +334,7 @@ public class BridgewellVisibilityCheckerUtils {
   public typealias AdFormat = PrebidMobile.AdFormat
   public typealias AdPosition = PrebidMobile.AdPosition
   public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
-  public typealias BridgewellRegisterWebviewCallback = (() -> Swift.Void)
+  public typealias BridgewellRegisterWebviewCallback = () -> Swift.Void
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BridgewellAdFrequencyHandler {

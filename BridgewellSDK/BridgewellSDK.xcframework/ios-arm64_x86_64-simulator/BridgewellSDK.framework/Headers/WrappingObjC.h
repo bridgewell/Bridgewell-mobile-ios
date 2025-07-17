@@ -52,7 +52,6 @@ typedef Utils* BwsUtils;
 typedef MediationRewardedAdUnit* BwsMediationRewardedAdUnit;
 typedef PBMLogLevel* BwsLogLevel;
 typedef AdFormat* BwsAdFormat;
-typedef PBMAdPosition* BwsAdPosition;
 
 typedef void (^BwsRegisterWebviewCallback)(NSString * _Nullable, NSError * _Nullable);
 

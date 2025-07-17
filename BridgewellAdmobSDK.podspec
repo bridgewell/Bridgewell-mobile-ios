@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BridgewellAdmobSDK"
-  s.version      = "4.2.0"
+  s.version      = "4.3.0"
   s.summary      = "BridgewellAdmobSDK is a lightweight framework that integrates directly with Prebid Server."
 
   s.description  = <<-DESC
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
   # Dependencies
-  s.dependency 'BridgewellSDK', '4.2.0'
+  s.dependency 'BridgewellSDK', '4.3.0'
   s.dependency 'PrebidMobileAdMobAdapters', '2.2.1'
   s.dependency 'PrebidMobileGAMEventHandlers', '2.2.1'
 
