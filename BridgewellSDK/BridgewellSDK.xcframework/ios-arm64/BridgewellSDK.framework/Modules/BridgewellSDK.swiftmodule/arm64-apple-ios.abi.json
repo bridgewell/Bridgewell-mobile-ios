@@ -7786,7 +7786,7 @@
           {
             "kind": "Function",
             "name": "registerContentWebViewWithAdInfo",
-            "printedName": "registerContentWebViewWithAdInfo(_:completion:)",
+            "printedName": "registerContentWebViewWithAdInfo(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7798,28 +7798,11 @@
                 "name": "WKWebView",
                 "printedName": "WebKit.WKWebView",
                 "usr": "c:objc(cs)WKWebView"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)registerContentWebViewWithAdInfo:completion:",
-            "mangledName": "$s13BridgewellSDK0A0C32registerContentWebViewWithAdInfo_10completionySo05WKWebF0C_yyctF",
+            "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)registerContentWebViewWithAdInfo:",
+            "mangledName": "$s13BridgewellSDK0A0C32registerContentWebViewWithAdInfoyySo05WKWebF0CF",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
               "AccessControl",
@@ -23114,6 +23097,20 @@
       "value": "\"hybrid\""
     },
     {
+      "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellWebKitScriptHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 507,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellWebKitScriptHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 546,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellVASTParser.swift",
       "kind": "StringLiteral",
       "offset": 4170,
@@ -23178,8 +23175,29 @@
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellVASTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5274,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellVASTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5324,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellVASTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 5373,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/BridgewellVASTParser.swift",
       "kind": "Dictionary",
-      "offset": 5737,
+      "offset": 5933,
       "length": 3,
       "value": "[]"
     },
@@ -23307,7 +23325,7 @@
       "kind": "StringLiteral",
       "offset": 361,
       "length": 7,
-      "value": "\"4.3.0\""
+      "value": "\"4.4.0\""
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",

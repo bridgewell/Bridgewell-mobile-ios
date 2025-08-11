@@ -393,8 +393,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
 /// Register WKWebview
 /// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
-/// within this web view.
-- (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
+/// within this web view. This version is non-blocking and will call window.onSdkDataReady
+/// JavaScript function when all data is prepared.
+- (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -959,8 +960,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
 /// Register WKWebview
 /// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
-/// within this web view.
-- (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview completion:(void (^ _Nonnull)(void))completion;
+/// within this web view. This version is non-blocking and will call window.onSdkDataReady
+/// JavaScript function when all data is prepared.
+- (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

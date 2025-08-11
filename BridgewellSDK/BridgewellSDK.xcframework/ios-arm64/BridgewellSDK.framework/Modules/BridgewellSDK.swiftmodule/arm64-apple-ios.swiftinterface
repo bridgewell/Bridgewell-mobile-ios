@@ -291,7 +291,7 @@ public class BridgewellVisibilityCheckerUtils {
   @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
   @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
   @objc public static func initializeSDK(_ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
-  @objc public func registerContentWebViewWithAdInfo(_ webview: WebKit.WKWebView, completion: @escaping BridgewellSDK.Bridgewell.BridgewellRegisterWebviewCallback)
+  @objc public func registerContentWebViewWithAdInfo(_ webview: WebKit.WKWebView)
   public typealias InterstitialAdUnitDelegate = PrebidMobile.InterstitialAdUnitDelegate
   public typealias InterstitialRenderingAdUnit = PrebidMobile.InterstitialRenderingAdUnit
   public typealias NativeRequest = PrebidMobile.NativeRequest
@@ -334,7 +334,6 @@ public class BridgewellVisibilityCheckerUtils {
   public typealias AdFormat = PrebidMobile.AdFormat
   public typealias AdPosition = PrebidMobile.AdPosition
   public typealias BridgewellInitializationCallback = PrebidMobile.PrebidInitializationCallback
-  public typealias BridgewellRegisterWebviewCallback = () -> Swift.Void
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BridgewellAdFrequencyHandler {

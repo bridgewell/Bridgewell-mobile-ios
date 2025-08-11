@@ -1,219 +1,179 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
-<VAST
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
-	<Ad id="%%CACHEBUSTER%%">
-		<InLine>
-			<AdSystem>Bridgewell</AdSystem>
-			<AdTitle>Ads By Bridgewell</AdTitle>
-			<Error>
-				<![CDATA[
-                https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgFQ&error_code=[ERRORCODE]
-                ]]>
-			</Error>
-			<Impression id="impressionBw">
-				<![CDATA[
-                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgFg
-                        ]]>
-			</Impression>
-			<Creatives>
-				<Creative id="8226100">
-					<Linear >
-						<Duration>00:00:30</Duration>
-						<TrackingEvents>
-							<Tracking event="mute" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgAQ
-                                            ]]>
-							</Tracking>
-							<Tracking event="unmute" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgAg
-                                            ]]>
-							</Tracking>
-							<Tracking event="pause" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgAw
-                                            ]]>
-							</Tracking>
-							<Tracking event="resume" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgBA
-                                            ]]>
-							</Tracking>
-							<Tracking event="rewind" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgBQ
-                                            ]]>
-							</Tracking>
-							<Tracking event="skip" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgBg
-                                            ]]>
-							</Tracking>
-							<Tracking event="playerExpand" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgBw
-                                            ]]>
-							</Tracking>
-							<Tracking event="playerCollapse" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgCA
-                                            ]]>
-							</Tracking>
-							<Tracking event="start" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgCQ
-                                            ]]>
-							</Tracking>
-							<Tracking event="firstQuartile" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgCg
-                                            ]]>
-							</Tracking>
-							<Tracking event="midpoint" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgCw
-                                            ]]>
-							</Tracking>
-							<Tracking event="thirdQuartile" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgDA
-                                            ]]>
-							</Tracking>
-							<Tracking event="complete" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgDQ
-                                            ]]>
-							</Tracking>
-							<Tracking event="acceptInvitationLinear" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgDg
-                                            ]]>
-							</Tracking>
-							<Tracking event="timeSpentViewing" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgDw
-                                            ]]>
-							</Tracking>
-							<Tracking event="otherAdInteraction" >
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgEA
-                                            ]]>
-							</Tracking>
-							<Tracking event="progress" offset="00:00:02">
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgEQ
-                                            ]]>
-							</Tracking>
-							<Tracking event="progress" offset="00:00:05">
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgEg
-                                            ]]>
-							</Tracking>
-							<Tracking event="progress" offset="00:00:30">
-								<![CDATA[
-                                    https://vast-log.scupio.com/v0/event?vast_log=UqMDCJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQNH07Pask8BGlZE6-BCMtCBjS8rChqPyMAyABUgcQZBgDIJIMWM4ZaAFwzZlbejkoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQCCAbUBChBOGgDUg4nyTq2uHEicc9L_GM0BKMI6QApgZGisw6yfqPyMA3IAeKMEiAG0ivYDkAFXmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gEAgAIDiAIEkAICmAIAoAIAqAIAyAIB0AIA2AIB6gIFMTk4ODH6AjVpMjEwNl9wYWNpbmdfRmFsc2UsaTI3MzktdHdjdHItU2luZ2xlLXZzLURvdWJsZV9GYWxzZYIDA250d4oBGQoXQ1ZSMjAyNTA0MjMwNzAwMjMyMTQ0OTRgEw
-                                            ]]>
-							</Tracking>
-						</TrackingEvents>
-						<VideoClicks>
-							<ClickThrough id="GDFP">
-								<![CDATA[
-                                https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQ7vOwoaj8jAMYn44Y&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEA&bwp_stk=01347d3b3dab24f011a5644ebe04232d08&chck=CgsI4pvSm6W2gz4QBRDomIlaGLLTuZ_______wE&u=https%3a%2f%2fwww.bridgewell.com%2f2025-cx-digital-ads%2f%3fbwp_lp%3d0%26imk%3dChAIkgwQ7vOwoaj8jAMYn44Y%26ug%3d10
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
+    <Ad id="%%CACHEBUSTER%%">
+        <InLine>
+            <AdSystem>Bridgewell</AdSystem>
+            <AdTitle>Ads By Bridgewell</AdTitle>
+            <Error>
+                <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAV&error_code=[ERRORCODE]]]>
+            </Error>
+
+                <Impression id="impressionBw">
+                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAW]]>
+                </Impression>
+
+            <Creatives>
+                <Creative id="8226100">
+                        <CreativeExtensions>
+                            <CreativeExtension>
+                                <![CDATA[
+                                    <LinkOpenMethod>2</LinkOpenMethod>
                                 ]]>
-							</ClickThrough>
-							<ClickTracking id="GDFF">
-								<![CDATA[
-                                https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQ7vOwoaj8jAMYn44Y&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEA&bwp_stk=01347d3b3dab24f011a5644ebe04232d08&chck=CgsI4pvSm6W2gz4QBRDomIlaGLLTuZ_______wE&u=https%3a%2f%2fwww.bridgewell.com%2f2025-cx-digital-ads%2f%3fbwp_lp%3d0%26imk%3dChAIkgwQ7vOwoaj8jAMYn44Y%26ug%3d10
-                                ]]>
-							</ClickTracking>
-						</VideoClicks>
-						<MediaFiles>
-							<MediaFile delivery="progressive" width="1920" height="1080"
-                                        type="video/mp4" bitrate="2522" scalable="true" maintainAspectRatio="true">
-								<![CDATA[
-                                    https://img.scupio.com/video/prod/converted/c5de4beb-fd3e-4e7a-8f15-d0b9b4f41317/video.mp4
-                                            ]]>
-							</MediaFile>
-							<MediaFile delivery="progressive" width="1920" height="1080"
-                                        type="video/ogg" bitrate="2522" scalable="true" maintainAspectRatio="true">
-								<![CDATA[
-                                    https://img.scupio.com/video/prod/converted/c5de4beb-fd3e-4e7a-8f15-d0b9b4f41317/video.ogg
-                                            ]]>
-							</MediaFile>
-							<MediaFile delivery="progressive" width="1920" height="1080"
-                                        type="video/webm" bitrate="2522" scalable="true" maintainAspectRatio="true">
-								<![CDATA[
-                                    https://img.scupio.com/video/prod/converted/c5de4beb-fd3e-4e7a-8f15-d0b9b4f41317/video.webm
-                                            ]]>
-							</MediaFile>
-						</MediaFiles>
-						<Creative>
-							<Extensions>
-								<LinkOpenMethod>
-									<![CDATA[0]]>
-								</LinkOpenMethod>
-							</Extensions>
-						</Creative>
-					</Linear>
-				</Creative>
-				<Creative id="8226100_c">
-					<CompanionAds>
-						<Companion width="1940" height="500">
-							<StaticResource creativeType="image/jpeg">
-								<![CDATA[
-                                        https://img.scupio.com/dsp/ad-image/205/0/0460c9b2-75bb-47b0-ae7e-e14794ae2ca2.jpg
-                                                ]]>
-							</StaticResource>
-							<CompanionClickThrough>
-								<![CDATA[
-                                        https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQ7vOwoaj8jAMYn44Y&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEA&bwp_stk=01347d3b3dab24f011a5644ebe04232d08&chck=CgsI4pvSm6W2gz4QBRDomIlaGLLTuZ_______wE&u=https%3a%2f%2fwww.bridgewell.com%2f2025-cx-digital-ads%2f%3fbwp_lp%3d0%26imk%3dChAIkgwQ7vOwoaj8jAMYn44Y%26ug%3d10
-                                                ]]>
-							</CompanionClickThrough>
-							<CompanionClickTracking>
-								<![CDATA[
-                                        https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQ7vOwoaj8jAMYn44Y&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEA&bwp_stk=01347d3b3dab24f011a5644ebe04232d08&chck=CgsI4pvSm6W2gz4QBRDomIlaGLLTuZ_______wE&u=https%3a%2f%2fwww.bridgewell.com%2f2025-cx-digital-ads%2f%3fbwp_lp%3d0%26imk%3dChAIkgwQ7vOwoaj8jAMYn44Y%26ug%3d10
-                                                ]]>
-							</CompanionClickTracking>
-							<Creative>
-							<Extensions>
-								<LinkOpenMethod>
-									<![CDATA[0]]>
-								</LinkOpenMethod>
-							</Extensions>
-						</Creative>
-						</Companion>
-					</CompanionAds>
-					<CompanionAds>
-						<Companion width="1200" height="1000">
-							<StaticResource creativeType="image/jpeg">
-								<![CDATA[
-                                        https://img.scupio.com/dsp/ad-image/205/3/398ff445-fe82-482f-9552-69874169c293.jpg
-                                                ]]>
-							</StaticResource>
-							<CompanionClickThrough>
-								<![CDATA[
-                                        https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQ7vOwoaj8jAMYn44Y&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEA&bwp_stk=01347d3b3dab24f011a5644ebe04232d08&chck=CgsI4pvSm6W2gz4QBRDomIlaGLLTuZ_______wE&u=https%3a%2f%2fwww.bridgewell.com%2f2025-cx-digital-ads%2f%3fbwp_lp%3d0%26imk%3dChAIkgwQ7vOwoaj8jAMYn44Y%26ug%3d10
-                                                ]]>
-							</CompanionClickThrough>
-						</Companion>
-					</CompanionAds>
-					<CompanionAds>
-						<Companion width="1200" height="1200">
-							<StaticResource creativeType="image/jpeg">
-								<![CDATA[
-                                        https://img.scupio.com/dsp/ad-image/205/c/c8c713ad-90f9-4eb5-b67a-25c16533cc13.jpg
-                                                ]]>
-							</StaticResource>
-							<CompanionClickThrough>
-								<![CDATA[
-                                        https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQ7vOwoaj8jAMYn44Y&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEA&bwp_stk=01347d3b3dab24f011a5644ebe04232d08&chck=CgsI4pvSm6W2gz4QBRDomIlaGLLTuZ_______wE&u=https%3a%2f%2fwww.bridgewell.com%2f2025-cx-digital-ads%2f%3fbwp_lp%3d0%26imk%3dChAIkgwQ7vOwoaj8jAMYn44Y%26ug%3d10
-                                                ]]>
-							</CompanionClickThrough>
-						</Companion>
-					</CompanionAds>
-				</Creative>
-			</Creatives>
-		</InLine>
-	</Ad>
+                            </CreativeExtension>
+                        </CreativeExtensions>
+
+                    <Linear >
+                        <Duration>00:00:30</Duration>
+                        <TrackingEvents>
+                                <Tracking event="mute" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAB]]>
+                                </Tracking>
+                                <Tracking event="unmute" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAC]]>
+                                </Tracking>
+                                <Tracking event="pause" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAD]]>
+                                </Tracking>
+                                <Tracking event="resume" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAE]]>
+                                </Tracking>
+                                <Tracking event="rewind" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAF]]>
+                                </Tracking>
+                                <Tracking event="skip" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAG]]>
+                                </Tracking>
+                                <Tracking event="playerExpand" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAH]]>
+                                </Tracking>
+                                <Tracking event="playerCollapse" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAI]]>
+                                </Tracking>
+                                <Tracking event="start" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAJ]]>
+                                </Tracking>
+                                <Tracking event="firstQuartile" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAK]]>
+                                </Tracking>
+                                <Tracking event="midpoint" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAL]]>
+                                </Tracking>
+                                <Tracking event="thirdQuartile" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAM]]>
+                                </Tracking>
+                                <Tracking event="complete" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAN]]>
+                                </Tracking>
+                                <Tracking event="acceptInvitationLinear" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAO]]>
+                                </Tracking>
+                                <Tracking event="timeSpentViewing" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAP]]>
+                                </Tracking>
+                                <Tracking event="otherAdInteraction" >
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAQ]]>
+                                </Tracking>
+                                <Tracking event="progress" offset="00:00:02">
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAR]]>
+                                </Tracking>
+                                <Tracking event="progress" offset="00:00:05">
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAS]]>
+                                </Tracking>
+                                <Tracking event="progress" offset="00:00:30">
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAT]]>
+                                </Tracking>
+                                <Tracking event="progress" offset="97%">
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAY]]>
+                                </Tracking>
+                        </TrackingEvents>
+                        <VideoClicks>
+                            <ClickThrough id="GDFP">
+                                <![CDATA[https://www.bridgewell.com/2025-cx-digital-ads/?bwp_stk=0128389b4b7876f011aeca82ea25f56773]]>
+                            </ClickThrough>
+                                <ClickTracking>
+                                    <![CDATA[https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQ3ZzX-YmCjwMYmcAl&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEAwAEAyAEB0AEA2AEB&bwp_stk=0128389b4b7876f011aeca82ea25f56773&chck=CgsI2MfQgceprD4QBRDj19PmBxiayuekBA]]>
+                                </ClickTracking>
+                                <ClickTracking>
+                                    <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAU]]>
+                                </ClickTracking>
+                        </VideoClicks>
+                        <MediaFiles>
+                                <MediaFile delivery="progressive" width="1920" height="1080"
+                                    type="video/mp4" bitrate="2522" scalable="true" maintainAspectRatio="true">
+                                    <![CDATA[https://img.scupio.com/video/prod/converted/c5de4beb-fd3e-4e7a-8f15-d0b9b4f41317/video.mp4]]>
+                                </MediaFile>
+                                <MediaFile delivery="progressive" width="1920" height="1080"
+                                    type="video/ogg" bitrate="2522" scalable="true" maintainAspectRatio="true">
+                                    <![CDATA[https://img.scupio.com/video/prod/converted/c5de4beb-fd3e-4e7a-8f15-d0b9b4f41317/video.ogg]]>
+                                </MediaFile>
+                                <MediaFile delivery="progressive" width="1920" height="1080"
+                                    type="video/webm" bitrate="2522" scalable="true" maintainAspectRatio="true">
+                                    <![CDATA[https://img.scupio.com/video/prod/converted/c5de4beb-fd3e-4e7a-8f15-d0b9b4f41317/video.webm]]>
+                                </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+
+                    <Creative id="8226100_c">
+                            <CreativeExtensions>
+                                <CreativeExtension>
+                                    <![CDATA[
+                                        <LinkOpenMethod>2</LinkOpenMethod>
+                                    ]]>
+                                </CreativeExtension>
+                            </CreativeExtensions>
+
+                            <CompanionAds>
+                                <Companion width="1940" height="500">
+                                    <StaticResource creativeType="image/jpeg">
+                                        <![CDATA[https://img.scupio.com/dsp/ad-image/205/0/0460c9b2-75bb-47b0-ae7e-e14794ae2ca2.jpg]]>
+                                    </StaticResource>
+                                    <CompanionClickThrough>
+                                        <![CDATA[https://www.bridgewell.com/2025-cx-digital-ads/?bwp_stk=0128389b4b7876f011aeca82ea25f56773]]>
+                                    </CompanionClickThrough>
+                                        <CompanionClickTracking>
+                                            <![CDATA[https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQsJ7X-YmCjwMYodkD&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEAwAEAyAEB0AEA2AEB&bwp_stk=0128389b4b7876f011aeca82ea25f56773&chck=CgsIpOXQgceprD4QBRCJusiYAhjRwMbfAg]]>
+                                        </CompanionClickTracking>
+                                        <CompanionClickTracking>
+                                            <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAU]]>
+                                        </CompanionClickTracking>
+                                </Companion>
+                            </CompanionAds>
+                            <CompanionAds>
+                                <Companion width="1200" height="1000">
+                                    <StaticResource creativeType="image/jpeg">
+                                        <![CDATA[https://img.scupio.com/dsp/ad-image/205/3/398ff445-fe82-482f-9552-69874169c293.jpg]]>
+                                    </StaticResource>
+                                    <CompanionClickThrough>
+                                        <![CDATA[https://www.bridgewell.com/2025-cx-digital-ads/?bwp_stk=0128389b4b7876f011aeca82ea25f56773]]>
+                                    </CompanionClickThrough>
+                                        <CompanionClickTracking>
+                                            <![CDATA[https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQvJ_X-YmCjwMY0NYO&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEAwAEAyAEB0AEA2AEB&bwp_stk=0128389b4b7876f011aeca82ea25f56773&chck=CgsItvrQgceprD4QBRCTuuOlBhiY9vWi_P____8B]]>
+                                        </CompanionClickTracking>
+                                        <CompanionClickTracking>
+                                            <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAU]]>
+                                        </CompanionClickTracking>
+                                </Companion>
+                            </CompanionAds>
+                            <CompanionAds>
+                                <Companion width="1200" height="1200">
+                                    <StaticResource creativeType="image/jpeg">
+                                        <![CDATA[https://img.scupio.com/dsp/ad-image/205/c/c8c713ad-90f9-4eb5-b67a-25c16533cc13.jpg]]>
+                                    </StaticResource>
+                                    <CompanionClickThrough>
+                                        <![CDATA[https://www.bridgewell.com/2025-cx-digital-ads/?bwp_stk=0128389b4b7876f011aeca82ea25f56773]]>
+                                    </CompanionClickThrough>
+                                        <CompanionClickTracking>
+                                            <![CDATA[https://c.scupio.com/v0/click?ch=1554&ma=205&la=ad547&pos=0&area=0&bwp_lp=0&icid=19881&imk=ChAIkgwQs6PX-YmCjwMYm943&adca=KAo4wjpItIr2A1CblwNgigFoA3GamZmZmZm5P3gBgAEEiAECkAEDmgEFMTk4ODGgAY8CqAECsgEAwAEAyAEB0AEA2AEB&bwp_stk=0128389b4b7876f011aeca82ea25f56773&chck=CgsIxMvRgceprD4QBRD2su74BBjE0fPoBA]]>
+                                        </CompanionClickTracking>
+                                        <CompanionClickTracking>
+                                            <![CDATA[https://vast-log.scupio.com/v0/event?vast_log=UtAECJIMEM0BKKMEOiRjNWRlNGJlYi1mZDNlLTRlN2EtOGYxNS1kMGI5YjRmNDEzMTdCL2h0dHBzOi8vd3d3LmJyaWRnZXdlbGwuY29tLzIwMjUtY3gtZGlnaXRhbC1hZHMvSh8IARIQKDibS3h28BGuyoLqJfVncxiEmNf5iYKPAyABUgcQZBgDIJIMWMMXaAFwzZlbekUoCjjCOki0ivYDUJuXA2CKAWgDcZqZmZmZmbk_eAGAAQSIAQKQAQOaAQUxOTg4MaABjwKoAQKyAQDAAQDIAQHQAQDYAQGCAdYCChDBBoF79pMpTJoK2RPKM3jbGM0BKMI6QApgZGj-n4zaiYKPA3IgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzF4owSIAbSK9gOQAbkHmAGblwOgAc2ZW7ABigHAAQPJAZqZmZmZmbk_4AEB-gGoASIgRTQxRTI0RUEyQTA1NEMzNEJCQ0NCMTJDRTFBOTQxNzGiAUBmMGY1ZDhkOTkzN2IwYjVlNjJkOWQ0MjA2MGM2MzI3ZjA4YTg0MmYwOWVkM2Q3MmY1YzdhMTQ1YmVkN2Y1ZmE5qgFAN2U2YzNkMTQ4YTJkYjY3ZjRmNDJkMWUxODcyYzI0NTAzZDNkNDFmYzg4ZDllNGU1YTk4MjU2NzI4YThhNTM5YYACA4gCBJACApgCAKACAKgCAMgCAdACANgCAeoCBTE5ODgx-gIBMIIDAnRwiAMAkAMBmAMAoAMBigEZChdDQUwyMDI1MDYyMDE0MjM1NDQ1MTc3NmAU]]>
+                                        </CompanionClickTracking>
+                                </Companion>
+                            </CompanionAds>
+                    </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
 </VAST>
