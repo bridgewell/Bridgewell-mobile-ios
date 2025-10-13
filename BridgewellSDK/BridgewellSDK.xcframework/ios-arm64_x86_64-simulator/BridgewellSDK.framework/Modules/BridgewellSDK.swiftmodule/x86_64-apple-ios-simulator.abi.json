@@ -4813,12 +4813,9 @@
             "mangledName": "$s13BridgewellSDK0A0C15userHashedEmailSSSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4844,7 +4841,6 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)userHashedEmail",
                 "mangledName": "$s13BridgewellSDK0A0C15userHashedEmailSSSgvg",
                 "moduleName": "BridgewellSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -4879,7 +4875,6 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUserHashedEmail:",
                 "mangledName": "$s13BridgewellSDK0A0C15userHashedEmailSSSgvs",
                 "moduleName": "BridgewellSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -4930,12 +4925,9 @@
             "mangledName": "$s13BridgewellSDK0A0C15userHashedPhoneSSSgvp",
             "moduleName": "BridgewellSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4961,7 +4953,6 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)userHashedPhone",
                 "mangledName": "$s13BridgewellSDK0A0C15userHashedPhoneSSSgvg",
                 "moduleName": "BridgewellSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -4996,7 +4987,6 @@
                 "usr": "c:@M@BridgewellSDK@objc(cs)Bridgewell(im)setUserHashedPhone:",
                 "mangledName": "$s13BridgewellSDK0A0C15userHashedPhoneSSSgvs",
                 "moduleName": "BridgewellSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -23260,49 +23250,49 @@
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3259,
+      "offset": 4199,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3163,
+      "offset": 4103,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4210,
+      "offset": 5150,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 8383,
+      "offset": 9323,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 8430,
+      "offset": 9370,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 8478,
+      "offset": 9418,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 8527,
+      "offset": 9467,
       "length": 4,
       "value": "3600"
     },
@@ -23317,48 +23307,62 @@
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 190,
+      "length": 30,
+      "value": "\"BRIDGEWELL_USER_HASHED_EMAIL\""
+    },
+    {
+      "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 30,
+      "value": "\"BRIDGEWELL_USER_HASHED_PHONE\""
+    },
+    {
+      "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
       "length": 19,
       "value": "\"hb_cache_id_local\""
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 501,
       "length": 7,
-      "value": "\"4.4.0\""
+      "value": "\"4.5.0\""
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 429,
+      "offset": 569,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 445,
+      "offset": 585,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 461,
+      "offset": 601,
       "length": 11,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 536,
+      "offset": 676,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 550,
+      "offset": 690,
       "length": 7,
       "value": "2"
     },

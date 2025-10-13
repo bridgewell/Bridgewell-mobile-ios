@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BridgewellSDK"
-  s.version      = "4.4.0"
+  s.version      = "4.5.0"
   s.summary      = "BridgewellSDK is a lightweight framework that integrates directly with Prebid Server."
 
   s.description  = <<-DESC
