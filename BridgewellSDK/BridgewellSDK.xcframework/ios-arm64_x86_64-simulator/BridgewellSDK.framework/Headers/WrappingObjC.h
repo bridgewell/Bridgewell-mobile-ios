@@ -1,10 +1,3 @@
-//
-//  WrappingObjC.h
-//  BridgewellSDK
-//
-//  Created by Nguyễn Mai Quân on 28/8/24.
-//
-
 #ifndef WrappingObjC_h
 #define WrappingObjC_h
 #import <Foundation/Foundation.h>

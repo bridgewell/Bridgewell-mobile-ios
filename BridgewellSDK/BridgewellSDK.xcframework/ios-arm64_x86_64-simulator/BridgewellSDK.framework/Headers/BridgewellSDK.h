@@ -1,10 +1,3 @@
-//
-//  BridgewellSDK.h
-//  BridgewellSDK
-//
-//  Created by Nalou Nguyen on 1/4/24.
-//
-
 #import <Foundation/Foundation.h>
 #import <BridgewellSDK/WrappingObjC.h>
 

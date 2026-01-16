@@ -6,7 +6,7 @@
 	<dict>
 		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
-		qb+DiMBOdZQp7mWV9CZ7tE4ylEw=
+		c4SXdTncAkAs3Uab0hPT6GWfFVo=
 		</data>
 		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,51 +14,51 @@
 		</data>
 		<key>Headers/BridgewellAdmobSDK.h</key>
 		<data>
-		pC19H45fnKgGLU+bKzZlFynUZLw=
+		emlZnKbIq//DLejVRNwMtbV5xjg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fEGBRsKTK/pNqtcUzWA6LiRS2oM=
+		H2hakKc1CouqWNQj2p1FZDaZ+yE=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nn4r3KoD/QVQUALsD64zmV8UTcc=
+		VH9wdp4fah1JRblgPRwwgefN1vY=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WS3MMBug/JjDZ8H+PR4d4XHN5jM=
+		alde1qetr4UUNCaLNz1ZtTjJo9s=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		03KuyGK2KKah8rVnuGgYK9gFQ40=
+		TxBG0k+9Y+rdNAvATpT2vo1NtRc=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WS3MMBug/JjDZ8H+PR4d4XHN5jM=
+		alde1qetr4UUNCaLNz1ZtTjJo9s=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PK+/NQlU5n1uyJ6lnvgg1zV9s+E=
+		hMZweMVr5OjaFDQgIUvdnEdOLDc=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nn4r3KoD/QVQUALsD64zmV8UTcc=
+		VH9wdp4fah1JRblgPRwwgefN1vY=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QeGIt5QYf18ysogw4a9aZj8oprQ=
+		JzY9Ks1A1QJNSEOb/lWApMnpuUg=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4E6Ip0O+dmklGw69PxlvKAU/9a8=
+		A5O1Z0bBbI/yRc9q0ykXhd7Sfvg=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QeGIt5QYf18ysogw4a9aZj8oprQ=
+		JzY9Ks1A1QJNSEOb/lWApMnpuUg=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		w4zL+sAOIsdqwat5W/v/HceRCwY=
+		fYhRRIPCWaKuwv214dl6iiwtr20=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
 		<data>
-		dapGW+iXvr0rIO4+C9uNNNNeqyM=
+		G2Wmbgt7JBjLjMMzMVlVLPUUlv4=
 		</data>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qP6RvksNLmmTa5Mh2SMAO46L/+S+ZDDQ3AEFmilWlTE=
+			Le3VaNy50XolJboShz8Q/hRnLLSDAHMkJqwcfmtv7GE=
 			</data>
 		</dict>
 		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -93,77 +93,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sh/wj7OdQnvFpCtg177NFz0HpuLRTyiJobnR4V7SloU=
+			vTRm7qTvkUn7WpOMX4o/ry0oKe5xrpjzJTj2hUgBR1E=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GiRCnjDfzbgMMjGqUdVaLH9I7IA0STXtcOMEq3iVJWY=
+			a4kTSLHjICnbDJ+P6wTkb6bZ380cV8dlJ4gQuuMxkTs=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NrdD4sgMLYAe/HRsIrW/pc8lD0VUy/19OXP/B2rBM6g=
+			Zy3vtTNJJNoTJRCqGBvy1qw8LxdpAk0dDSLp88MtZEg=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Fgs9oba4aD8W5sDnDxD6GmaMONxcUtRkB/boVB7LC4=
+			Kgd7OU+RfO0aR/HRfCO7wf9TnlnSh2BwviAUWWvb0g8=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NrdD4sgMLYAe/HRsIrW/pc8lD0VUy/19OXP/B2rBM6g=
+			Zy3vtTNJJNoTJRCqGBvy1qw8LxdpAk0dDSLp88MtZEg=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JBFMsmNp9IegrSBsB/3iMZSiEKamarCfhJIUW5hqvg0=
+			zc17U8mZdR9OT5vYL9OQJAav38y6DkY7vfdIAThbiTQ=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GiRCnjDfzbgMMjGqUdVaLH9I7IA0STXtcOMEq3iVJWY=
+			a4kTSLHjICnbDJ+P6wTkb6bZ380cV8dlJ4gQuuMxkTs=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wfWWYZK84xm0OySuELozv7ye4bmpgzEyl7IEhkCpJng=
+			6+yfanLArWCWqg/21n7vda3gX2UKu2pAsFI+KBFCUUg=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/L8cBsk94b317hLHQq9UHuQTMy5qDwBd/Tfam/ubLQk=
+			t0If3GvLLfGfTMtXWFILslJzNXNCQx8yp5Yq1wujnzc=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wfWWYZK84xm0OySuELozv7ye4bmpgzEyl7IEhkCpJng=
+			6+yfanLArWCWqg/21n7vda3gX2UKu2pAsFI+KBFCUUg=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lk9jYDymQFDsRoCfbGXpapsV+DWKN3nQQZE7zbT5WwE=
+			FbPEBNvUaYU+Wr2Pvs+PZ6m5nSCmroDK4svXyCpBfZo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yFn5/Kf+Km4CAzb9OVVfexAa05y36SO2OyvJUfJFIJw=
+			dlXE4fzMmNsZlWFS2HIRWo5EtgZynkHx3U1K7bzNeGs=
 			</data>
 		</dict>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
