@@ -9,10 +9,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "BridgewellAdmobSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "BridgewellAdmobSDK"
       },
       {
         "kind": "Import",

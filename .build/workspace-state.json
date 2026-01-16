@@ -1,0 +1,38 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "bridgewell-mobile-ios",
+          "kind" : "root",
+          "location" : "/Users/mac-mini-01/Documents/Bridgewell-mobile-ios",
+          "name" : "Bridgewell-mobile-ios"
+        },
+        "path" : "/Users/mac-mini-01/Documents/Bridgewell-mobile-ios/BridgewellSDK/BridgewellSDK.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "BridgewellFramework"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "bridgewell-mobile-ios",
+          "kind" : "root",
+          "location" : "/Users/mac-mini-01/Documents/Bridgewell-mobile-ios",
+          "name" : "Bridgewell-mobile-ios"
+        },
+        "path" : "/Users/mac-mini-01/Documents/Bridgewell-mobile-ios/PrebidFrameworks/XCPrebidMobile.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "PrebidMobile"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}

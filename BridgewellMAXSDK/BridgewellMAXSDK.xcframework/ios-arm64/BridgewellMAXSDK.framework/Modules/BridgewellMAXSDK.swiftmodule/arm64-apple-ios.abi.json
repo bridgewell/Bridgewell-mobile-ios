@@ -9,10 +9,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "BridgewellMAXSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "BridgewellMAXSDK"
       },
       {
         "kind": "Import",

@@ -1,10 +1,3 @@
-//
-//  BridgewellAdmobSDK.h
-//  BridgewellAdmobSDK
-//
-//  Created by Nguyễn Mai Quân on 8/5/24.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for BridgewellAdmobSDK.
