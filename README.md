@@ -1,7 +1,7 @@
 # Documentation Guide
 
 # Bridgewell SDK for iOS.
-# Version: 0.0.8
+# Version: 4.6.1
 
 # Requirements
 

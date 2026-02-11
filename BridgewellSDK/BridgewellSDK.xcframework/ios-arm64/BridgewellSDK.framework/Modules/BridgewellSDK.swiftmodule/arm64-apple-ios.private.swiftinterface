@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BridgewellSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AVFoundation
 import AdSupport
 import AppTrackingTransparency
@@ -24,9 +24,7 @@ import _SwiftConcurrencyShims
   case onImpression
   case onClick
   case all
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -42,14 +40,10 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol BwsAdViewDelegate : ObjectiveC.NSObjectProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc func adViewPresentationController() -> UIKit.UIViewController?
-  #endif
   @objc optional func adViewDisplayed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewFailed(_ adView: BridgewellSDK.BwsAdView, didFailToReceiveAdWith error: any Swift.Error)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func adViewClicked(_ adView: BridgewellSDK.BwsAdView, openUrl: Swift.String?, linkOpenMethod: Swift.String?)
-  #endif
   @objc optional func adViewClosed(_ adView: BridgewellSDK.BwsAdView)
   @objc optional func adViewDidDismissModal(_ adView: BridgewellSDK.BwsAdView)
 }
@@ -57,22 +51,18 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency public var adUnitConfig: PrebidMobile.AdUnitConfig {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var eventHandler: (any PrebidMobile.BannerEventHandler)? {
     get
   }
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var bannerParameters: PrebidMobile.BannerParameters {
     @objc get
   }
   @objc @_Concurrency.MainActor @preconcurrency public var videoParameters: PrebidMobile.VideoParameters {
     @objc get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var lastBidResponse: PrebidMobile.BidResponse? {
     @objc get
   }
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var configID: Swift.String {
     @objc get
   }
@@ -80,12 +70,10 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var additionalSizes: [CoreFoundation.CGSize]? {
     @objc get
     @objc set
   }
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency public var adFormat: BridgewellSDK.Bridgewell.AdFormat {
     @objc get
     @objc set
@@ -94,12 +82,10 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BridgewellSDK.BwsAdViewDelegate)? {
     @objc get
     @objc set
@@ -127,15 +113,9 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor @preconcurrency public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
   @objc @_Concurrency.MainActor @preconcurrency public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
   @objc @_Concurrency.MainActor @preconcurrency public func clearUserData()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func getAdTrackingURL() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func getVideoBgTracking() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func bannerViewPresentationController() -> UIKit.UIViewController?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func bannerView(_ bannerView: PrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
   @objc @_Concurrency.MainActor @preconcurrency public func handleTapOnVideo()
   @_Concurrency.MainActor @preconcurrency @objc public func bannerView(_ bannerView: PrebidMobile.BannerView, didFailToReceiveAdWith error: any Swift.Error)
@@ -145,9 +125,7 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor @preconcurrency public func handleTapOnBackground()
   @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
   @objc @_Concurrency.MainActor @preconcurrency public func didTapOnAd()
 }
@@ -192,12 +170,8 @@ extension PrebidMobile.AdFormat {
   @objc final public let geo: Swift.String?
   @objc final public let device: Swift.String?
   @objc final public let sdk: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(mobile: Swift.String?, geo: Swift.String?, device: Swift.String?, sdk: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func asDictionary() -> [Swift.String : Swift.String?]
-  #endif
   @objc public func asNonNilDictionary() -> [Swift.String : Swift.String]
   @objc deinit
 }
@@ -212,9 +186,7 @@ public class BridgewellVisibilityCheckerUtils {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BridgewellViewExposureChecker : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func exposureOf(_ view: UIKit.UIView) -> BridgewellSDK.BridgewellViewExposure?
-  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BridgewellViewExposure : ObjectiveC.NSObject {
@@ -225,18 +197,14 @@ public class BridgewellVisibilityCheckerUtils {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Bridgewell : ObjectiveC.NSObject {
   @objc public static let shared: BridgewellSDK.Bridgewell
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var userHashedEmail: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var userHashedPhone: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc public var updatedTimeout: Swift.Bool {
     @objc get
     @objc set
@@ -291,18 +259,14 @@ public class BridgewellVisibilityCheckerUtils {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var timeoutMillisecondDynamic: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var cachedAuctionResponse: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc public var useCacheForReportWithRenderingAPI: Swift.Bool {
     @objc get
     @objc set
@@ -342,21 +306,15 @@ public class BridgewellVisibilityCheckerUtils {
   @objc public func setCustomBridgewellServer(url: Swift.String) throws
   @objc public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
   @objc public func clearStoredBidResponses()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
-  #endif
   @objc public func addCustomHeader(name: Swift.String, value: Swift.String)
   @objc public func clearCustomHeaders()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initializeSDK(_ completion: BridgewellSDK.Bridgewell.BridgewellInitializationCallback? = nil)
-  #endif
   @objc public func registerContentWebViewWithAdInfo(_ webview: WebKit.WKWebView)
+  @objc public func unregisterContentWebView(_ webview: WebKit.WKWebView)
+  @objc public func unregisterAllContentWebViews()
   @objc public func getWebViewData(completion: @escaping (BridgewellSDK.BridgewellWebViewData) -> Swift.Void)
   @objc public func getWebViewDataSync() -> BridgewellSDK.BridgewellWebViewData
   @objc @available(iOS 13.0, *)
@@ -416,9 +374,7 @@ public let BridgewellLocalCacheIdKey: Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objcMembers public class BwsTrackAdEvent : Swift.AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func trackURL(_ url: Swift.String?)
-  #endif
   @objc deinit
 }
 extension BridgewellSDK.BwBannerMessageListenerMode : Swift.Equatable {}
