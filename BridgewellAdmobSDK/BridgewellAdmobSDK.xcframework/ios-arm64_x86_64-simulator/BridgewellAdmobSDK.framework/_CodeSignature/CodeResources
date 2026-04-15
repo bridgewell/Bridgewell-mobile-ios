@@ -6,7 +6,7 @@
 	<dict>
 		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
-		xEyw9Ork0c6h6Ls80/8k5yqn9k4=
+		rwpc1rRiR4G4tgWOZsSpvwv3mwI=
 		</data>
 		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		v0d5U5qOLVMZ29rib/CyViXwS4U=
+		XX5jQ8te865QZIX6WaodNnpOYuw=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		abmdTFvvKL6CnxG99R2hs9JpSRc=
+		nwYlUTJulQYjPv/EV5xWLg05gJk=
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Et4BXn2Y+Y4S9BnyanN1rtrUGAU=
+		x/ynKb2rWw5xig9q0hqzE6HFJcE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
 		<data>
-		Lfolpo1XBaVRkFQ7M+iGRKzwhME=
+		e6whc1IkXHybL1FSc1TTWnAJ2tk=
 		</data>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N4uojjUNBt8C/iQac4grV6r75kbepj0ix4JM2ruoLVo=
+			sdcp4vgBBSkDDwvQhqrNTPJR20WUCev44V63lvpFE8A=
 			</data>
 		</dict>
 		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			30Eltuvj4m55X123T8EQzTbnaC7oGMt2Dcq7h2sygkc=
+			2zSEPIOlchM+vPjQvPgRlB0v2ojTtLfVo08Dl39sYPU=
 			</data>
 		</dict>
 		<key>Modules/BridgewellAdmobSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -163,7 +163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zG1vktNxdOTxglFZFpVjcpp9xCKqW56xgXo7gMfrjpM=
+			IPDIO0a/VynyCK/YverOmDQlPwX50t6Wqtj6uerxR94=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wRaoS3iWPBPEfGUGrkQbo8XLU2ceeJcrA5JoyOtmq5I=
+			PBZEwJhXJdVm/RRRDVX4zcENJ2D6vsddw1wqIK5zRGU=
 			</data>
 		</dict>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>

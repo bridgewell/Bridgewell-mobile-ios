@@ -394,11 +394,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
 /// Register WKWebview
 /// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
-/// within this web view. Data is injected as <code>window.bwsMobile</code>, <code>window.bwsGeo</code>,
-/// <code>window.bwsDevice</code>, and <code>window.bwsdk</code> global variables via a persistent WKUserScript.
-/// An initial script is installed immediately (with geo=null); once geolocation resolves,
-/// the script is refreshed with the full data set. If the page defines
-/// <code>window.onSdkDataReady</code>, it will be called on each injection.
+/// within this web view. Data is injected as a single <code>window.bws</code> global variable (JSON string)
+/// via <code>evaluateJavaScript</code>, using a two-phase injection model:
+/// <ul>
+///   <li>
+///     <em>Phase 1</em> (didCommit): Sets <code>window.bws</code> with immediately available data (geo may be null).
+///   </li>
+///   <li>
+///     <em>Phase 2</em> (geo ready): Updates <code>window.bws</code> with complete data and calls <code>window.setBws(jsonString)</code>
+///     so the page can react to the full data set.
+///   </li>
+/// </ul>
+/// Injection can also occur immediately upon registration if the page is already loaded,
+/// or at <code>didFinish</code> as a fallback when registration happens after <code>didCommit</code> has already fired.
 - (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview;
 /// Unregister a specific WKWebView
 /// Removes the Bridgewell SDK’s navigation delegate proxy from the specified web view,
@@ -410,50 +418,51 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 /// Unregister all WKWebViews
 /// Removes the Bridgewell SDK from all previously registered web views.
 - (void)unregisterAllContentWebViews;
+/// Returns a JavaScript snippet that sets <code>window.bws</code> with immediately available data.
+/// Geo-location may be <code>null</code> if it hasn’t been resolved yet.
+/// Evaluate the returned string directly on a WKWebView.
+/// Example usage:
+/// \code
+/// func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+///     webView.evaluateJavaScript(Bridgewell.shared.webViewInjectionScript())
+/// }
+///
+/// \endcode
+/// returns:
+/// A JavaScript string, e.g. <code>window.bws = JSON.stringify({"mobile":{...},"geo":null,...});</code>
+- (NSString * _Nonnull)webViewInjectionScript SWIFT_WARN_UNUSED_RESULT;
+/// Fetches complete SDK data (including geo-location) and returns a JavaScript snippet
+/// that sets <code>window.bws</code> and calls <code>window.setBws()</code> with DOMContentLoaded fallback.
+/// The completion handler is called on the main thread when all data is ready.
+/// Example usage:
+/// \code
+/// func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+///     webView.evaluateJavaScript(Bridgewell.shared.webViewInjectionScript())
+///     Bridgewell.shared.fetchWebViewInjectionScript { script in
+///         webView.evaluateJavaScript(script)
+///     }
+/// }
+///
+/// \endcode\param completion Completion handler called with a ready-to-evaluate JavaScript string.
+///
+- (void)fetchWebViewInjectionScriptWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 /// Retrieves WebView data asynchronously with a completion handler.
 /// This method retrieves all data including geo-location (which may require async permission checks).
 /// The completion handler is called on the main thread when all data is ready.
-/// note:
-/// Supports iOS 12+
-/// Example usage:
-/// \code
-/// Bridgewell.shared.getWebViewData { data in
-///     // Use data.mobile, data.geo, data.device, data.sdk
-///     let script = "window.bwsMobile = '\(data.mobile ?? "null")';"
-///     webView.evaluateJavaScript(script)
-/// }
-///
-/// \endcode\param completion Completion handler called with BridgewellWebViewData when ready
+/// For most use cases, prefer <code>webViewInjectionScript()</code> and <code>fetchWebViewInjectionScript(completion:)</code> which return
+/// ready-to-evaluate JavaScript strings.
+/// \param completion Completion handler called with BridgewellWebViewData when ready
 ///
 - (void)getWebViewDataWithCompletion:(void (^ _Nonnull)(BridgewellWebViewData * _Nonnull))completion;
 /// Retrieves WebView data synchronously.
-/// This method returns immediately with available data. Geo-location data may be <code>nil</code>
-/// if it hasn’t been cached yet or if location permissions are denied.
-/// note:
-/// Supports iOS 12+
-/// Example usage:
-/// \code
-/// let data = Bridgewell.shared.getWebViewDataSync()
-/// // data.geo might be nil if location is not cached
+/// Returns immediately with available data. Geo-location may be <code>nil</code> if not cached.
+/// For most use cases, prefer <code>webViewInjectionScript()</code> which returns a ready-to-evaluate JavaScript string.
 ///
-/// \endcode
 /// returns:
 /// BridgewellWebViewData with immediately available data
 - (BridgewellWebViewData * _Nonnull)getWebViewDataSync SWIFT_WARN_UNUSED_RESULT;
-/// Retrieves WebView data asynchronously using async/await.
-/// This method uses Swift’s modern concurrency features to retrieve all data including geo-location.
-/// note:
-/// Supports iOS 13+ (requires async/await support)
-/// Example usage:
-/// \code
-/// Task {
-///     let data = await Bridgewell.shared.getWebViewData()
-///     // Use data.mobile, data.geo, data.device, data.sdk
-/// }
-///
-/// \endcode
-/// returns:
-/// BridgewellWebViewData with all available data
+/// Async/await version of <code>getWebViewData(completion:)</code>.
+/// For most use cases, prefer <code>fetchWebViewInjectionScript()</code> which returns a ready-to-evaluate JavaScript string.
 - (void)getWebViewDataWithCompletionHandler:(void (^ _Nonnull)(BridgewellWebViewData * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1078,11 +1087,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
 /// Register WKWebview
 /// Registers a web view with the Bridgewell SDK to improve in-app ad monetization of ads
-/// within this web view. Data is injected as <code>window.bwsMobile</code>, <code>window.bwsGeo</code>,
-/// <code>window.bwsDevice</code>, and <code>window.bwsdk</code> global variables via a persistent WKUserScript.
-/// An initial script is installed immediately (with geo=null); once geolocation resolves,
-/// the script is refreshed with the full data set. If the page defines
-/// <code>window.onSdkDataReady</code>, it will be called on each injection.
+/// within this web view. Data is injected as a single <code>window.bws</code> global variable (JSON string)
+/// via <code>evaluateJavaScript</code>, using a two-phase injection model:
+/// <ul>
+///   <li>
+///     <em>Phase 1</em> (didCommit): Sets <code>window.bws</code> with immediately available data (geo may be null).
+///   </li>
+///   <li>
+///     <em>Phase 2</em> (geo ready): Updates <code>window.bws</code> with complete data and calls <code>window.setBws(jsonString)</code>
+///     so the page can react to the full data set.
+///   </li>
+/// </ul>
+/// Injection can also occur immediately upon registration if the page is already loaded,
+/// or at <code>didFinish</code> as a fallback when registration happens after <code>didCommit</code> has already fired.
 - (void)registerContentWebViewWithAdInfo:(WKWebView * _Nonnull)webview;
 /// Unregister a specific WKWebView
 /// Removes the Bridgewell SDK’s navigation delegate proxy from the specified web view,
@@ -1094,50 +1111,51 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Bridgewell *
 /// Unregister all WKWebViews
 /// Removes the Bridgewell SDK from all previously registered web views.
 - (void)unregisterAllContentWebViews;
+/// Returns a JavaScript snippet that sets <code>window.bws</code> with immediately available data.
+/// Geo-location may be <code>null</code> if it hasn’t been resolved yet.
+/// Evaluate the returned string directly on a WKWebView.
+/// Example usage:
+/// \code
+/// func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+///     webView.evaluateJavaScript(Bridgewell.shared.webViewInjectionScript())
+/// }
+///
+/// \endcode
+/// returns:
+/// A JavaScript string, e.g. <code>window.bws = JSON.stringify({"mobile":{...},"geo":null,...});</code>
+- (NSString * _Nonnull)webViewInjectionScript SWIFT_WARN_UNUSED_RESULT;
+/// Fetches complete SDK data (including geo-location) and returns a JavaScript snippet
+/// that sets <code>window.bws</code> and calls <code>window.setBws()</code> with DOMContentLoaded fallback.
+/// The completion handler is called on the main thread when all data is ready.
+/// Example usage:
+/// \code
+/// func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+///     webView.evaluateJavaScript(Bridgewell.shared.webViewInjectionScript())
+///     Bridgewell.shared.fetchWebViewInjectionScript { script in
+///         webView.evaluateJavaScript(script)
+///     }
+/// }
+///
+/// \endcode\param completion Completion handler called with a ready-to-evaluate JavaScript string.
+///
+- (void)fetchWebViewInjectionScriptWithCompletion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 /// Retrieves WebView data asynchronously with a completion handler.
 /// This method retrieves all data including geo-location (which may require async permission checks).
 /// The completion handler is called on the main thread when all data is ready.
-/// note:
-/// Supports iOS 12+
-/// Example usage:
-/// \code
-/// Bridgewell.shared.getWebViewData { data in
-///     // Use data.mobile, data.geo, data.device, data.sdk
-///     let script = "window.bwsMobile = '\(data.mobile ?? "null")';"
-///     webView.evaluateJavaScript(script)
-/// }
-///
-/// \endcode\param completion Completion handler called with BridgewellWebViewData when ready
+/// For most use cases, prefer <code>webViewInjectionScript()</code> and <code>fetchWebViewInjectionScript(completion:)</code> which return
+/// ready-to-evaluate JavaScript strings.
+/// \param completion Completion handler called with BridgewellWebViewData when ready
 ///
 - (void)getWebViewDataWithCompletion:(void (^ _Nonnull)(BridgewellWebViewData * _Nonnull))completion;
 /// Retrieves WebView data synchronously.
-/// This method returns immediately with available data. Geo-location data may be <code>nil</code>
-/// if it hasn’t been cached yet or if location permissions are denied.
-/// note:
-/// Supports iOS 12+
-/// Example usage:
-/// \code
-/// let data = Bridgewell.shared.getWebViewDataSync()
-/// // data.geo might be nil if location is not cached
+/// Returns immediately with available data. Geo-location may be <code>nil</code> if not cached.
+/// For most use cases, prefer <code>webViewInjectionScript()</code> which returns a ready-to-evaluate JavaScript string.
 ///
-/// \endcode
 /// returns:
 /// BridgewellWebViewData with immediately available data
 - (BridgewellWebViewData * _Nonnull)getWebViewDataSync SWIFT_WARN_UNUSED_RESULT;
-/// Retrieves WebView data asynchronously using async/await.
-/// This method uses Swift’s modern concurrency features to retrieve all data including geo-location.
-/// note:
-/// Supports iOS 13+ (requires async/await support)
-/// Example usage:
-/// \code
-/// Task {
-///     let data = await Bridgewell.shared.getWebViewData()
-///     // Use data.mobile, data.geo, data.device, data.sdk
-/// }
-///
-/// \endcode
-/// returns:
-/// BridgewellWebViewData with all available data
+/// Async/await version of <code>getWebViewData(completion:)</code>.
+/// For most use cases, prefer <code>fetchWebViewInjectionScript()</code> which returns a ready-to-evaluate JavaScript string.
 - (void)getWebViewDataWithCompletionHandler:(void (^ _Nonnull)(BridgewellWebViewData * _Nonnull))completionHandler SWIFT_AVAILABILITY(ios,introduced=13.0);
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

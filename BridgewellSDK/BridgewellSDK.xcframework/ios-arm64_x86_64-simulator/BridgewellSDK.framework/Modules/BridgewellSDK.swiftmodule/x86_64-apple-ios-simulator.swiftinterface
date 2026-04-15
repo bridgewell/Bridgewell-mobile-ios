@@ -315,6 +315,8 @@ public class BridgewellVisibilityCheckerUtils {
   @objc public func registerContentWebViewWithAdInfo(_ webview: WebKit.WKWebView)
   @objc public func unregisterContentWebView(_ webview: WebKit.WKWebView)
   @objc public func unregisterAllContentWebViews()
+  @objc public func webViewInjectionScript() -> Swift.String
+  @objc public func fetchWebViewInjectionScript(completion: @escaping (Swift.String) -> Swift.Void)
   @objc public func getWebViewData(completion: @escaping (BridgewellSDK.BridgewellWebViewData) -> Swift.Void)
   @objc public func getWebViewDataSync() -> BridgewellSDK.BridgewellWebViewData
   @objc @available(iOS 13.0, *)
