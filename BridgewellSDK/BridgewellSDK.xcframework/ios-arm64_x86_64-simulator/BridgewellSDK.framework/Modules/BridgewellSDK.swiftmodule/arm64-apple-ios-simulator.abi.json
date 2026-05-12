@@ -24341,57 +24341,57 @@
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
-      "kind": "StringLiteral",
-      "offset": 464,
-      "length": 15,
-      "value": "\"carrefour.com\""
+      "kind": "Dictionary",
+      "offset": 493,
+      "length": 207,
+      "value": "[(\"1554\", \"goyomoney.com.tw\"), (\"1552\", \"uni-prosperity.com.tw\"), (\"1564\", \"uni-prosperity.com.tw\"), (\"1615\", \"uni-prosperity.com.tw\"), (\"1616\", \"uni-prosperity.com.tw\")]"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4108,
+      "offset": 4797,
       "length": 2,
       "value": "99"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4012,
+      "offset": 4701,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "BooleanLiteral",
-      "offset": 5059,
+      "offset": 5748,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 9232,
+      "offset": 9921,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 9277,
+      "offset": 9966,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 9325,
+      "offset": 10014,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Bridgewell.swift",
       "kind": "IntegerLiteral",
-      "offset": 9374,
+      "offset": 10063,
       "length": 4,
       "value": "3600"
     },
@@ -24428,7 +24428,7 @@
       "kind": "StringLiteral",
       "offset": 413,
       "length": 7,
-      "value": "\"4.7.0\""
+      "value": "\"4.8.0\""
     },
     {
       "filePath": "\/Volumes\/DATA\/charly-data\/document\/bwsdk-iOS\/BridgewellSDK\/core\/Constants.swift",
